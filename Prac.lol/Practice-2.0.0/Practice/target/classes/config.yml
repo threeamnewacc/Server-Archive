@@ -1,0 +1,48 @@
+DATABASE:
+  MONGO:
+    DATABASE: "Practice"
+    HOST: "127.0.0.1"
+    PORT: 27017
+    AUTHENTICATION:
+      ENABLED: FALSE
+      DATABASE: "admin"
+      USER: "user"
+      PASSWORD: "password"
+
+region: "REGION"
+
+LEADERBOARDS:
+  UPDATE-TIME: 15 # The time is calculated in minutes
+  UPDATE-MESSAGE: "&8[&b&lPractice&8] &7&oUpdating leaderboards! This could cause minor lag..."
+
+PLACEHOLDER-API:
+  PLAYER-KIT-ELO-FORMAT: "&b<kit> &f<position>&8. <player> &7(&f<elo>&7)"
+
+HOLOGRAM:
+  UPDATE-TIME: 20 # Seconds
+  FORMAT:
+    FORMAT: "&b<number>. &f<name>: &b<value>"
+    LINES:
+      - "&b&lPractice Leaderboards"
+      - "&7"
+      - "&b <kit> "
+      - "&7"
+      - "<top>"
+  WINSTREAK:
+    FORMAT: "&b<number>. &f<name>: &b<value>"
+    LINES:
+      - "&b&lPractice Winstreak Leaderboards"
+      - "&7"
+      - "&b <kit> "
+      - "&7"
+      - "<top>"
+
+NPC:
+  UPDATE-TIME: 20 # Seconds
+  FORMAT:
+    FORMAT: '&6<number># &f<name> &7» &f<value> &7» <elo_rating>'
+    LINES:
+      - "&a◉ <kit> ◉"
+      - "<top>"
+      - "&7"
+      - "&fNext update in &6<update>"

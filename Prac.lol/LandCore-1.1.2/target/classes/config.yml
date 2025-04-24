@@ -1,0 +1,11 @@
+server_name: "server-name"
+network_name: "SERVER_NAME"
+
+mongodb:
+  uri: mongodb://127.0.0.1:27017/land_core
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  timeout: 2000
+  password: "53$pdu432423f"

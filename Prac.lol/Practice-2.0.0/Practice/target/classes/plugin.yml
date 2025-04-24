@@ -1,0 +1,7 @@
+main: me.devkevin.practice.Practice
+name: Practice
+author: DevKevin
+version: 10.3
+depend:
+  - LandCore
+  - HolographicDisplays

@@ -1,0 +1,6 @@
+main: me.devkevin.WebSocketAPI
+name: WebSocketAPI
+author: DevKevin
+version: 1.0
+depend:
+  - Core

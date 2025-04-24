@@ -1,0 +1,3307 @@
+ladders:
+  Gapple:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 5
+          DURABILITY: 3
+          FIRE_ASPECT: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      damage: 1
+      amount: 0
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Gapple
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oGawdApple§7 - §61000
+        - §72. §e§oReleases§7 - §61000
+        - §73. §e§oAgentAsh_§7 - §61000
+        - ''
+        - §eClick here to play §6Gapple§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Pond
+    - Toxic
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - MarioBros
+    - Spotify
+    - Pepe
+    - Apple
+    - Winter
+    - Hills
+    - Overwatch
+    - Valorant
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  NoDebuff:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 3
+          DURABILITY: 3
+          FIRE_ASPECT: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+          PROTECTION_FALL: 4
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_FISH
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: GRILLED_PORK
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        display-name: §6NoDebuff
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oLeaan§7 - §61000
+        - §72. §e§oAgentAsh_§7 - §61000
+        - §73. §e§oAlleComboZ§7 - §61000
+        - ''
+        - §eClick here to play §6NoDebuff§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Pond
+    - Toxic
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - Bat
+    - Christmas
+    - RedSand
+    - SnowTree
+    - HolyGarden
+    - MarioBros
+    - Spotify
+    - Pepe
+    - Apple
+    - Winter
+    - Hills
+    - Overwatch
+    - Valorant
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Sumo:
+    contents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: -1
+    - ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: -1
+    - ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: -1
+    - ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: -1
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Sumo
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oBruhMonkeyJayy§7 - §61000
+        - §72. §e§oAlleComboZ§7 - §61000
+        - §73. §e§oAlexCanaryYT§7 - §61000
+        - ''
+        - §eClick here to play §6Sumo§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Mario
+    - Fruit
+    - Snow
+    enabled: true
+    ranked: true
+    sumo: true
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Archer:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          ARROW_DAMAGE: 1
+          ARROW_INFINITE: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: WOOD_PICKAXE
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      amount: 12
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16454
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Archer
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oDe_el_pler§7 - §61000
+        - §72. §e§oAgentAsh_§7 - §61000
+        - §73. §e§oAlleComboZ§7 - §61000
+        - ''
+        - §eClick here to play §6Archer§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Pond
+    - Toxic
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - MarioBros
+    - Spotify
+    - Pepe
+    - Apple
+    - Winter
+    - Hills
+    - Overwatch
+    - Valorant
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Boxing:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 5
+          DURABILITY: 3
+        repair-cost: 8
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: -1
+      amount: 0
+    - ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: -1
+      amount: 0
+    - ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: -1
+      amount: 0
+    - ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: -1
+      amount: 0
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Boxing
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oAlleComboZ§7 - §61000
+        - §72. §e§oReleases§7 - §61000
+        - §73. §e§oiShamm§7 - §61000
+        - ''
+        - §eClick here to play §6Boxing§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Pond
+    - Toxic
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - Bat
+    - HolyGarden
+    - Valorant
+    - Overwatch
+    - Hills
+    - Winter
+    - Apple
+    - Pepe
+    - Spotify
+    - MarioBros
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: true
+  ArcherHCF:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          ARROW_DAMAGE: 4
+          DURABILITY: 3
+          ARROW_FIRE: 1
+          ARROW_INFINITE: 1
+        repair-cost: 15
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: SUGAR
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_CARROT
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: FEATHER
+      amount: 64
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 3
+          PROTECTION_FALL: 4
+        repair-cost: 7
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          ARROW_DAMAGE: 4
+          DURABILITY: 3
+          ARROW_FIRE: 1
+          ARROW_INFINITE: 1
+        repair-cost: 15
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: SUGAR
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_CARROT
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: FEATHER
+      amount: 64
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aArcherHCF
+        enchants:
+          ARROW_DAMAGE: 4
+          DURABILITY: 3
+          ARROW_FIRE: 1
+          ARROW_INFINITE: 1
+        repair-cost: 15
+    arenaWhitelist: []
+    enabled: false
+    ranked: false
+    sumo: false
+    build: false
+    hcf: true
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Vanilla:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 5
+          DURABILITY: 3
+          FIRE_ASPECT: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          ARROW_DAMAGE: 5
+          ARROW_FIRE: 1
+          DURABILITY: 3
+          ARROW_INFINITE: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8257
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8233
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8257
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8233
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8257
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8233
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+          PROTECTION_FALL: 4
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 5
+          DURABILITY: 3
+          FIRE_ASPECT: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          ARROW_DAMAGE: 5
+          ARROW_FIRE: 1
+          DURABILITY: 3
+          ARROW_INFINITE: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8257
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8233
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8257
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8233
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8257
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8233
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8229
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        display-name: §6Vanilla
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oGawdApple§7 - §61000
+        - §72. §e§oAlexCanaryYT§7 - §61000
+        - §73. §e§oAgentAsh_§7 - §61000
+        - ''
+        - §eClick here to play §6Vanilla§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Pond
+    - Toxic
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - Valorant
+    - Overwatch
+    - Hills
+    - Winter
+    - Apple
+    - Pepe
+    - Spotify
+    - MarioBros
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Combo:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 5
+          DURABILITY: 3
+          FIRE_ASPECT: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      damage: 1
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAW_FISH
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Combo
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oiShamm§7 - §61000
+        - §72. §e§oReleases§7 - §61000
+        - §73. §e§oDe_el_pler§7 - §61000
+        - ''
+        - §eClick here to play §6Combo§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Pond
+    - Toxic
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - MarioBros
+    - Spotify
+    - Pepe
+    - Apple
+    - Winter
+    - Hills
+    - Overwatch
+    - Valorant
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: true
+    boxing: false
+  HCF:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 3
+          FIRE_ASPECT: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: FISHING_ROD
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+          PROTECTION_FALL: 4
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 3
+          FIRE_ASPECT: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: FISHING_ROD
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aHCF
+        enchants:
+          DAMAGE_ALL: 3
+          FIRE_ASPECT: 2
+          DURABILITY: 3
+    arenaWhitelist: []
+    enabled: true
+    ranked: false
+    sumo: false
+    build: false
+    hcf: true
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Classic:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+    - ==: org.bukkit.inventory.ItemStack
+      type: FISHING_ROD
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOW
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      amount: 3
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+      amount: 10
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 16
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: FISHING_ROD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Classic
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oLeaan§7 - §61000
+        - §72. §e§oiShamm§7 - §61000
+        - §73. §e§oBruhMonkeyJayy§7 - §61000
+        - ''
+        - §eClick here to play §6Classic§e.
+    arenaWhitelist:
+    - Pepe
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Bard:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: SUGAR
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_INGOT
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: BLAZE_POWDER
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_CARROT
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: FEATHER
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: GHAST_TEAR
+      amount: 64
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLD_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          PROTECTION_FALL: 4
+          DURABILITY: 3
+        repair-cost: 7
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLD_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLD_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLD_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 3
+        repair-cost: 3
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aBard
+    arenaWhitelist: []
+    enabled: false
+    ranked: false
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Axe:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_BOOTS
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_LEGGINGS
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_CHESTPLATE
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_HELMET
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Axe
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oiShamm§7 - §61000
+        - §72. §e§oAgentAsh_§7 - §61000
+        - §73. §e§oReleases§7 - §61000
+        - ''
+        - §eClick here to play §6Axe§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Pond
+    - Toxic
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - Valorant
+    - Overwatch
+    - Hills
+    - Winter
+    - Apple
+    - Pepe
+    - Spotify
+    - MarioBros
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Soup:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: IRON_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    - ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: MUSHROOM_SOUP
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Soup
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oReleases§7 - §61000
+        - §72. §e§oDe_el_pler§7 - §61000
+        - §73. §e§oAlexCanaryYT§7 - §61000
+        - ''
+        - §eClick here to play §6Soup§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Toxic
+    - Pond
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - Valorant
+    - Overwatch
+    - Hills
+    - Winter
+    - Apple
+    - Pepe
+    - Spotify
+    - MarioBros
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  Debuff:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 3
+          DURABILITY: 3
+          FIRE_ASPECT: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16388
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16394
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16388
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16426
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16388
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16426
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+          PROTECTION_FALL: 4
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 3
+          DURABILITY: 3
+          FIRE_ASPECT: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16388
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16394
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16388
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16426
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16388
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16426
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16388
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        display-name: §6Debuff
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oiShamm§7 - §61000
+        - §72. §e§oReleases§7 - §61000
+        - §73. §e§oBruhMonkeyJayy§7 - §61000
+        - ''
+        - §eClick here to play §6Debuff§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Pond
+    - Toxic
+    - Fountain
+    - Candy
+    - Cavern
+    - YingYang
+    - Desert
+    - Train
+    - Panda
+    - HolyGarden
+    - MarioBros
+    - Spotify
+    - Pepe
+    - Apple
+    - Winter
+    - Hills
+    - Overwatch
+    - Valorant
+    enabled: true
+    ranked: true
+    sumo: false
+    build: false
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false
+  BuildUHC:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: FISHING_ROD
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          ARROW_DAMAGE: 3
+          ARROW_INFINITE: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: WOOD
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Golden Head
+        repair-cost: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLDEN_APPLE
+      amount: 6
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_AXE
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_PICKAXE
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: ANVIL
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - ==: org.bukkit.inventory.ItemStack
+      type: COBBLESTONE
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: LAVA_BUCKET
+    - ==: org.bukkit.inventory.ItemStack
+      type: LAVA_BUCKET
+    - ==: org.bukkit.inventory.ItemStack
+      type: WATER_BUCKET
+    - ==: org.bukkit.inventory.ItemStack
+      type: WATER_BUCKET
+    - null
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_PROJECTILE: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_PROJECTILE: 2
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: LAVA_BUCKET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6BuildUHC
+        lore:
+        - '§7● §eIn queue: §60'
+        - '§7● §eIn match: §60'
+        - ''
+        - §71. §e§oAlexCanaryYT§7 - §61000
+        - §72. §e§oLeaan§7 - §61000
+        - §73. §e§oDe_el_pler§7 - §61000
+        - ''
+        - §eClick here to play §6BuildUHC§e.
+        ItemFlags: !!set
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+    arenaWhitelist:
+    - Build_1
+    - Build_2
+    enabled: true
+    ranked: true
+    sumo: false
+    build: true
+    hcf: false
+    parkour: false
+    spleef: false
+    bedWars: false
+    combo: false
+    boxing: false

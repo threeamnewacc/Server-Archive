@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>me.devkevin.practice</groupId>
+  <artifactId>Practice</artifactId>
+  <name>Practice</name>
+  <version>dev-SNAPSHOT</version>
+  <description>Practice plugin exclusive created for uDrop Network</description>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.1</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>club.inverted</groupId>
+      <artifactId>inverted-spigot</artifactId>
+      <version>1.8.8-R0.1-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/Carbon-Server-1.8.8-R0.1-SNAPSHOT.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.lunarclient</groupId>
+      <artifactId>bukkitapi</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/bukkitapi.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>me.devkevin.landcore</groupId>
+      <artifactId>LandCore</artifactId>
+      <version>1.3-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/LandCore-1.3-SNAPSHOT.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>club.udrop.npc</groupId>
+      <artifactId>NPC</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/NPC-1.0-SNAPSHOT.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>com.comphenix.protocol</groupId>
+      <artifactId>ProtocolLib</artifactId>
+      <version>yes</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/ProtocolLib.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>WorldEdit</groupId>
+      <artifactId>WorldEdit</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/WorldEdit.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>ViaVersion-3.2.1</groupId>
+      <artifactId>ViaVersion-3.2.1</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/ViaVersion-3.2.1.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>ViaRewind-1.4.5</groupId>
+      <artifactId>ViaRewind-1.4.5</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/ViaRewind-1.4.5.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>FastAsyncWorldEdit-bukkit-19.07.12-5cc5ce5-1277-22.3.0</groupId>
+      <artifactId>FastAsyncWorldEdit-bukkit-19.07.12-5cc5ce5-1277-22.3.0</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/FastAsyncWorldEdit-bukkit-19.07.12-5cc5ce5-1277-22.3.0.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>PlaceholderAPI-2.10.9</groupId>
+      <artifactId>PlaceholderAPI-2.10.9</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/PlaceholderAPI-2.10.9.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>me.filoghost.holographicdisplays</groupId>
+      <artifactId>HolographicDisplays</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\kevin\Desktop\Java Projects\Practice/lib/HolographicDisplays.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.16.20</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
+

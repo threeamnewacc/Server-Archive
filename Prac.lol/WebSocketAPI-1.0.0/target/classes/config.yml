@@ -1,0 +1,4 @@
+# The IP/URL for our WebAPI and our security key to access it
+api:
+  url: "localhost:8080"
+  key: "82jnsnmdo1$dpñl1da21"

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84a450c0-2dd2-460b-9a41-ad4c69ac1bcc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Kotlin Worksheet" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Countdown</find>
+      <find>getCountdown</find>
+      <find>join unranked</find>
+      <find>PAPER</find>
+      <find>emerald</find>
+      <find>giving you</find>
+      <find>Match ended</find>
+      <find>succesfully</find>
+      <find>you have</find>
+      <find>starting</find>
+      <find>starting duel match.</find>
+      <find>searching</find>
+      <find>MATCH SUMMary</find>
+      <find>winner</find>
+      <find>select a</find>
+      <find>ELO range</find>
+      <find>RED</find>
+      <find>ELO</find>
+      <find>yellow</find>
+      <find>Settings</find>
+      <find>StatsCommand</find>
+      <find>click here</find>
+      <find>strafe</find>
+      <find>Save</find>
+      <find>you are editing</find>
+      <find>aqua</find>
+      <find>allowing</find>
+      <find>cooldown</find>
+      <find>club.egirls.practice</find>
+      <find>/inv</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>vip.strafe.practice</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\filoù\Desktop\mcp\eclipse\Practice\src\main\java\club\egirls\practice</dir>
+      <dir>C:\Users\filoù\Desktop\mcp\eclipse\Practice</dir>
+    </dirStrings>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="Practice/invalid/Minecraft" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectId" id="1aLvz2EBOlOoFbvJ4Rd7C4QQ6Ck" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558825905200" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/me/devkevin/practice/util" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kevin\OneDrive\Escritorio\Java Projects\Practice\src\main\java\me\devkevin\practice\util" />
+      <recent name="C:\Users\kevin\OneDrive\Escritorio\Java Projects\Practice\src\main\java\me\devkevin\practice\arena\generate" />
+      <recent name="C:\Users\kevin\OneDrive\Escritorio\Java Projects\Practice\src\main\java" />
+      <recent name="C:\Users\kevin\OneDrive\Escritorio\Java Projects\Practice\src\main\java\me\devkevin\practice\profile\listener" />
+      <recent name="C:\Users\kevin\OneDrive\Escritorio\Java Projects\Practice\src\main\java\me\devkevin\practice\arena\chunk" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.devkevin.practice.util" />
+      <recent name="me.devkevin.practice.nametags" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\filoù\Desktop\mcp\eclipse\Practice\src\main\java\club\egirls\practice\leaderboards" />
+      <recent name="C:\Users\filoù\Desktop\mcp\eclipse\Practice\src\main\java\club\egirls\practice\managers" />
+      <recent name="C:\Users\filoù\Desktop\mcp\eclipse\Practice\src\main\java\club\egirls\practice\commands\management" />
+      <recent name="C:\Users\filoù\Desktop\mcp\eclipse\Practice\src\main\java\club\egirls\practice\commands\event" />
+      <recent name="C:\Users\filoù\Desktop\mcp\eclipse\Practice\src\main\java\club\egirls\practice\runnable" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84a450c0-2dd2-460b-9a41-ad4c69ac1bcc" name="Default Changelist" comment="" />
+      <created>1552408540221</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552408540221</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="845" y="383" key="#Notifications" timestamp="1597492819536">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="383" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597492819536" />
+    <state x="2472" y="161" key="#Plugins" timestamp="1592161434084">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="161" key="#Plugins/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592161434084" />
+    <state x="2606" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1597505702456">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="103" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593344833411" />
+    <state x="2606" y="103" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597505702456" />
+    <state x="2613" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1592160835303">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2613" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592160835303" />
+    <state x="721" y="80" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1597499130248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="80" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597499130248" />
+    <state x="2641" y="80" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597441657142" />
+    <state x="429" y="411" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597512452055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="429" y="411" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597512452055" />
+    <state x="2349" y="411" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597487805316" />
+    <state x="2500" y="156" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597420664320">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="580" y="156" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1596473178184" />
+    <state x="2500" y="156" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597420664320" />
+    <state x="2399" y="180" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1597488747709">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="479" y="180" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597451483815" />
+    <state x="2399" y="180" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597488747709" />
+    <state x="547" y="149" key="FileChooserDialogImpl" timestamp="1597494390242">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="547" y="149" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597494390242" />
+    <state x="2467" y="149" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597446535123" />
+    <state x="229" y="0" key="SettingsEditor" timestamp="1597499134818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="229" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597499134818" />
+    <state x="2149" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597488749022" />
+    <state x="607" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593528798266">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="607" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593528798266" />
+    <state x="2527" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589050216367" />
+    <state x="342" y="140" key="new project wizard" timestamp="1597448545391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597448545391" />
+    <state x="2262" y="140" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597446535850" />
+    <state x="597" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1591532730761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="597" y="0" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591532730761" />
+    <state x="2396" y="224" key="run.anything.popup" timestamp="1594895325333">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="476" y="224" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590850988195" />
+    <state x="2396" y="224" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594895325333" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597508015478">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597508015478" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597426601960" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vip/strafe/practice/commands/management/TournamentCommand.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vip/strafe/practice/managers/InventoryManager.java</url>
+          <line>665</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>

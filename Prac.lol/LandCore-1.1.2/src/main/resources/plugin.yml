@@ -1,0 +1,4 @@
+name: LandCore
+version: ${version}
+author: DevKevin
+main: me.devkevin.landcore.LandCore

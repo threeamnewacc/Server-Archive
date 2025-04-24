@@ -1,0 +1,8 @@
+main: me.devkevin.practice.Practice
+name: Practice
+author: DevKevin
+version: 10.3
+description: Prac LOL Practice Plugin
+depend:
+  - LandCore
+  - HolographicDisplays

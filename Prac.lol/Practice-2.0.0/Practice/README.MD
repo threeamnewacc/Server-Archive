@@ -1,0 +1,11 @@
+### TO-DO
+- [ ] Possibly recode queues and implement some new features to it
+- [ ] Add SkyWars Event
+- [ ] Add BedWars kit type
+- [ ] Add StickFight kit type
+- [x] Add HCF TeamFights for Parties
+- [x] Fix weird and random invis bug on some matches
+- [ ] Allow the Bridges bridge to be broke by players
+- [x] Completely recoded arena regeneration
+- [ ] Make the Bridges max build height based on the arena so it cannot be glitched
+- [ ] Allow the Bridges armor to NOT be explicitly full (helmet, chestplate, leggings, boots) (That means, being able to make the armor not have the helmet for example)

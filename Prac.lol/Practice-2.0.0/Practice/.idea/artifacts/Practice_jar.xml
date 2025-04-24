@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Practice:jar">
+    <output-path>$PROJECT_DIR$/../../jars de los plugins que usare</output-path>
+    <root id="archive" name="Practice.jar">
+      <element id="module-output" name="Practice" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/bson/3.12.10/bson-3.12.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.12.10/mongodb-driver-3.12.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver-core/3.12.10/mongodb-driver-core-3.12.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/Aether-1.0-SNAPSHOT.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

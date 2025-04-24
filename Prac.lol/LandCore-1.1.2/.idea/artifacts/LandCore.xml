@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="LandCore">
+    <output-path>$PROJECT_DIR$/out/artifacts/LandCore</output-path>
+    <root id="archive" name="LandCore.jar" />
+  </artifact>
+</component>

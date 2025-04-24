@@ -1,0 +1,18 @@
+Practice permissions
+
+// Donors permissions
+
+practice.donors.*
+practice.donors.{rank_name}
+
+practice.staff
+
+practice.developer
+practice.platformadmin
+
+practice.user.spawn-visibility
+
+practice.host.tournament
+
+
+// TODO: add whitelist arenas for BuildUHC and Sumo 28/11/2022
