@@ -1,0 +1,5 @@
+authors: [dewgs, Erouax, Coords]
+depend: [Core, ProtocolLib]
+main: club.mineman.antigamingchair.AntiGamingChair
+name: AntiGamingChair
+version: 1.6.4.2-b92036b9

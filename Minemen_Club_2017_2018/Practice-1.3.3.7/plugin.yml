@@ -1,0 +1,5 @@
+authors: [dewgs, Erouax, TehNeon, Lacota]
+depend: [Core]
+main: club.minemen.practice.Practice
+name: Practice
+version: 1.3.3.7-${git.commit.id.abbrev}
