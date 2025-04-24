@@ -1,0 +1,35 @@
+package club.minemen.hcfactions.combat.events;
+
+import club.minemen.hcfactions.combat.LoggerNPC;
+import org.bukkit.event.Event;
+import org.bukkit.event.HandlerList;
+
+public class CombatTagDestroyEvent extends Event {
+
+	private static final HandlerList handlers = new HandlerList();
+
+	private LoggerNPC loggerNPC;
+	private LoggerNPC.REMOVE_REASON reason;
+
+	public CombatTagDestroyEvent(LoggerNPC loggerNPC, LoggerNPC.REMOVE_REASON reason) {
+		this.loggerNPC = loggerNPC;
+		this.reason = reason;
+	}
+
+	public static HandlerList getHandlerList() {
+		return handlers;
+	}
+
+	public LoggerNPC getLoggerNPC() {
+		return loggerNPC;
+	}
+
+	public LoggerNPC.REMOVE_REASON getReason() {
+		return reason;
+	}
+
+	public HandlerList getHandlers() {
+		return handlers;
+	}
+
+}

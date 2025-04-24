@@ -1,0 +1,55 @@
+package com.massivecraft.factions.event;
+
+import com.massivecraft.factions.FactionPlayer;
+import com.massivecraft.factions.FPlayers;
+import com.massivecraft.factions.Faction;
+import com.massivecraft.factions.Factions;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Cancellable;
+import org.bukkit.event.Event;
+import org.bukkit.event.HandlerList;
+
+public class FactionDisbandEvent extends Event implements Cancellable {
+
+	private static final HandlerList handlers = new HandlerList();
+
+	private boolean cancelled;
+	private String id;
+	private Player sender;
+
+	public FactionDisbandEvent(Player sender, String factionId) {
+		cancelled = false;
+		this.sender = sender;
+		this.id = factionId;
+	}
+
+	public static HandlerList getHandlerList() {
+		return handlers;
+	}
+
+	public HandlerList getHandlers() {
+		return handlers;
+	}
+
+	public Faction getFaction() {
+		return Factions.getInstance().getById(id);
+	}
+
+	public FactionPlayer getFPlayer() {
+		return FPlayers.getInstance().get(sender);
+	}
+
+	public Player getPlayer() {
+		return sender;
+	}
+
+	@Override
+	public boolean isCancelled() {
+		return cancelled;
+	}
+
+	@Override
+	public void setCancelled(boolean c) {
+		cancelled = c;
+	}
+}

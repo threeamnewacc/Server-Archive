@@ -1,0 +1,7 @@
+name: Classes
+version: ${git.commit.id.abbrev}
+main: club.minemen.classes.ClassesPlugin
+authors: [TehNeon]
+
+depend: [Core, ClubLibrary]
+softdepend: [HCFactions]

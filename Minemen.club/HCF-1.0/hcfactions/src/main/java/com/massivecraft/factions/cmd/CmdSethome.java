@@ -1,0 +1,75 @@
+package com.massivecraft.factions.cmd;
+
+import com.massivecraft.factions.Board;
+import com.massivecraft.factions.Conf;
+import com.massivecraft.factions.FLocation;
+import com.massivecraft.factions.Faction;
+import com.massivecraft.factions.event.FactionHomeSetEvent;
+import com.massivecraft.factions.struct.Permission;
+import com.massivecraft.factions.struct.Role;
+import org.bukkit.Bukkit;
+
+public class CmdSethome extends FCommand {
+
+	public CmdSethome() {
+		this.aliases.add("sethome");
+
+		// this.requiredArgs.add("");
+		this.optionalArgs.put("faction tag", "mine");
+
+		this.permission = Permission.SETHOME.node;
+		this.disableOnLock = true;
+
+		senderMustBePlayer = true;
+		senderMustBeMember = false;
+		senderMustBeModerator = false;
+		senderMustBeAdmin = false;
+	}
+
+	@Override
+	public void perform() {
+		if (!Conf.homesEnabled) {
+			fme.msg("<b>Sorry, Faction homes are disabled on this server.");
+			return;
+		}
+
+		Faction faction = this.argAsFaction(0, myFaction);
+		if (faction == null) {
+			return;
+		}
+
+		// Can the player set the home for this faction?
+		if (faction == myFaction) {
+			if (!Permission.SETHOME_ANY.has(sender) && !assertMinRole(Role.MODERATOR)) {
+				return;
+			}
+		} else {
+			if (!Permission.SETHOME_ANY.has(sender, true)) {
+				return;
+			}
+		}
+
+		// Can the player set the faction home HERE?
+		if (!Permission.BYPASS.has(me) && Conf.homesMustBeInClaimedTerritory && Board.getFactionAt(new FLocation(me)) != faction) {
+			fme.msg("<b>Sorry, your faction home can only be set inside your own claimed territory.");
+			return;
+		}
+
+		if (me.getLocation().getBlockY() > 100) {
+			fme.msg("<b>Sorry, your faction home can not be set above y=100.");
+			return;
+		}
+
+		faction.setHome(me.getLocation());
+
+		FactionHomeSetEvent hsEvent = new FactionHomeSetEvent(new FLocation(me.getLocation()), fme.getFaction(), fme);
+		Bukkit.getServer().getPluginManager().callEvent(hsEvent);
+
+		faction.msg("%s<instance> set the home for your faction. You can now use:", fme.describeTo(myFaction, true));
+		faction.sendMessage(p.cmdBase.cmdHome.getUseageTemplate());
+		if (faction != myFaction) {
+			fme.msg("<b>You have set the home for the " + faction.getTag(fme) + "<instance> faction.");
+		}
+	}
+
+}
