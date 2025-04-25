@@ -1,0 +1,119 @@
+playerkits:
+  NoDebuff:
+    '1':
+      displayName: My Shlong
+      contents:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          enchants:
+            DAMAGE_ALL: 2
+            DURABILITY: 3
+            FIRE_ASPECT: 2
+      - ==: org.bukkit.inventory.ItemStack
+        type: ENDER_PEARL
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8259
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: CARROT_ITEM
+        amount: 64
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 16421
+      - ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 8226

@@ -1,0 +1,22 @@
+# This is edaterSpigot's official configuration file.
+potion-settings:
+  distance: 0.5
+  offset: -20.0
+  speed: 0.05000000074505806
+  async: false
+options:
+  invalid-location-crash-fix: true
+  nbt-crash-fix: true
+  no-leaf-decay: true
+  enable-mob-ai: true
+  hide-players-from-tab: false
+  fire-move-event: false
+  fire-left-click-air: false
+  fire-left-click-block: false
+  invalid-arm-animation-kick: false
+messages:
+  insufficient-permissions: '&6I''m sorry, but you do not have permission to perform
+    this command. Please contact the server administrators if you believe that this
+    is in error.'
+  version: '&cThis server is running &4&l%name% &cversion &4&l%version% &c(Implementing
+    API version &4&l%apiversion%&c)'

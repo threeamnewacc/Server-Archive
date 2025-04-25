@@ -1,0 +1,97 @@
+server:
+  id: practice-us
+  hub: false
+  restricted: false
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: "4xgJUtFvNM6WAqPzKTUMVKZTB2EC2Fq4CNsMFMBjAXmG7cUGAQ4BMMZSYJYVGCvv8SR3JVckJHFNRzVacjssSvK"
+priority:
+  default: 1
+  ranks:
+    Default:
+      priority: 1
+      permission: "rank.default"
+    Basic:
+      priority: 2
+      permission: "rank.basic"
+    Elite:
+      priority: 3
+      permission: "rank.elite"
+    Prime:
+      priority: 4
+      permission: "rank.prime"
+    Master:
+      priority: 5
+      permission: "rank.master"
+    Titan:
+      priority: 6
+      permission: "rank.titan"
+    YouTuber:
+      priority: 7
+      permission: "rank.youtuber"
+    Famous:
+      priority: 8
+      permission: "rank.famous"
+    Partner:
+      priority: 9
+      permission: "rank.partner"
+    TrialMod:
+      priority: 10
+      permission: "rank.trial-mod"
+    Mod:
+      priority: 11
+      permission: "rank.mod"
+    SeniorMod:
+      priority: 12
+      permission: "rank.seniormod"
+    Admin:
+      priority: 13
+      permission: "rank.admin"
+    SeniorAdmin:
+      priority: 14
+      permission: "rank.senioradmin"
+    Manager:
+      priority: 15
+      permission: "rank.manager"
+    Developer:
+      priority: 16
+      permission: "rank.developer"
+    MediaOwner:
+      priority: 17
+      permission: "rank.mediaowner"
+    Owner:
+      priority: 18
+      permission: "rank.owner"
+language:
+  reminder:
+    - '&eYou joined the queue for &6&l{queue}&e, You are in position &d{position}'
+  added:
+    - "&aYou have been added to the {queue} queue!"
+  removed:
+    - "&aYou have left the {queue} queue."
+  permission:
+    - "&cNo permission."
+  queuemenu:
+    title:
+      - "Queue Status"
+    queuename:
+      - "&a{queue}"
+    serverstatus:
+      - "&eStatus » "
+    serverplayers:
+      - "&ePlayers » "
+    playercount:
+      - "&a{online}/{max}"
+    noplayers:
+      - "&c0/0"
+    queuestatus:
+      - "&eQueue Status » "
+    online:
+      - "&aOnline."
+    whitelisted:
+      - "&fWhitelisted."
+    offline:
+      - "Offline."
+commands:
+  hub: false

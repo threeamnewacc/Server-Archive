@@ -1,0 +1,24 @@
+server:
+  id: practice-us
+  type: PRACTICE
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password: 4xgJUtFvNM6WAqPzKTUMVKZTB2EC2Fq4CNsMFMBjAXmG7cUGAQ4BMMZSYJYVGCvv8SR3JVckJHFNRzVacjssSvK
+mongo:
+  host: 127.0.0.1
+  port: 27017
+  database: core
+  authentication:
+    enabled: true
+    username: root
+    password: 7qHduupQmE3RPVxv653zH5DkUCGEJZNVwggzgE9ZRvpSvNWq37y7xSG2KnQ47Kk74AZnUhJXZ5pvWPzxUNDVwjv
+    database: admin
+messages:
+  player_send: '&7(To &f%TO%&7) &7%MESSAGE%'
+  player_receive: '&7(From &f%FROM%&7) &7%MESSAGE%'
+  social_spy: '&7(&f%FROM% &7-> &f%TO%&7) &7%MESSAGE%'
+proxy: na
+version8: false
+tab-update: false
+cross-party: false

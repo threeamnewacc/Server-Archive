@@ -1,0 +1,16 @@
+# This is edaterSpigot's official knockback file.
+active-profile: default
+knockback-profiles:
+  default:
+    knockback:
+      horizontal: 0.325
+      vertical: 0.5
+      extra-horizontal: 0.5
+      extra-vertical: 0.0
+      friction: 3.5
+      vertical-limit: 0.36
+      slowdown: 0.6
+      combo: false
+      max-combo-height: 3.0
+      combo-velocity: -0.05
+      exhaustion: 0.3

@@ -1,0 +1,645 @@
+kits:
+  NoDebuff:
+    contents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 2
+          DURABILITY: 3
+          FIRE_ASPECT: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: ENDER_PEARL
+      amount: 16
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8259
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: COOKED_BEEF
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    armor:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_FALL: 4
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    kitEditContents:
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16421
+    - ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8226
+    - ==: org.bukkit.inventory.ItemStack
+      type: CARROT_ITEM
+      amount: 64
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8229
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        display-name: §7NoDebuff
+        lore:
+        - '§cIn Game: §f0'
+        - '§cIn Queue: §f0'
+        - ''
+        - §eClick here to play §cNoDebuff
+    excludedArenas: []
+    arenaWhitelist: []
+    enabled: true
+    ranked: true
+    combo: false
+    sumo: false
+    build: false
+    spleef: false
+    parkour: false
+    hcteams: false
+    bestOfThree: false
+    premium: false
+    priority: 0
+    knockback: default
+  Debuff:
+    contents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - null
+    - null
+    - null
+    - null
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8196
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        display-name: §7Debuff
+        lore:
+        - '§cIn Game: §f0'
+        - '§cIn Queue: §f0'
+        - ''
+        - §eClick here to play §cDebuff
+    excludedArenas: []
+    arenaWhitelist: []
+    enabled: true
+    ranked: true
+    combo: false
+    sumo: false
+    build: false
+    spleef: false
+    parkour: false
+    hcteams: false
+    bestOfThree: false
+    premium: false
+    priority: 1
+    knockback: default
+  Sumo:
+    contents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - null
+    - null
+    - null
+    - null
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: LEASH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7Sumo
+        lore:
+        - '§cIn Game: §f0'
+        - '§cIn Queue: §f0'
+        - ''
+        - §eClick here to play §cSumo
+    excludedArenas: []
+    arenaWhitelist: []
+    enabled: true
+    ranked: true
+    combo: false
+    sumo: false
+    build: false
+    spleef: false
+    parkour: false
+    hcteams: false
+    bestOfThree: false
+    premium: false
+    priority: 4
+    knockback: default
+  Archer:
+    contents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - null
+    - null
+    - null
+    - null
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7Archer
+        lore:
+        - '§cIn Game: §f0'
+        - '§cIn Queue: §f0'
+        - ''
+        - §eClick here to play §cArcher
+    excludedArenas: []
+    arenaWhitelist: []
+    enabled: true
+    ranked: true
+    combo: false
+    sumo: false
+    build: false
+    spleef: false
+    parkour: false
+    hcteams: false
+    bestOfThree: false
+    premium: false
+    priority: 2
+    knockback: default
+  BuildUHC:
+    contents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    armor:
+    - null
+    - null
+    - null
+    - null
+    kitEditContents:
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    - null
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: LAVA_BUCKET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7BuildUHC
+        lore:
+        - '§cIn Game: §f0'
+        - '§cIn Queue: §f0'
+        - ''
+        - §eClick here to play §cBuildUHC
+    excludedArenas: []
+    arenaWhitelist: []
+    enabled: true
+    ranked: false
+    combo: false
+    sumo: false
+    build: true
+    spleef: false
+    parkour: false
+    hcteams: false
+    bestOfThree: false
+    premium: false
+    priority: 3
+    knockback: default

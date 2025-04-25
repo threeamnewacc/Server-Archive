@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "0b5cd2ba-133d-49e8-a272-bef974e207c5",
+    "name": "BankrolHayden",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "d247d008-5040-4bbb-86e3-b1ab0ebe5d37",
+    "name": "Candeligh",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "bff23c05-a3f7-45a5-b604-90b473c801c0",
+    "name": "Weird_Kid247",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
