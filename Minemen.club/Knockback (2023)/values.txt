@@ -1,0 +1,6 @@
+Horizontal Multiplier: 0.9055
+Vertical Multiplier: 0.8835
+Range Factor: 0.0
+Max Range Reduction: 0.4
+Start Range: 3.0
+Idle Reduction: 0.6
