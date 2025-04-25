@@ -1,0 +1,34 @@
+# This list contains over 50 arenas and the coordinates to each one
+FlatMap = NoDebuff, Gapple, Debuff, Classic, Archer, Axe, Soup, Boxing, BuildUHC
+Format: <arena> - <coordinates> | <gamemode>
+
+Aquarium - 0 130 0 | FlatMap
+Beach - 1000 130 1000 | FlatMap
+Blizzard - 2000 130 2000 | FlatMap
+Bullseye - 3000 130 3000 | FlatMap
+Cave - 4000 120 4000 | FlatMap
+Desert - 6000 130 6000 | FlatMap
+Ethereal - 7000 130 7000 | FlatMap
+Jurassic - 11000 130 11000 | FlatMap
+Mesa - 13000 70 13000 | FlatMap
+Monarch - 14000 70 14000 | FlatMap
+Monolith - 15000 120 15000 | FlatMap
+Mudland - 15800 190 15800 | FlatMap
+Oriental - 17000 180 17000 | FlatMap
+Paintjob - 18000 180 18000 | FlatMap
+Park - 19000 120 19000 | FlatMap
+Snow - 20000 80 20000 | FlatMap
+Soccer - 21000 80 21000 | FlatMap
+Tropical - 22000 120 22000 | FlatMap
+Birch - 23000 130 23000 | Sumo
+Cabana - 24000 130 24000 | Sumo
+Desert2 - 25000 130 25000 | Sumo
+Factory - 26000 130 26000 | Sumo
+Jungle - 27000 130 27000 | Sumo
+Mahogany - 28000 130 28000 | Sumo
+Mesa2 - 29000 130 29000 | Sumo
+Timber - 30000 130 30000 | Sumo
+Volcano - 31000 130 31000 | Sumo
+Candy - 32000 130 32000 | Spleef
+Fantasy - 33000 130 33000 | Spleef
+Winter - 34000 130 34000 | Spleef
