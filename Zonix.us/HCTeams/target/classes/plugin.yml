@@ -1,0 +1,5 @@
+name: "HCFactions"
+version: "1.0"
+author: "Zonix Network"
+main: us.zonix.hcfactions.FactionsPlugin
+depend: [Core]

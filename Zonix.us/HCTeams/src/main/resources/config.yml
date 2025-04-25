@@ -1,0 +1,275 @@
+DATABASE:
+  MONGO:
+    DATABASE: "hcfactions"
+    HOST: "127.0.0.1"
+    PORT: 27017
+    AUTHENTICATION:
+      ENABLED: FALSE
+      DATABASE: "admin"
+      USER: "user"
+      PASSWORD: "password"
+KITMAP_MODE: FALSE
+FACTION_GENERAL:
+  WORLD_BORDER: 3000
+  END_BORDER: 500
+  NETHER_BORDER: 1500
+  FACTION_HOME_IN_ENEMY_TERRITORY: FALSE
+  BYPASS_INSIDE_CHECK:
+    - "North Road"
+    - "South Road"
+    - "West Road"
+    - "East Road"
+  STARTING_DTR: 1.1
+  DTR_PER_PLAYER: 0.5
+  MIN_DTR: -6.0
+  REGEN_DELAY: 90 #every 90 seconds regen 0.1 dtr
+  FREEZE_DURATION: 3600
+  ALLIES:
+    ENABLED: TRUE
+    DAMAGE_ALLIES: FALSE
+    MAX_ALLIES: 1
+  MAX_PLAYERS: 30
+FACTION_NAME:
+  MAX_CHARACTERS: 16
+  MIN_CHARACTERS: 3
+  BLOCKED_NAMES:
+    - "hcteams" # ;)
+TAB_LIST:
+  ENABLED: TRUE
+  FRIENDLY_COLOR: "DARK_GREEN"
+  ALLY_COLOR: "LIGHT_PURPLE"
+  ENEMY_COLOR: "YELLOW"
+  ARCHER_TAG: "RED"
+  FOCUS: "RED"
+FACTION_MAP:
+  PILLAR:
+    FRIENDLY: "DIAMOND_BLOCK"
+    ENEMY: "RANDOM"
+    ALLY: "RANDOM"
+    SYSTEM_FACTION:
+      DEATHBAN: "RANDOM"
+      NON-DEATHBAN: "DIAMOND_BLOCK"
+FACTION_CLAIMING:
+  BUFFER: 10
+  PRICE_MULTIPLIER: 1.8 #5 x 5 claim = $45
+  MIN_SIZE: 5 #minimum size = 5x5
+  CLAIM_PILLAR:
+    TYPE: "EMERALD_BLOCK"
+    DATA: 0
+  WAND:
+    TYPE: "GOLD_HOE"
+    DATA: 0
+    NAME: "&aClaiming Wand"
+    LORE:
+      - "&aLeft click the ground&7 to set the &afirst&7 point."
+      - "&aRight click the ground&7 to set the &asecond&7 point."
+      - "&aSneak and left click the air&7 to claim once both points set."
+      - "&aRight click the air twice&7 to clear your selection."
+FACTION_CHAT:
+  ENABLED: TRUE
+  NO_FACTION: ""
+  FRIENDLY: "&6[&2%TAG%&6]&r"
+  ALLY: "&6[&d%TAG%&6]&r"
+  ENEMY: "&6[&e%TAG%&6]&r"
+OVERWORLD: "world"
+END: "world_the_end"
+NETHER: "world_the_nether"
+TELEPORT_COUNTDOWN:
+  HOME:
+    OVERWORLD:
+      ENABLED: TRUE
+      TIME: 10
+    NETHER:
+      ENABLED: TRUE
+      TIME: 30
+    END:
+      ENABLED: FALSE
+      TIME: 10
+  STUCK:
+    DISTANCE: 5
+    OVERWORLD:
+      ENABLED: TRUE
+      TIME: 120
+    NETHER:
+      ENABLED: FALSE
+      TIME: 120
+    END:
+      ENABLED: FALSE
+      TIME: 120
+
+SUBCLAIM:
+  ENABLED: TRUE
+  CREATE_TEXT: "[SUBCLAIM]"
+BLOCK_MODIFIER:
+  FURNACE_COOK_INCREASE: 10
+  BREWING_STAND_BREW_INCREASE: 10
+COMBAT_LOGGER:
+  ENTITY_TYPE: "VILLAGER"
+  DESPAWN_TIME: 30
+  LOGOUT_TIME: 30
+  LOGOUT_CANCEL_RANGE: 1
+BLOCKED_POTIONS: #put the data value
+  - 8201
+  - 8233
+  - 16393
+  - 8265
+  - 16425
+  - 16457
+  - 16420
+  - 8228
+  - 8193
+  - 8225
+  - 8257
+  - 16385
+  - 16417
+  - 16449
+  - 16452
+  - 8260
+  - 8232
+  - 8264
+  - 16424
+  - 16456
+  - 8266
+  - 16458
+  - 8268
+  - 8236
+  - 16460
+  - 16428
+ENCHANTMENT_LIMITER:
+  DAMAGE_ALL: 1
+  PROTECTION_ENVIRONMENTAL: 1
+  ARROW_DAMAGE: 3
+  ARROW_KNOCKBACK: 0
+  FIRE_ASPECT: 0
+  KNOCKBACK: 0
+  THORNS: 0
+COOLDOWN:
+  ENDER_PEARL: 16
+  SPAWN_TAG: 30
+  ARCHER_TAG: 10
+  GOLDEN_APPLE: 21600
+PVP_PROTECTION:
+  DURATION: 1800
+CROWBAR:
+  ITEM: "DIAMOND_HOE"
+CLAIM_WALL:
+  PVP_PROTECTION:
+    RANGE: 10
+    SIZE: 10
+    BLOCK: "STAINED_GLASS"
+    DATA: 2
+  SPAWN_TAG:
+    RANGE: 10
+    SIZE: 10
+    BLOCK: "STAINED_GLASS"
+    DATA: 14
+KIT:
+  ROGUE_BACKSTAB:
+    SLOWNESS_DURATION: 6
+    SLOWNESS_LEVEL: 3
+    HIT_DAMAGE: 8
+    COOLDOWN: 1200
+  ARCHER_TAG:
+    PERCENTAGE_DAMAGE: 25
+  ABILITY:
+    ROGUE_FEATHER_JUMP:
+      DURATION: 10
+      COOLDOWN_DURATION: 80
+      LEVEL: 4
+    ROGUE_SUGAR_SPEED:
+      DURATION: 10
+      COOLDOWN_DURATION: 80
+      LEVEL: 5
+    SINGLE_SUGAR_SPEED:
+      DURATION: 10
+      COOLDOWN_DURATION: 30
+      LEVEL: 4
+    MULTI_SUGAR_SPEED:
+      ENERGY_REQUIRED: 5
+      DURATION: 10
+      LEVEL: 3
+      RANGE: 15
+      ITEM: "SUGAR"
+    MULTI_FEATHER_JUMP:
+      ENERGY_REQUIRED: 5
+      DURATION: 10
+      LEVEL: 6
+      RANGE: 15
+      ITEM: "FEATHER"
+    MULTI_IRON_RESISTANCE:
+      ENERGY_REQUIRED: 5
+      DURATION: 10
+      LEVEL: 3
+      RANGE: 15
+      ITEM: "IRON_INGOT"
+    MULTI_BLAZE_STRENGTH:
+      ENERGY_REQUIRED: 5
+      DURATION: 10
+      LEVEL: 2
+      RANGE: 15
+      ITEM: "BLAZE_POWDER"
+    MULTI_SPIDER_WITHER:
+      ENERGY_REQUIRED: 5
+      DURATION: 10
+      LEVEL: 2
+      RANGE: 15
+      ITEM: "SPIDER_EYE"
+    MULTI_TEAR_REGEN:
+      ENERGY_REQUIRED: 5
+      DURATION: 10
+      LEVEL: 2
+      RANGE: 15
+      ITEM: "GHAST_TEAR"
+    MULTI_CREAM_FIRERES:
+      ENERGY_REQUIRED: 5
+      DURATION: 10
+      LEVEL: 2
+      RANGE: 15
+      ITEM: "MAGMA_CREAM"
+  WARMUP:
+    ENABLED: TRUE
+    TIME: 10
+MOB_STACKING:
+  MAX_COUNT: 175
+  NO_AI:
+    - "SKELETON"
+    - "ZOMBIE"
+    - "CREEPER"
+    - "PIG"
+    - "COW"
+    - "SHEEP"
+    - "VILLAGER"
+    - "CHICKEN"
+  EXCLUDED_MOBS:
+    - "CREEPER"
+    - "ENDERMAN"
+    - "SLIME"
+    - "BAT"
+    - "HORSE"
+    - "VILLAGER"
+GLOWSTONE:
+  RESET_TIME: 3600000
+SOTW:
+  DURATION: 3600000
+KITMAP_KILL:
+  MONEY: 100
+RECLAIM:
+    VIP:
+      - "crate givekey %PLAYER% Common 3"
+      - "crate givekey %PLAYER% Rare 2"
+      - "lives add %PLAYER% SOULBOUND 5"
+    PRO:
+      - "crate givekey %PLAYER% Common 5"
+      - "crate givekey %PLAYER% Rare 3"
+      - "lives add %PLAYER% SOULBOUND 8"
+    ELITE:
+      - "crate givekey %PLAYER% Rare 5"
+      - "crate givekey %PLAYER% Legendary 3"
+      - "lives add %PLAYER% SOULBOUND 10"
+      - "lives add %PLAYER% FRIEND 2"
+    HIGHROLLER:
+      - "crate givekey %PLAYER% Rare 5"
+      - "crate givekey %PLAYER% Legendary 3"
+      - "crate givekey %PLAYER% OP 1"
+      - "lives add %PLAYER% SOULBOUND 12"
+      - "lives add %PLAYER% FRIEND 3"

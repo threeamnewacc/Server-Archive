@@ -1,0 +1,27 @@
+TITLE: "&6&lHCTeams &c[Map 1]"
+LINES:
+  - "&r&7&m---------------------"
+  - "%SOTW%"
+  - "%KOTH%"
+  - "%KILLS%"
+  - "%DEATHS%"
+  - "%KILL_STREAK%"
+  - "%BALANCE%"
+  - "&4&lLogout:&c %LOGOUT%"
+  - "&4&lSpawn Tag:&c %SPAWN_TAG%"
+  - "&e&lEnder Pearl:&c %ENDER_PEARL%"
+  - "&e&lGod Apple:&c %GOLDEN_APPLE%"
+  - "&9&lPvP Protection:&c %PVP_PROTECTION%"
+  - "&4&lStuck:&c %STUCK%"
+  - "&9&lHome:&c %HOME%"
+  - "&a&l%CLASS% Warmup:&c %CLASS_WARMUP%"
+  - "%BARD%"
+  - "&6&lTagged: &c%ARCHER_TAG%"
+  - "&7&m---------------------&r"
+PLACE_HOLDER:
+  SOTW:
+   - "&a&l%SOTW% &aends in &a&l%TIME%"
+  KOTH:
+   - "&9&l%KOTH%&c: %TIME%"
+  BARD:
+   - "&a&lEnergy:&c %ENERGY%"

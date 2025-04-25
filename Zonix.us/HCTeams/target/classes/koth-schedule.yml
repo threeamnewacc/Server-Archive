@@ -1,0 +1,10 @@
+# Add more koths in the same day by adding a splitter '#' after each event
+
+schedule-timezone: "America/New_York"
+schedule-monday: "6:00PM/Temple/15"
+schedule-tuesday: "6:00PM/Temple/15"
+schedule-wednesday: "6:00PM/Temple/15"
+schedule-thursday: "6:00PM/Temple/15"
+schedule-friday: "6:00PM/Temple/15"
+schedule-saturday: "6:00PM/Temple/15"
+schedule-sunday: "6:00PM/Temple/15"

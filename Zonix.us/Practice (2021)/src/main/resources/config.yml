@@ -1,0 +1,21 @@
+mongo:
+  host: "127.0.0.1"
+  port: 27017
+  database: "practice"
+  authentication:
+    enabled: false
+    username: "admin"
+    password: "dev"
+    database: "admin"
+Release-Day: "March 00th"
+potion:
+  splash: 0.15
+region-lock: true
+allowed-continents:
+  - 'EU'
+  - 'SA'
+  - 'NA'
+  - 'OC'
+  - 'AS'
+  - 'AF'
+  - 'AN'
