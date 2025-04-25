@@ -1,0 +1,150 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block title %}
+    Ticket List
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="table-wrapper ticket-list">
+                    <div class="table-header">
+                        Ticket List
+                    </div>
+                    <div class="table-content">
+                        <div class="dropdown">
+                            <button style="width: auto" class="btn themed-red-btn dropdown-toggle" id="sort" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sort
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="sort">
+                                <a class="dropdown-item" href="/admin/tickets/all/1/new">New</a>
+                                <a class="dropdown-item" href="/admin/tickets/all/1/old">Old</a>
+                                <a class="dropdown-item" href="/admin/tickets/all/1/open">Open</a>
+                                <a class="dropdown-item" href="/admin/tickets/all/1/creator_replied">Creator Replied</a>
+                                <a class="dropdown-item" href="/admin/tickets/all/1/unassigned">Unassigned</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-content no-padding">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="fit"></th>
+                                <th>
+                                    Subject
+                                </th>
+                                <th class="fit">
+                                    Creator
+                                </th>
+                                <th class="fit">
+                                    Handler
+                                </th>
+                                <th class="fit">
+                                    Status
+                                </th>
+                                <th class="fit">
+                                    Last Update
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if context.tickets_size > 0 %}
+                                {% for ticket in context.tickets %}
+                                    <tr>
+                                        <td class="fit">
+                                            <a class="btn btn-dark" href="/support/tickets/v/{{ ticket.id }}/">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="/support/tickets/v/{{ ticket.id }}/">{% shorten_string ticket.title 40 %}</a>
+                                        </td>
+                                        <td>
+                                            <div class="g-v">
+                                                <img class="app avatar small margin" src="https://visage.surgeplay.com/face/32/{{ ticket.creator_name }}">
+                                                <a href="/player/{{ ticket.creator_name }}/">{{ ticket.creator_name }}</a>
+                                            </div>
+                                        </td>
+                                        <td class="fit">
+                                            {% if ticket.handler_name == None %}
+                                                None
+                                            {% else %}
+                                                <div class="g-v">
+                                                    <img class="app avatar small margin" src="https://visage.surgeplay.com/face/32/{{ ticket.handler_name }}">
+                                                    <a href="/player/{{ ticket.handler_name }}/">{{ ticket.handler_name }}</a>
+                                                </div>
+                                            {% endif %}
+                                        </td>
+                                        <td class="fit">
+                                            {% if ticket.status == 'a' or ticket.status == 'b' %}
+                                                <span class="btn btn-success">{{ ticket.status_pretty }}</span>
+                                            {% elif ticket.status == 'c' %}
+                                                <div class="btn btn-danger">{{ ticket.status_pretty }}</div>
+                                            {% elif ticket.status == 'd' %}
+                                                <div class="btn btn-info">{{ ticket.status_pretty }}</div>
+                                            {% elif ticket.status == 'e' %}
+                                                <div class="btn btn-warning">{{ ticket.status_pretty }}</div>
+                                            {% else %}
+                                                {{ ticket.status_pretty }}
+                                            {% endif %}
+                                        </td>
+                                        <td class="fit">
+                                            {% format_timestamp ticket.publish_date '%B %d %Y - %I:%M %p' False %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr>
+                                    <td colspan="6">There are no tickets.</td>
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if context.pagination.max_pages > 1 %}
+            <div class="row g-row listed">
+                <div class="col-md-12">
+                    <nav aria-label="Thread Replies">
+                        <ul class="pagination">
+                            {% for page in context.pagination.pages %}
+                                {% if page == '...' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">...</a>
+                                    </li>
+                                {% elif page == 'min' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/admin/tickets/all/{{ context.pagination.min_pages }}/{{ context.sort }}">{{ context.pagination.min_pages }}</a>
+                                    </li>
+                                {% elif page == 'max' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/admin/tickets/all/{{ context.pagination.max_pages }}/{{ context.sort }}">{{ context.pagination.max_pages }}</a>
+                                    </li>
+                                {% elif page == 'current' %}
+                                    <li class="page-item">
+                                        <a class="page-link" disabled="">{{ context.pagination.current_page }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/admin/tickets/all/{{ page }}/{{ context.sort }}">{{ page }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock page_content %}
+
+{% block body_extra %}
+
+{% endblock body_extra %}

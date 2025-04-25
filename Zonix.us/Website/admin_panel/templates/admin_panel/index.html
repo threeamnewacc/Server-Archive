@@ -1,0 +1,53 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block title %}
+    Admin Index
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-4">
+                <div class="module">
+                    <h2>Statistics</h2>
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td>Users</td>
+                            <td>{{ context.users_count }}</td>
+                        </tr>
+                        <tr>
+                            <td>Threads</td>
+                            <td>{{ context.threads_count }}</td>
+                        </tr>
+                        <tr>
+                            <td>Replies</td>
+                            <td>{{ context.replies_count }}</td>
+                        </tr>
+                        <tr>
+                            <td>Tickets</td>
+                            <td>{{ context.tickets_count }}</td>
+                        </tr>
+                        <tr>
+                            <td>Players</td>
+                            <td>{{ context.admin_stats.players }}</td>
+                        </tr>
+                        <tr>
+                            <td>Bans</td>
+                            <td>{{ context.admin_stats.bans }}</td>
+                        </tr>
+                        <tr>
+                            <td>Blacklists</td>
+                            <td>{{ context.admin_stats.blacklists }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}

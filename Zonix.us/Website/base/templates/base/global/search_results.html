@@ -1,0 +1,8 @@
+<ul>
+    {% for result in context.search_results %}
+        <li class="g-v">
+            <img class="g-avatar g-mr" src="https://visage.surgeplay.com/face/64/{{ result }}">
+            <a href="/player/{{ result }}/">{{ result }}</a>
+        </li>
+    {% endfor %}
+</ul>

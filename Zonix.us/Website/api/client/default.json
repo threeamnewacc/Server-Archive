@@ -1,0 +1,592 @@
+[
+  {
+    "name": "Armor Status",
+    "x": 342.0,
+    "y": 427.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "item count",
+        "value": true
+      },
+      {
+        "name": "25% color",
+        "chroma": false,
+        "value": -43691
+      },
+      {
+        "name": "armor damage",
+        "value": true
+      },
+      {
+        "name": "damage overlay",
+        "value": true
+      },
+      {
+        "name": "80% color",
+        "chroma": false,
+        "value": -519405
+      },
+      {
+        "name": "list mode",
+        "value": "vertical"
+      },
+      {
+        "name": "40% color",
+        "chroma": false,
+        "value": -21758
+      },
+      {
+        "name": "enabled",
+        "value": true
+      },
+      {
+        "name": "damage display type",
+        "value": "value"
+      },
+      {
+        "name": "100% color",
+        "chroma": false,
+        "value": -65022
+      },
+      {
+        "name": "10% color",
+        "chroma": false,
+        "value": -4579296
+      },
+      {
+        "name": "item damage",
+        "value": true
+      },
+      {
+        "name": "damage type",
+        "value": "value"
+      },
+      {
+        "name": "max damage",
+        "value": false
+      },
+      {
+        "name": "item name",
+        "value": false
+      },
+      {
+        "name": "60% color",
+        "chroma": false,
+        "value": -171
+      }
+    ]
+  },
+  {
+    "name": "Reach Display",
+    "x": 572.0,
+    "y": 491.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1862270976
+      },
+      {
+        "name": "draw background",
+        "value": true
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -65536
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Potion Status",
+    "x": 4.0,
+    "y": 218.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "show duration",
+        "value": true
+      },
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "duration color",
+        "chroma": false,
+        "value": -65022
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "effect color",
+        "chroma": false,
+        "value": -65022
+      },
+      {
+        "name": "show effect icon",
+        "value": true
+      },
+      {
+        "name": "show effect name",
+        "value": true
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Direction HUD",
+    "x": 330.0,
+    "y": 2.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1862270976
+      },
+      {
+        "name": "display type",
+        "value": "Zonix"
+      },
+      {
+        "name": "draw background",
+        "value": false
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -1
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "FPS Boost",
+    "x": 2.0,
+    "y": 2.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "chunk loading",
+        "value": 40.0
+      },
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "item glint",
+        "value": false
+      },
+      {
+        "name": "clear glass",
+        "value": true
+      },
+      {
+        "name": "lighting updates",
+        "value": false
+      },
+      {
+        "name": "weather",
+        "value": false
+      },
+      {
+        "name": "shiny pots",
+        "value": false
+      },
+      {
+        "name": "fast chat",
+        "value": true
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Keystrokes",
+    "x": 4.0,
+    "y": 2.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1878853640
+      },
+      {
+        "name": "draw background",
+        "value": true
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -65022
+      },
+      {
+        "name": "enabled",
+        "value": true
+      },
+      {
+        "name": "show mouse buttons",
+        "value": true
+      },
+      {
+        "name": "show key buttons",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "CPS",
+    "x": 4.0,
+    "y": 107.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1862270976
+      },
+      {
+        "name": "draw background",
+        "value": true
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -65022
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Coordinates",
+    "x": 888.0,
+    "y": 468.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "show y coordinate",
+        "value": true
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1862270976
+      },
+      {
+        "name": "display type",
+        "value": "Zonix"
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -65536
+      },
+      {
+        "name": "show direction",
+        "value": true
+      },
+      {
+        "name": "enabled",
+        "value": true
+      },
+      {
+        "name": "show decimal",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "FPS",
+    "x": 4.0,
+    "y": 75.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1862402562
+      },
+      {
+        "name": "draw background",
+        "value": true
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -64508
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Combo",
+    "x": 4.0,
+    "y": 123.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1862270976
+      },
+      {
+        "name": "display type",
+        "value": "0 hits"
+      },
+      {
+        "name": "draw background",
+        "value": true
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -64508
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "TimeChanger",
+    "x": 2.0,
+    "y": 2.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "time",
+        "value": "Day Only"
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Pot Counter",
+    "x": 4.0,
+    "y": 91.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1862270976
+      },
+      {
+        "name": "display type",
+        "value": "0 Potions"
+      },
+      {
+        "name": "draw background",
+        "value": true
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -65022
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "Zan\u0027s Minimap",
+    "x": 2.0,
+    "y": 2.0,
+    "enabled": false,
+    "settings": [
+      {
+        "name": "enabled",
+        "value": false
+      }
+    ]
+  },
+  {
+    "name": "Scoreboard",
+    "x": 845.0,
+    "y": 227.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "show numbers",
+        "value": false
+      },
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "draw background",
+        "value": true
+      },
+      {
+        "name": "enabled",
+        "value": true
+      }
+    ]
+  },
+  {
+    "name": "ToggleSneak",
+    "x": 850.0,
+    "y": 2.0,
+    "enabled": true,
+    "settings": [
+      {
+        "name": "fly boost text",
+        "value": "[Flying (10x boost)]"
+      },
+      {
+        "name": "vanilla sprint text",
+        "value": "[Sprinting (Vanilla)]"
+      },
+      {
+        "name": "held sneak text",
+        "value": "[Sprinting (Key Held)]"
+      },
+      {
+        "name": "draw background",
+        "value": false
+      },
+      {
+        "name": "foreground",
+        "chroma": false,
+        "value": -65022
+      },
+      {
+        "name": "enabled",
+        "value": true
+      },
+      {
+        "name": "riding text",
+        "value": "[Riding]"
+      },
+      {
+        "name": "dismounting text",
+        "value": "[Dismounting]"
+      },
+      {
+        "name": "hide from hud",
+        "value": false
+      },
+      {
+        "name": "toggle sneak text",
+        "value": "[Sneaking (Toggled)]"
+      },
+      {
+        "name": "general settings"
+      },
+      {
+        "name": "color settings"
+      },
+      {
+        "name": "toggle sprint",
+        "value": true
+      },
+      {
+        "name": "background",
+        "chroma": false,
+        "value": 1862270976
+      },
+      {
+        "name": "text settings"
+      },
+      {
+        "name": "fly text",
+        "value": "[Flying]"
+      },
+      {
+        "name": "held sprint text",
+        "value": "[Sprinting (Key Held)]"
+      },
+      {
+        "name": "toggle sprint text",
+        "value": "[Sprinting (Toggled)]"
+      },
+      {
+        "name": "descending text",
+        "value": "[Descending]"
+      },
+      {
+        "name": "toggle sneak",
+        "value": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,117 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Create Staff Application
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Create Staff Application
+                    </div>
+                    <div class="table-content">
+                        <div class="alert" id="new-app-response"></div>
+                        <form class="form" id="new-app-form">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>What is you first name?</label>
+                                        <input class="form-control" type="text" name="first_name" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>What is your telegram?</label>
+                                        <input class="form-control" type="text" name="telegram" placeholder="Telegram">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>What region are you from?</label>
+                                        <select class="form-control" name="region">
+                                            <option value="a">NA</option>
+                                            <option value="b">EU</option>
+                                            <option value="c">SA</option>
+                                            <option value="d">AS</option>
+                                            <option value="e">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label>How active can you be?</label>
+                                        <select class="form-control" name="activity">
+                                            <option value="a">A couple hours every other day</option>
+                                            <option value="b">1-2 hours a day</option>
+                                            <option value="c">2-4 hours a day</option>
+                                            <option value="d">4-8 hours a day</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>What languages do you speak? Check all that apply.</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="english" name="languages">
+                                    <label class="form-check-label">
+                                        English
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="spanish" name="languages">
+                                    <label class="form-check-label">
+                                        Spanish
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="german" name="languages">
+                                    <label class="form-check-label">
+                                        German
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="french" name="languages">
+                                    <label class="form-check-label">
+                                        French
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="other" name="languages">
+                                    <label class="form-check-label">
+                                        Other(s)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>What previous experience / qualifications do you have?</label>
+                                <textarea class="form-control" rows="8" name="previous_experience" placeholder="Write about your previous experience"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>What are you like? Tell us about yourself.</label>
+                                <textarea class="form-control" rows="8" name="about_yourself" placeholder="Tell us about yourself"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>What is your opinion on cheating? Should cheaters ever be unbanned?</label>
+                                <textarea class="form-control" rows="8" name="cheating_opinion" placeholder="Explain your opinion on cheating"></textarea>
+                            </div>
+                            <button class="btn themed-red-btn">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript">
+        setupApplicationCreationForm();
+    </script>
+{% endblock body_bottom %}

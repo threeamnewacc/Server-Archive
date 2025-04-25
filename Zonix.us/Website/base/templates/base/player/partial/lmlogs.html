@@ -1,0 +1,29 @@
+{% load time_tags %}
+
+{% if context.logs_size > 0 %}
+    <div class="table-wrapper">
+        <div class="table-header">
+            Lord_MeMe Logs
+        </div>
+        <div class="table-content no-padding">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Log</th>
+                    <th>Timestamp</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for log in context.logs %}
+                    <tr>
+                        <td>{{ log.message }}</td>
+                        <td>{% format_timestamp log.timestamp '%B %d %Y - %I:%M %p' %}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% else %}
+    <p>This player does not have any Lord_MeMe logs.</p>
+{% endif %}

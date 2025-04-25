@@ -1,0 +1,104 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block title %}
+    {{ context.forum.title }}
+{% endblock %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="btn-group btn-breadcrumb">
+                    <a href="/forums/" class="btn btn-default">Forums</a>
+                    <a href="/forums/f/v/{{ context.forum.id }}/" class="btn btn-default">{{ context.forum.title }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="table-wrapper">
+                    <div class="table-content">
+                        {% if user.is_authenticated %}
+                            {% if not context.forum.requires_admin or context.forum.requires_admin and user.is_staff and user.is_admin %}
+                                <a class="btn themed-red-btn" href="/forums/t/c/{{ context.forum.id }}/">New Thread</a>
+                                <div class="clear"></div>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <div class="table-content no-padding">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>Title</th>
+                                <th>Statistics</th>
+                                <th>Last Reply</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if context.stickied_size > 0 %}
+                                <tr class="thread-header">
+                                    <td class="app horizontally-center"><i class="fa fa-thumb-tack"></i></td>
+                                    <td colspan="3">Stickied Threads</td>
+                                </tr>
+                                {% for thread in context.stickied %}
+                                    {% include "forums/partial/thread_row.html" %}
+                                {% endfor %}
+                                <tr class="thread-divider">
+                                    <td colspan="4"></td>
+                                </tr>
+                            {% endif %}
+                            {% if context.threads_size > 0 %}
+                                {% for thread in context.threads %}
+                                    {% include "forums/partial/thread_row.html" %}
+                                {% endfor %}
+                            {% else %}
+                                <tr>
+                                    <td colspan="4">There are no threads in this forum. Be the first to make one!</td>
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if context.pagination.max_pages > 1 %}
+            <div class="row g-row listed">
+                <div class="col-md-12">
+                    <nav aria-label="Threads">
+                        <ul class="pagination">
+                            {% for page in context.pagination.pages %}
+                                {% if page == '...' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">...</a>
+                                    </li>
+                                {% elif page == 'min' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/forums/f/v/{{ context.forum.id }}/{{ context.pagination.min_pages }}/">{{ context.pagination.min_pages }}</a>
+                                    </li>
+                                {% elif page == 'max' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/forums/f/v/{{ context.forum.id }}/{{ context.pagination.max_pages }}/">{{ context.pagination.max_pages }}</a>
+                                    </li>
+                                {% elif page == 'current' %}
+                                    <li class="page-item">
+                                        <a class="page-link" disabled="">{{ context.pagination.current_page }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/forums/f/v/{{ context.forum.id }}/{{ page }}/">{{ page }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock page_content %}

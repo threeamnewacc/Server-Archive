@@ -1,0 +1,20 @@
+{% load time_tags %}
+
+<div class="announcement">
+    <div class="announcement-header g-v">
+        <img class="g-avatar large" src="https://visage.surgeplay.com/face/{{ announcement.creator_name }}">
+        <div class="info">
+            <a class="title" href="/forums/t/v/{{ announcement.id }}/">{{ announcement.title }}</a>
+            <div class="group">
+                <span class="parent"><a href="/player/{{ announcement.creator_name }}/">{{ announcement.creator_name }}</a>, {% format_timestamp announcement.publish_date '%B %d, %Y, %I:%M %p' False %}</span>
+            </div>
+        </div>
+    </div>
+    <div class="announcement-content">
+        <div class="parse-content">{{ announcement.content }}</div>
+        <div class="app clear"></div>
+        <a class="btn btn-default read-more themed-red-btn" href="/forums/t/v/{{ announcement.id }}/">
+            Read More
+        </a>
+    </div>
+</div>

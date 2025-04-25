@@ -1,0 +1,25 @@
+{% load general_tags %}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="table-wrapper">
+            <div class="table-header">
+                Alts
+            </div>
+            <div class="table-content no-padding">
+                <table class="table table-sm table-borderless">
+                    {% for alt in context.alts %}
+                        <tr>
+                            <td>
+                                <div class="g-v">
+                                    <img class="g-mr" src="https://crafatar.com/avatars/{{ alt.uuid }}">
+                                    <a href="/player/{{ alt.name }}/">{{ alt.name }}</a>
+                                </div>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

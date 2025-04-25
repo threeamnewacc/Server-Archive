@@ -1,0 +1,14 @@
+{% load general_tags %}
+
+{% get_name_from_uuid premium_leader.uuid as leader_name %}
+
+<div class="col-md-4">
+    <div class="premium-leader">
+        <a class="username" href="/player/{{ leader_name }}/">{{ leader_name }}</a>
+        <div class="rounded-circle app horizontally-center vertically-center">
+            <img class="image-drop-shadow" src="https://crafatar.com/renders/head/{{ premium_leader.uuid }}">
+        </div>
+        <span class="position">Premium #{{ premium_position }}</span>
+        <span class="value">{{ premium_leader.elo }} ELO</span>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+{% load general_tags %}
+
+{% convert_rank_data staff_row.name as rank_data %}
+
+<div class="row g-row listed">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="staff-header rank-overlay {{ rank_data.css_class }}">{{ rank_data.name }}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="staff-wrapper">
+                    <div class="row">
+                        {% for staff in staff_row.entries %}
+                            {% get_name_from_uuid staff as staff_name %}
+
+                            <div class="col-md-2">
+                                <div class="staff-entry">
+                                    <img src="https://visage.surgeplay.com/full/256/{{ staff }}">
+                                    <a class="staff-footer" href="/player/{{ staff_name }}/">{{ staff_name }}</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

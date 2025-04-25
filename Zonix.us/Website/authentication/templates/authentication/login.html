@@ -1,0 +1,77 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-6">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Login
+                    </div>
+                    <div class="table-content">
+                        <form class="form" id="login-form">
+                            <div class="form-group">
+                                <small id="notice" class="form-text text-muted">Your details are securely stored and will never be shared with anyone else.</small>
+                            </div>
+                            <div class="alert" id="login-response"></div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" autocomplete="on">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="on">
+                            </div>
+                            <button class="btn themed-blue-btn" type="submit">Login</button>
+                            <a class="btn themed-red-btn pull-right" href="/forgot-password/">Forgotten Password</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Register
+                    </div>
+                    <div class="table-content">
+                        <small id="notice" class="form-text text-muted">You'll need to connect to our server and register. Follow the instructions below to get started!</small>
+                        <div class="list-group register-steps">
+                            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Step #1</h5>
+                                </div>
+                                <p class="mb-1">Connect to one of our servers and use the command <code>/register &lt;email&gt;</code>. Make sure you're using an email address that you have access to.</p>
+                                <small class="text-muted">If you used an incorrect email when signing up, wait <strong>2 minutes</strong> and use the register command again. If you are currently banned, you can still join our hub servers.</small>
+                            </div>
+                            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Step #2</h5>
+                                </div>
+                                <p class="mb-1">Login to your email and look for a confirmation email from <code>site@zonix.us</code>. Click on it and follow the instructions inside to confirm your account on our website.</p>
+                                <small class="text-muted">Ensure that the password that you are creating is strong and is not used elsewhere for maximum security.</small>
+                            </div>
+                            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Step #3</h5>
+                                </div>
+                                <p class="mb-1">That's it! Come back to this page and input your login information on the left side. Once you're logged in, you can create support tickets, apply for staff, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript">
+        setupLoginForm();
+    </script>
+{% endblock body_bottom %}

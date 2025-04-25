@@ -1,0 +1,137 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+{% load chartkick %}
+
+{% block title %}
+    Staff Applications
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container" id="applications">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="table-wrapper application-list">
+                    <div class="table-header">
+                        Staff Applications
+                    </div>
+                    <div class="table-content">
+                        <div class="dropdown">
+                            <button style="width: auto" class="btn themed-red-btn dropdown-toggle" id="sort" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sort
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="sort">
+                                <a class="dropdown-item" href="/admin/applications/all/1/new">New</a>
+                                <a class="dropdown-item" href="/admin/applications/all/1/old">Old</a>
+                                <a class="dropdown-item" href="/admin/applications/all/1/review">Under Review</a>
+                                <a class="dropdown-item" href="/admin/applications/all/1/accepted">Accepted</a>
+                                <a class="dropdown-item" href="/admin/applications/all/1/denied">Denied</a>
+                                <a class="dropdown-item" href="/admin/applications/all/1/interview">Awaiting Interview</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-content no-padding">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="fit"></th>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Creator
+                                </th>
+                                <th class="fit">
+                                    Status
+                                </th>
+                                <th class="fit">
+                                    Last Update
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if context.applications_size > 0 %}
+                                {% for application in context.applications %}
+                                    <tr>
+                                        <td class="fit">
+                                            <a class="btn btn-dark" href="/applications/v/{{ application.id }}/">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="/applications/v/{{ application.id }}/">Application #{{ application.id }}</a>
+                                        </td>
+                                        <td class="fit">
+                                            <img class="app avatar small margin" src="https://visage.surgeplay.com/face/32/{{ application.creator }}">
+                                            <a href="/player/{{ application.creator }}/">{{ application.creator }}</a>
+                                        </td>
+                                        <td class="fit">
+                                            {% if application.status == 'a' %}
+                                                <span class="btn themed-green-btn">{{ application.status_pretty }}</span>
+                                            {% elif application.status == 'b' %}
+                                                <div class="btn themed-yellow-btn">{{ application.status_pretty }}</div>
+                                            {% elif application.status == 'c' %}
+                                                <div class="btn themed-green-btn">{{ application.status_pretty }}</div>
+                                            {% elif application.status == 'd' %}
+                                                <div class="btn themed-red-btn">{{ application.status_pretty }}</div>
+                                            {% else %}
+                                                {{ application.status_pretty }}
+                                            {% endif %}
+                                        </td>
+                                        <td class="fit">
+                                            {% format_timestamp application.updated_timestamp '%B %d %Y - %I:%M %p' False %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr>
+                                    <td colspan="5">There are no applications.</td>
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if context.pagination.max_pages > 1 %}
+            <div class="app row listed">
+                <div class="col-md-12">
+                    <nav aria-label="Thread Replies">
+                        <ul class="pagination">
+                            {% for page in context.pagination.pages %}
+                                {% if page == '...' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">...</a>
+                                    </li>
+                                {% elif page == 'min' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/admin/applications/all/{{ context.pagination.min_pages }}/{{ context.sort }}">{{ context.pagination.min_pages }}</a>
+                                    </li>
+                                {% elif page == 'max' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/admin/applications/all/{{ context.pagination.max_pages }}/{{ context.sort }}">{{ context.pagination.max_pages }}</a>
+                                    </li>
+                                {% elif page == 'current' %}
+                                    <li class="page-item">
+                                        <a class="page-link" disabled="">{{ context.pagination.current_page }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/admin/applications/all/{{ page }}/{{ context.sort }}">{{ page }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock page_content %}
+
+{% block body_extra %}
+
+{% endblock body_extra %}

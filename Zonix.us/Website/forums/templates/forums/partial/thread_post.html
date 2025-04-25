@@ -1,0 +1,129 @@
+{% load general_tags %}
+{% load time_tags %}
+
+{% if post_type == 'thread' %}
+    {% get_item context.profiles context.thread.creator None as thread_creator %}
+    {% convert_rank_data thread_creator.rank as rank %}
+
+    <div class="post" id="thread-{{ context.thread.id }}">
+        <div class="post-header">
+            {{ context.thread.title }}
+        </div>
+        <div class="row g-row listed equal no-gutters">
+            <div class="col-md-3" align="center">
+                <div class="post-sidebar">
+                    <div class="sb-section">
+                        <div class="avatar">
+                            <div class="rounded-circle">
+                                <img class="image-drop-shadow" src="{% get_bust_link context.thread.creator 512 %}">
+                            </div>
+                        </div>
+                        <h2>
+                            <a href="/player/{{ thread_creator.name }}">{{ thread_creator.name }}</a>
+                        </h2>
+                        <div class="rank-tag {{ rank.css_class }}">{{ rank.name }}</div>
+                    </div>
+                    <div class="sb-section">
+                        <div class="stat">
+                            <div class="stat-header">
+                                First Join
+                            </div>
+                            <div class="stat-value">
+                                {% format_timestamp thread_creator.firstLogin '%B %d, %Y' True %}
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-header">
+                                Forums
+                            </div>
+                            <div class="stat-value">
+                                Threads: {{ thread_creator.threads_count }}
+                            </div>
+                            <div class="stat-value">
+                                Replies: {{ thread_creator.replies_count }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="post-content">
+                    <small class="post-date">Posted {% format_timestamp context.thread.publish_date '%B %d, %Y - %I:%M %p' False %}</small>
+                    <div class="parse-content">{{ context.thread.content }}</div>
+                </div>
+                {% if user.is_authenticated %}
+                    <div class="post-footer">
+                        {% get_user_uuid user as user_uuid %}
+                        {% if context.thread.creator == user_uuid or user.is_staff and user.is_admin %}
+                            <a class="btn no-style delete-btn pull-right" data-post="thread-{{ reply.id }}">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        {% endif %}
+                        <div class="clear"></div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% else %}
+    {% get_item context.profiles reply.creator None as reply_creator %}
+    {% convert_rank_data reply_creator.rank as rank %}
+
+    <div class="post" id="reply-{{ reply.id }}">
+        <div class="row g-row listed equal no-gutters">
+            <div class="col-md-3" align="center">
+                <div class="post-sidebar">
+                    <div class="sb-section">
+                        <div class="avatar">
+                            <div class="rounded-circle">
+                                <img class="image-drop-shadow" src="{% get_bust_link reply.creator 512 %}">
+                            </div>
+                        </div>
+                        <h2>
+                            <a href="/player/{{ reply_creator.name }}">{{ reply_creator.name }}</a>
+                        </h2>
+                        <div class="rank-tag {{ rank.css_class }}">{{ rank.name }}</div>
+                    </div>
+                    <div class="sb-section">
+                        <div class="stat">
+                            <div class="stat-header">
+                                First Join
+                            </div>
+                            <div class="stat-value">
+                                {% format_timestamp reply_creator.firstLogin '%B %d, %Y' True %}
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-header">
+                                Forums
+                            </div>
+                            <div class="stat-value">
+                                Threads: {{ reply_creator.threads_count }}
+                            </div>
+                            <div class="stat-value">
+                                Replies: {{ reply_creator.replies_count }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="post-content">
+                    <small class="post-date">Posted {% format_timestamp reply.publish_date '%B %d, %Y - %I:%M %p' False %}</small>
+                    <div class="parse-content">{{ reply.content.rendered }}</div>
+                </div>
+                {% if user.is_authenticated %}
+                    <div class="post-footer">
+                        {% get_user_uuid user as user_uuid %}
+                        {% if reply.creator == user_uuid or user.is_staff and user.is_admin %}
+                            <a class="btn no-style delete-btn pull-right" data-post="reply-{{ reply.id }}">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        {% endif %}
+                        <div class="clear"></div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,35 @@
+{% load static %}
+{% load general_tags %}
+
+<div class="event event-{{ event_data.name }}">
+    <div class="event-header">
+        <div class="g-v">
+            {% format_display_name event_data.name %}
+        </div>
+    </div>
+    <div class="event-content">
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>Wins</td>
+                <td class="number">{{ event_data.wins }}</td>
+            </tr>
+            <tr>
+                <td>Losses</td>
+                <td class="number">{{ event_data.losses }}</td>
+            </tr>
+            {% if event_data.name == 'oitc' %}
+                <tr>
+                    <td>K/D</td>
+                    <td class="number">{{ event_data.kills }}/{{ event_data.deaths }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td>W/L Ratio</td>
+                    <td class="number">{% get_ratio event_data.wins event_data.losses %}%</td>
+                </tr>
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block title %}
+    Forums
+{% endblock %}
+
+{% block page_content %}
+    <div class="container" id="forums">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="module no-style">
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item active" href="/forums/">Forums</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        {% if context.categories_size > 0 %}
+            {% for category in context.categories %}
+                <div class="row g-row listed">
+                    <div class="col-md-9">
+                        <div class="table-wrapper">
+                            <div class="table-header align-left">
+                                {{ category.title }}
+                            </div>
+                            <div class="table-content no-padding">
+                                <table class="table">
+                                    {% if category.forums_size > 0 %}
+                                        <tbody>
+                                        {% for forum in category.forums %}
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li class="forum-title">
+                                                            <a href="/forums/f/v/{{ forum.id }}/">{{ forum.title }}</a>
+                                                        </li>
+                                                        <li class="forum-description">
+                                                            <span>{{ forum.description }}</span>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="fit">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="comments icon" aria-hidden="true"></i>
+                                                            {% if forum.threads_count == 1 %}
+                                                                1 thread
+                                                            {% else %}
+                                                                {{ forum.threads_count }} threads
+                                                            {% endif %}
+                                                        </li>
+                                                        <li>
+                                                            <i class="comment icon" aria-hidden="true"></i>
+                                                            {% if forum.replies_count == 1 %}
+                                                                1 reply
+                                                            {% else %}
+                                                                {{ forum.replies_count }} replies
+                                                            {% endif %}
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td class="fit fit-min latest-post">
+                                                    <ul>
+                                                        {% if forum.last_thread == None %}
+                                                            <li>There are no recent threads.</li>
+                                                        {% else %}
+                                                            {% assign_var forum.last_thread as thread %}
+                                                            <li class="thread-title">
+                                                                <a href="/forums/t/v/{{ thread.id }}/">{% shorten_string thread.title 16 %}</a>
+                                                            </li>
+                                                            {% if thread.last_reply == None %}
+                                                                <li>
+                                                                    by <a href="/player/{{ thread.creator_name }}/">{{ thread.creator_name }}</a>
+                                                                </li>
+                                                                <li>
+                                                                    {% timeago_helper thread.publish_date %}
+                                                                </li>
+                                                            {% else %}
+                                                                <li>
+                                                                    by <a href="/player/{{ thread.last_reply.creator_name }}/">{{ thread.last_reply.creator_name }}</a>
+                                                                </li>
+                                                                <li>
+                                                                    {% timeago_helper thread.last_reply.publish_date %}
+                                                                </li>
+                                                            {% endif %}
+                                                        {% endif %}
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    {% else %}
+                                        <tbody>
+                                        <tr>
+                                            <td colspan="3">There are no forums in this category!</td>
+                                        </tr>
+                                        </tbody>
+                                    {% endif %}
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock page_content %}

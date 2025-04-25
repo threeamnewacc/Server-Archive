@@ -1,0 +1,62 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Create Thread
+{% endblock %}
+
+{#{% block head_extra %}#}
+{#    <link rel="stylesheet" href="{% static "css/wysibb.css" %}"/>#}
+{#    <script src="{% static "js/jquery.wysibb.js" %}"></script>#}
+{#{% endblock %}#}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row limited">
+            <div class="col-md-12">
+                <div class="module no-style">
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="/forums/">Forums</a>
+                        <a class="breadcrumb-item" href="/forums/f/v/{{ context.forum.id }}">{{ context.forum.title }}</a>
+                        <a class="breadcrumb-item active" href="forums/t/c/{{ context.forum.id }}">New Thread</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row g-row limited">
+            <div class="col-md-12">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Create Thread
+                    </div>
+                    <div class="table-content">
+                        <div class="alert" id="new-thread-response"></div>
+                        <form class="form" id="new-thread-form">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="thread_title" placeholder="Thread Title">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="thread-textarea" rows="16" name="thread_content" placeholder="Write something..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <a class="btn themed-red-btn" href="https://django-precise-bbcode.readthedocs.io/en/stable/basic_reference/builtin_bbcodes.html" target="_blank">Formatting Guide</a>
+                                <button class="btn themed-red-btn pull-right">Submit</button>
+                                <div class="clear"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript" src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=34kuz4yilbrgrb0dxjh6yirqswdduvs4ntcdq0xio19jaq5t"></script>
+    <script type="text/javascript" src="{% static "js/forums/forums.js" %}"></script>
+    <script type="text/javascript">
+        setPageAttribute('forum_id', {{ context.forum.id }});
+        setupCreateThreadForm();
+    </script>
+{% endblock body_bottom %}

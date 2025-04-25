@@ -1,0 +1,83 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block page_content %}
+    <div id="home-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="app complete-center">
+                        <div class="severs">
+                            <div class="server-info">
+                                <h1>zonix.us</h1>
+                                <span>{{ context.proxy_data.us_proxy }}/400 Online</span>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="server-info">
+                                <h1>eu.zonix.us</h1>
+                                <span>{{ context.proxy_data.eu_proxy }}/400 Online</span>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img class="logo" src="{% static "image/logo_transparent.png" %}">
+                </div>
+                <div class="col-md-4">
+                    <div class="app complete-center">
+                        <div class="severs">
+                            <div class="server-info">
+                                <h1>sa.zonix.us</h1>
+                                <span>{{ context.proxy_data.sa_proxy }}/400 Online</span>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="server-info">
+                                <h1>as.zonix.us</h1>
+                                <span>{{ context.proxy_data.as_proxy }}/400 Online</span>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-row listed no-gutters">
+            <div class="col-md-9 mobile-margin col-theme">
+                {% if context.announcements_size > 0 %}
+                    {% for announcement in context.announcements %}
+                        {% include "forums/partial/announcement.html" %}
+                    {% endfor %}
+                {% else %}
+                    <div class="module">
+                        <p>There are no announcements to display.</p>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-md-3 col-theme no-left">
+                <section>
+                    {% include "forums/partial/recent_activity.html" %}
+                </section>
+                <section>
+                    <div class="recent-tweets">
+                        <a class="twitter-timeline" data-width="350" data-height="400" href="https://twitter.com/ZonixUS?ref_src=twsrc%5Etfw">Tweets by ZonixUS</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript" src="{% static "js/ubb.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/ubb_tags.js" %}"></script>
+    <script type="text/javascript">
+        parseAndRenderPosts();
+    </script>
+{% endblock %}

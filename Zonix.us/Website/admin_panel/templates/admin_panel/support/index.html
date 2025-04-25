@@ -1,0 +1,61 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+{% load chartkick %}
+
+{% block title %}
+    Ticket Management
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container" id="tickets">
+        <div class="row g-row listed">
+            <div class="col-md-4">
+                <div class="module less-padding">
+                    <h2>Ticket Blacklist</h2>
+                    <p>Add users to the ticket blacklist to exempt them from being assigned support tickets.</p>
+                    <hr/>
+                    {% if context.ticket_blacklist_size > 0 %}
+                        <table class="table">
+                            <tbody>
+                            {% for entry in context.ticket_blacklist %}
+                                <tr>
+                                    <td>
+                                        <a class="app vertical" href="/player/{{ entry }}/">
+                                            <img class="app avatar margin small" src="https://visage.surgeplay.com/face/64/{{ entry }}"> {{ entry }}
+                                        </a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p>There are no entries in the ticket blacklist.</p>
+                    {% endif %}
+                    <hr/>
+                    <form class="form" id="aor-form">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="UUID" name="uuid">
+                        </div>
+                        <button class="btn themed-blue-btn" type="submit">Add/Remove</button>
+                    </form>
+                    <div class="alert" id="aor-response"></div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="module less-padding">
+                    <a class="btn themed-blue-btn" href="/admin/tickets/all/">Ticket List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript" src="{% static "js/admin/admin.js" %}"></script>
+    <script type="text/javascript">
+        setupTicketManagement();
+    </script>
+{% endblock body_bottom %}

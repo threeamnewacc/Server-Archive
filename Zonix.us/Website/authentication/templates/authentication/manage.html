@@ -1,0 +1,76 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Manage Account
+{% endblock %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed equal">
+            <div class="col-md-4 offset-md-2">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Change Password
+                    </div>
+                    <div class="table-content">
+                        <div class="alert" id="change-password-response"></div>
+                        <form id="change-password-form">
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password_current" placeholder="Enter your current password" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password_new" placeholder="Enter a new password" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password_new_match" placeholder="Enter a new password" autocomplete="off">
+                            </div>
+                            <button type="submit" class="btn themed-blue-btn">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Social Accounts
+                    </div>
+                    <div class="table-content">
+                        <div class="alert" id="change-password-response"></div>
+                        <form id="social-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="youtube" placeholder="Your youtube username" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="twitter" placeholder="Your twitter username" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="telegram" placeholder="Your telegram username" autocomplete="off">
+                            </div>
+                            <button type="submit" class="btn themed-blue-btn">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-row listed equal">
+            <div class="col-md-8 offset-md-2">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Client Cosmetics
+                    </div>
+                    <div class="table-content">
+                        <p>Click a cosmetic to toggle it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body_bottom %}
+    <script type="text/javascript">
+        setupManageForms();
+    </script>
+{% endblock body_bottom %}

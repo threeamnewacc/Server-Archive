@@ -1,0 +1,44 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Support
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-6 equal">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Support Tickets
+                    </div>
+                    <div class="table-content">
+                        <p>
+                            Support tickets are the primary focus for our staff team.
+                            We try to provide quick assistance but please allow up to 48 hours for a response.
+                            Please provide detailed and accurate information about your situation for the fastest response time.
+                        </p>
+                        <a class="btn themed-red-btn g-mt" href="/support/tickets/"><i class="fa fa-info"></i> Tickets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 equal">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Teamspeak
+                    </div>
+                    <div class="table-content">
+                        <p>
+                            For immediate assistance, use our Teamspeak server to communicate with our staff team.
+                            Keep in mind that we do not handle ban appeals via Teamspeak, you must use our support ticket system.
+                            If the connect button below does not work, you can connect directly to our server address <strong>ts.zonix.us</strong>.
+                        </p>
+                        <a class="btn themed-red-btn g-mt" href="ts3server://ts.zonix.us/"><i class="fa fa-server"></i> Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}

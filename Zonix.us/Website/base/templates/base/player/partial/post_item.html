@@ -1,0 +1,11 @@
+{% load general_tags %}
+{% load time_tags %}
+
+<div class="list-group-item">
+    <div class="d-flex w-100 justify-content-between">
+        <small>Posted new {{ post.type }}...</small>
+        <small>{% timeago_helper post.data.publish_date %}</small>
+    </div>
+    <a href="/forums/t/v/{{ post.data.id }}/"><h5>{% shorten_string post.data.title 40 %}</h5></a>
+    <p>{% shorten_string post.data.content 200 %}</p>
+</div>

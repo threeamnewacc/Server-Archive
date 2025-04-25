@@ -1,0 +1,40 @@
+{% load general_tags %}
+{% load time_tags %}
+
+<tr class="table-row">
+    <td class="fit">
+        <img class="thread-img" src="https://visage.surgeplay.com/face/{{ thread.creator_name }}">
+    </td>
+    <td>
+        <ul>
+            <li class="thread-title">
+                <a href="/forums/t/v/{{ thread.id }}/">{% shorten_string thread.title 40 %}</a>
+            </li>
+            <li class="thread-creator">
+                <a href="/player/{{ thread.creator_name }}/">{{ thread.creator_name }}</a>, {% format_timestamp thread.publish_date '%B %d, %Y, %I:%M %p' False %}
+            </li>
+        </ul>
+    </td>
+    <td class="fit">
+        <i class="comment icon" aria-hidden="true"></i>
+        {% if thread.replies_count == 1 %}
+            1 reply
+        {% else %}
+            {{ thread.replies_count }} replies
+        {% endif %}
+    </td>
+    <td class="fit fit-min">
+        {% if thread.last_reply_timestamp == None %}
+            No recent posts.
+        {% else %}
+            <ul>
+                <li>
+                    by <a href="/player/{{ thread.last_reply_creator }}/">{{ thread.last_reply_creator }}</a>
+                </li>
+                <li>
+                    {% timeago_helper thread.last_reply_timestamp %}
+                </li>
+            </ul>
+        {% endif %}
+    </td>
+</tr>

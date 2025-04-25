@@ -1,0 +1,120 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+
+{% block title %}
+    {{ context.application.creator }}'s Staff Application
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-8">
+                {% if user.uid == context.application.creator %}
+                    {% if context.application.status == 'b' %}
+                        <div class="alert alert-success">
+                            Your application has been approved for an interview. Please join our TeamSpeak server (ts.zonix.us) and
+                            patiently wait in the "Application Interview Waiting Room".
+                        </div>
+                        <br/>
+                    {% elif context.application.status == 'd' %}
+                        <div class="alert alert-danger">
+                            Your application has been denied. Don't worry though, you'll be able to apply again soon. As we don't tell you specifically why you were denied, we can't give you any other advice besides to review what you've submitted and try to improve what you think can be improved.
+                        </div>
+                        <br/>
+                    {% endif %}
+                {% endif %}
+                {% if user.is_staff and user.is_admin %}
+                    <div class="table-wrapper">
+                        <div class="table-header">
+                            Application Actions
+                        </div>
+                        <div class="table-content">
+                            <div class="alert alert-danger" id="action-response"></div>
+                            <a class="btn themed-green-btn action-btn" data-action="accept">Accept</a>
+                            <a class="btn themed-red-btn action-btn" data-action="deny">Deny</a>
+                            <a class="btn themed-yellow-btn action-btn" data-action="interview">Interview</a>
+                        </div>
+                    </div>
+                {% endif %}
+                <div class="application">
+                    <div class="content">
+                        <div class="content-header">
+                            <a href="/applications/view/{{ context.application.id }}/">Application #{{ context.application.id }}</a> by <a href="/player/{{ context.application.creator }}/">{{ context.application.creator }}</a>
+                        </div>
+                        <div class="content-body">
+                            <strong>Previous Experience</strong>
+                            {{ context.application.previous_experience|linebreaks }}
+                            <br/>
+                            <strong>About Yourself</strong>
+                            {{ context.application.about_yourself|linebreaks }}
+                            <br/>
+                            <strong>Opinions on Cheating</strong>
+                            {{ context.application.cheating_opinion|linebreaks }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Application Details
+                    </div>
+                    <div class="table-content">
+                        <table class="table table-sm table-borderless">
+                            <tbody>
+                            <tr>
+                                <td>First Name</td>
+                                <td>{{ context.application.first_name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Telegram</td>
+                                <td>{{ context.application.telegram }}</td>
+                            </tr>
+                            <tr>
+                                <td>Region</td>
+                                <td>{{ context.application.region }}</td>
+                            </tr>
+                            <tr>
+                                <td>Availability</td>
+                                <td>{{ context.application.activity }}</td>
+                            </tr>
+                            <tr>
+                                <td>Languages</td>
+                                <td>{% join_string context.application.languages %}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Status
+                                </td>
+                                <td>
+                                    {% if context.application.status == 'a' %}
+                                        <span class="btn themed-green-btn">{{ context.application.status_pretty }}</span>
+                                    {% elif context.application.status == 'b' %}
+                                        <div class="btn themed-yellow-btn">{{ context.application.status_pretty }}</div>
+                                    {% elif context.application.status == 'c' %}
+                                        <div class="btn themed-green-btn">{{ context.application.status_pretty }}</div>
+                                    {% elif context.application.status == 'd' %}
+                                        <div class="btn themed-red-btn">{{ context.application.status_pretty }}</div>
+                                    {% else %}
+                                        {{ context.ticket.status_pretty }}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript" src="{% static "js/staff_apps/staff_apps.js" %}"></script>
+    <script type="text/javascript">
+        setPageAttribute('application_id', {{ context.application.id }});
+        setupApplicationOptionForms();
+    </script>
+{% endblock body_bottom %}

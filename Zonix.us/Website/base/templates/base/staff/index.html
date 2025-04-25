@@ -1,0 +1,37 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+
+{% block title %}
+    Staff
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="module less-padding">
+                    <h4>Interested in staff?</h4>
+                <p>If you are a dedicated, hard working, fair, and well spoken individual, we'd love to have you on our staff team. Click <a href="/applications/">here</a> to apply now.</p>
+                </div>
+            </div>
+        </div>
+        {% assign_var context.staff.OWNER as staff_row %}
+        {% include "base/staff/partial/staff_row.html" %}
+        {% assign_var context.staff.DEVELOPER as staff_row %}
+        {% include "base/staff/partial/staff_row.html" %}
+        {% assign_var context.staff.MANAGER as staff_row %}
+        {% include "base/staff/partial/staff_row.html" %}
+        {% assign_var context.staff.PLATFORM_ADMINISTRATOR as staff_row %}
+        {% include "base/staff/partial/staff_row.html" %}
+        {% assign_var context.staff.ADMINISTRATOR as staff_row %}
+        {% include "base/staff/partial/staff_row.html" %}
+        {% assign_var context.staff.SENIOR_MODERATOR as staff_row %}
+        {% include "base/staff/partial/staff_row.html" %}
+        {% assign_var context.staff.MODERATOR as staff_row %}
+        {% include "base/staff/partial/staff_row.html" %}
+        {% assign_var context.staff.TRIAL_MOD as staff_row %}
+        {% include "base/staff/partial/staff_row.html" %}
+    </div>
+{% endblock page_content %}

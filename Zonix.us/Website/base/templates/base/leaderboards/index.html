@@ -1,0 +1,67 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+
+{% block head_extra %}
+    <link rel="stylesheet" href="{% static "css/leaderboards/leaderboards.css" %}">
+{% endblock head_extra %}
+
+{% block title %}
+    Leaderboards
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            {% assign_var '1' as premium_position %}
+            {% get_item context.premium_leaders '1' None as premium_leader %}
+            {% include "base/leaderboards/partial/premium_leader.html" %}
+            {% assign_var '2' as premium_position %}
+            {% get_item context.premium_leaders '2' None as premium_leader %}
+            {% include "base/leaderboards/partial/premium_leader.html" %}
+            {% assign_var '3' as premium_position %}
+            {% get_item context.premium_leaders '3' None as premium_leader %}
+            {% include "base/leaderboards/partial/premium_leader.html" %}
+        </div>
+        {% for leaderboard_row in context.leaderboards %}
+            <div class="row g-row listed">
+                {% for leaderboard in leaderboard_row %}
+                    <div class="col-md-4">
+                        <div class="leaderboard">
+                            <div class="header">
+                                {{ leaderboard.type }}
+                            </div>
+                            <div class="content">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th class="fit">Rank</th>
+                                        <th>Player</th>
+                                        <th>ELO</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for entry in leaderboard.entries %}
+                                        {% get_name_from_uuid entry.uuid as entry_name %}
+                                        <tr>
+                                            <td class="fit">{{ entry.ranking }}</td>
+                                            <td class="g-v">
+                                                <a href="/player/{{ entry_name }}/">
+                                                    <img class="avatar" src="https://crafatar.com/renders/head/{{ entry.uuid }}">
+                                                    {{ entry_name }}
+                                                </a>
+                                            </td>
+                                            <td>{{ entry.elo }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock page_content %}

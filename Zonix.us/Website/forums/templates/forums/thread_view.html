@@ -1,0 +1,146 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+{% load bbcode_tags %}
+
+{% block title %}
+    {% shorten_string context.thread.title 24 %}
+{% endblock %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row limited">
+            <div class="col-md-12">
+                <div class="module no-style">
+                    <nav class="breadcrumb">
+                        <a class="breadcrumb-item" href="/forums/">Forums</a>
+                        <a class="breadcrumb-item" href="/forums/f/v/{{ context.forum.id }}">{{ context.forum.title }}</a>
+                        <a class="breadcrumb-item active" href="/forums/t/v/{{ context.thread.id }}">{% shorten_string context.thread.title 40 %}</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        {% if user.is_authenticated %}
+            {% if user.is_staff or user.is_staff and user.is_admin %}
+                <div class="row g-row limited">
+                    <div class="col-md-12">
+                        <div class="table-wrapper">
+                            <div class="table-header">
+                                Thread Options
+                            </div>
+                            <div class="table-content thread-options">
+                                <div class="alert alert-danger" id="thread-options-response"></div>
+                                {% if context.thread.locked %}
+                                    <a class="btn no-style unlock-btn"><i class="fa fa-unlock"></i> Unlock</a>
+                                {% else %}
+                                    <a class="btn no-style lock-btn"><i class="fa fa-lock"></i> Lock</a>
+                                {% endif %}
+                                {% if user.is_admin %}
+                                    <a class="btn no-style delete-btn" data-post="thread-{{ context.thread.id }}"><i class="fa fa-trash"></i> Trash</a>
+                                    <a class="btn no-style announce-btn"><i class="fa fa-bullhorn"></i> Announce</a>
+                                    <a class="btn no-style sticky-btn"><i class="fa fa-thumb-tack"></i> Sticky</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
+
+        {% assign_var "thread" as post_type %}
+        {% include "forums/partial/thread_post.html" %}
+
+        {% if context.replies_size > 0 %}
+            {% for reply in context.replies %}
+                {% assign_var "reply" as post_type %}
+                {% include "forums/partial/thread_post.html" %}
+            {% endfor %}
+        {% endif %}
+
+        <div id="replies-after"></div>
+
+        {% if context.pagination.max_pages > 1 %}
+            <div class="row g-row listed">
+                <div class="col-md-12">
+                    <nav aria-label="Thread Replies">
+                        <ul class="pagination">
+                            {% for page in context.pagination.pages %}
+                                {% if page == '...' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">...</a>
+                                    </li>
+                                {% elif page == 'min' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/forums/t/v/{{ context.thread.id }}/{{ context.pagination.min_pages }}/">{{ context.pagination.min_pages }}</a>
+                                    </li>
+                                {% elif page == 'max' %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/forums/t/v/{{ context.thread.id }}/{{ context.pagination.max_pages }}/">{{ context.pagination.max_pages }}</a>
+                                    </li>
+                                {% elif page == 'current' %}
+                                    <li class="page-item">
+                                        <a class="page-link" disabled="">{{ context.pagination.current_page }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="/forums/t/v/{{ context.thread.id }}/{{ page }}/">{{ page }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        {% endif %}
+        {% if context.thread.locked %}
+            <div class="row g-row limited">
+                <div class="col-md-12">
+                    <div class="alert alert-danger">This thread is currently locked. Only administrators and authorized staff members can reply.</div>
+                </div>
+            </div>
+        {% else %}
+            {% if user.is_authenticated %}
+                <div class="app row listed">
+                    <div class="col-md-12">
+                        <div class="table-wrapper">
+                            <div class="table-header">
+                                Create Reply
+                            </div>
+                            <div class="table-content">
+                                <div class="alert" id="new-reply-response"></div>
+                                <form class="form" id="new-reply-form">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="reply-textarea" rows="8" name="reply_content" placeholder="Write something..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn themed-red-btn">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="alert alert-light">Please login to reply to this thread.</div>
+            {% endif %}
+        {% endif %}
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript" src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=34kuz4yilbrgrb0dxjh6yirqswdduvs4ntcdq0xio19jaq5t"></script>
+    <script type="text/javascript" src="{% static "js/ubb.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/ubb_tags.js" %}"></script>
+    <script type="text/javascript">
+        setPageAttribute('forum_id', {{ context.forum.id }});
+        setPageAttribute('thread_id', {{ context.thread.id }});
+        setPageAttribute('page_num', {{ context.pagination.current_page }});
+        setupThreadViewForms();
+
+        $(document).ready(function () {
+            parseAndRenderPosts();
+        });
+    </script>
+{% endblock body_bottom %}

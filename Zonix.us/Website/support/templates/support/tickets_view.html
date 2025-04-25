@@ -1,0 +1,149 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block title %}
+    Viewing Ticket
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container" id="ticket">
+        <div class="row g-row listed">
+            <div class="col-md-8">
+                {% if user.is_staff %}
+                    <div class="table-wrapper">
+                        <div class="table-header">
+                            Ticket Actions
+                        </div>
+                        <div class="table-content">
+                            <div class="alert alert-danger" id="options-response"></div>
+                            {% if context.ticket.status != 'c' %}
+                                <a class="btn themed-red-btn close-btn">Close</a>
+                            {% else %}
+                                <a class="btn themed-blue-btn open-btn">Open</a>
+                            {% endif %}
+                            {% if user.can_access_logs %}
+                                <a class="btn themed-blue-btn reassign-btn">Re-assign</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+                <div class="content">
+                    <div class="content-header">
+                        <a href="/support/tickets/v/{{ context.ticket.id }}/">{{ context.ticket.title }}</a>
+                        <span class="d-inline pull-right">{% format_timestamp context.ticket.publish_date '%B %d %Y - %I:%M %p' False %}</span>
+                    </div>
+                    <div class="content-body">
+                        {{ context.ticket.content.rendered }}
+                    </div>
+                </div>
+
+                {% for reply in context.replies %}
+                    {% include "support/partial/reply.html" %}
+                {% endfor %}
+
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Create Reply
+                    </div>
+                    <div class="table-content">
+                        <div class="alert alert-danger" id="reply-response"></div>
+                        <form class="form" id="reply-form">
+                            <div class="form-group">
+                                <textarea class="form-control" name="reply_content" placeholder="Reply to this ticket..." rows="8"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn themed-red-btn">Submit Reply</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Ticket Details
+                    </div>
+                    <div class="table-content">
+                        <table class="table table-sm table-borderless">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    ID
+                                </td>
+                                <td>
+                                    {{ context.ticket.id }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Type
+                                </td>
+                                <td>
+                                    {{ context.ticket.type_pretty }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Creator
+                                </td>
+                                <td>
+                                    <div class="g-v">
+                                        <img class="app avatar margin" src="https://visage.surgeplay.com/face/64/{{ context.ticket.creator_name }}">
+                                        <a href="/player/{{ context.ticket.creator_name }}">{{ context.ticket.creator_name }}</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Handler
+                                </td>
+                                <td class="right aligned">
+                                    {% if context.ticket.handler_name == None %}
+                                        None
+                                    {% else %}
+                                        <div class="g-v">
+                                            <img class="app avatar margin" src="https://visage.surgeplay.com/face/64/{{ context.ticket.handler_name }}">
+                                            <a href="/player/{{ context.ticket.handler_name }}">{{ context.ticket.handler_name }}</a>
+                                        </div>
+                                    {% endif %}
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Status
+                                </td>
+                                <td class="right aligned">
+                                    {% if context.ticket.status == 'a' or context.ticket.status == 'b' %}
+                                        <span class="btn themed-green-btn">{{ context.ticket.status_pretty }}</span>
+                                    {% elif context.ticket.status == 'c' %}
+                                        <div class="btn themed-red-btn">{{ context.ticket.status_pretty }}</div>
+                                    {% elif context.ticket.status == 'd' %}
+                                        <div class="btn themed-blue-btn">{{ context.ticket.status_pretty }}</div>
+                                    {% elif context.ticket.status == 'e' %}
+                                        <div class="btn themed-yellow-btn">{{ context.ticket.status_pretty }}</div>
+                                    {% else %}
+                                        {{ context.ticket.status_pretty }}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript" src="{% static "js/support/tickets.js" %}"></script>
+    <script type="text/javascript">
+        setPageAttribute('ticket_id', '{{ context.ticket.id }}');
+        setupTicketReply();
+        setupTicketViewOptions();
+    </script>
+{% endblock body_bottom %}

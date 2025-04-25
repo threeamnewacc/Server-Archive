@@ -1,0 +1,411 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block title %}
+    {{ context.profile.name }}'s Profile
+{% endblock title %}
+
+{% block page_content %}
+    {% get_item context 'profile' as profile %}
+    {% convert_rank_data profile.rank as rank %}
+    <div class="container" id="profile">
+        {% if profile.punishments.is_banned %}
+            <div class="row g-row listed">
+                <div class="col-md-12">
+                    <div class="alert alert-danger">
+                        <p><i class="fa fa-exclamation-triangle"></i> Uh-oh! This player is currently banned for '<strong>{{ profile.punishments.ban_reason }}</strong>'.</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        <div class="row equal no-gutters">
+            <div class="col-md-3" align="center">
+                <div id="sidebar">
+                    <div class="info">
+                        <div class="avatar">
+                            <div class="rounded-circle">
+                                <img class="image-drop-shadow" src="{% get_bust_link profile.uuid 512 %}">
+                            </div>
+                        </div>
+                        <h2>
+                            {% if profile.uuid == 'bcedcb9f-e6fc-42da-bd98-6e7e2d209c24' %}
+                                <i class="fa fa-money"></i>
+                            {% elif profile.rank == 'OWNER' %}
+                                <i class="fa fa-bolt"></i>
+                            {% elif profile.rank == 'DEVELOPER' %}
+                                <i class="fa fa-code"></i>
+                            {% elif profile.rank == 'E_GIRL' %}
+                                <i class="fa fa-heart"></i>
+                            {% elif profile.uuid == '1db5807b-5ae6-4942-a36e-34650fb46c8c' or profile.uuid == '02a2fbd6-f664-46c1-81a0-23e7a8f8f908' or profile.uuid == '401202a3-0102-4ed8-979a-e5d4832c8a9b' or profile.uuid == '65e467ff-5dab-450b-bfc3-288697948374' %}
+                                <i class="fa fa-wheelchair"></i>
+                            {% elif profile.uuid == 'bb7139d2-0606-45ab-b6ee-c57deae6e2a2' %}
+                                <i class="fa fa-hand-rock-o"></i>
+                            {% elif profile.uuid == 'ae2ee248-3ba4-4159-a94c-15004477ae54' or profile.uuid == 'c97e8535-f826-4443-8a39-beb7728c270d' or profile.uuid == 'dcdb1c5f-7f4a-4f54-b682-47febdf06675' %}
+                                <i class="fa fa-heart"></i>
+                            {% endif %}
+                            {{ profile.name }}
+                        </h2>
+                        <div class="rank-tag {{ rank.css_class }}">{{ rank.name }}</div>
+                    </div>
+                    <div class="sb-section status">
+                        {% if context.profile.status.online %}
+                            <p>Online playing {{ context.profile.status.server }}</p>
+                        {% else %}
+                            <p>Last seen {% timeago_helper profile.lastLogin True %} playing {{ profile.lastServer }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="sb-section">
+                        <div class="stat">
+                            <div class="stat-header">
+                                First Join
+                            </div>
+                            <div class="stat-value">
+                                {% format_timestamp profile.firstLogin '%B %d, %Y' True %}
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-header">
+                                Forums
+                            </div>
+                            <div class="stat-value">
+                                Threads: {{ context.forums.threads }}
+                            </div>
+                            <div class="stat-value">
+                                Replies: {{ context.forums.replies }}
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav flex-column menu" id="profileTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">
+                                <i class="fa fa-fw fa-user"></i> General
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="punishments-tab" data-toggle="tab" href="#punishments" role="tab" aria-controls="punishments" aria-selected="false">
+                                <i class="fa fa-fw fa-gavel"></i> Punishments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="forum-activity-tab" data-toggle="tab" href="#forum-activity" role="tab" aria-controls="forum-activity" aria-selected="false">
+                                <i class="fa fa-fw fa-bullhorn"></i> Forum Activity
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">
+                                <i class="fa fa-fw fa-comments"></i> Comments
+                            </a>
+                        </li>
+                        {% if user.is_staff %}
+                            <li class="nav-item">
+                                <a class="nav-link" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">
+                                    <i class="fa fa-fw fa-bolt"></i> Staff Information
+                                </a>
+                            </li>
+                            {% if user.can_view_logs %}
+                                <li class="nav-item">
+                                    <a class="nav-link" id="lmlogs-tab" data-toggle="tab" href="#lmlogs" role="tab" aria-controls="lmlogs" aria-selected="false">
+                                        <i class="fa fa-fw fa-flag-checkered"></i> Lord_MeMe Logs
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                        {% if profile.youtube_link != None %}
+                            <li class="nav-item youtube-btn">
+                                <a class="nav-link" href="{{ profile.youtube_link }}">
+                                    <i class="fa fa-fw fa-youtube"></i> YouTube
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if profile.twitter_link != None %}
+                            <li class="nav-item twitter-btn">
+                                <a class="nav-link" href="{{ profile.twitter_link }}">
+                                    <i class="fa fa-fw fa-twitter"></i> Twitter
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="content">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                            <div class="tab-content" id="practiceTabContent">
+                                <div class="row g-row listed first">
+                                    <div class="col-md-4 mobile-margin">
+                                        {% assign_var profile.converted.practice.events.sumo as event_data %}
+                                        {% include "base/player/partial/event.html" %}
+                                    </div>
+                                    <div class="col-md-4">
+                                        {% assign_var profile.converted.practice.events.parkour as event_data %}
+                                        {% include "base/player/partial/event.html" %}
+                                    </div>
+                                    <div class="col-md-4">
+                                        {% assign_var profile.converted.practice.events.oitc as event_data %}
+                                        {% include "base/player/partial/event.html" %}
+                                    </div>
+                                </div>
+                                <div class="row g-row listed">
+                                    <div class="col-md-6">
+                                        <div class="table-wrapper ladders-table">
+                                            <div class="table-header">
+                                                Ladders
+                                            </div>
+                                            <div class="table-content no-padding">
+                                                <table class="table table-sm table-borderless">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Ladder</th>
+                                                        <th>ELO</th>
+                                                        <th>Wins</th>
+                                                        <th>Losses</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% assign_var profile.converted.practice.ladders.nodebuff as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.debuff as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.builduhc as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.sumo as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.classic as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.axe as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.vanilla as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.soup as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.gapple as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.spleef as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.combo as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    {% assign_var profile.converted.practice.ladders.archer as ladder_data %}
+                                                    {% include "base/player/partial/ladder.html" %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="table-wrapper recent-matches">
+                                            <div class="table-header">
+                                                Recent Matches
+                                            </div>
+                                            {% get_size_of profile.games.practice.matches as matches_size %}
+                                            <div class="table-content {% if matches_size > 0 %}no-padding{% endif %}">
+                                                {% if matches_size == 0 %}
+                                                    <p>This player hasn't played any matches.</p>
+                                                {% else %}
+                                                    {% for match in profile.games.practice.matches %}
+                                                        {% get_name_from_uuid match.winner_uuid as winner_name %}
+                                                        {% get_name_from_uuid match.loser_uuid as loser_name %}
+
+                                                        <div class="match-entry">
+                                                            <div class="match-header">
+                                                                <div class="g-v">
+                                                                    {% if profile.uuid == match.winner_uuid %}
+                                                                        <img class="winner" src="https://crafatar.com/renders/head/{{ match.winner_uuid }}">
+                                                                        <a class="winner" href="/player/{{ winner_name }}/">{{ winner_name }}</a>&nbsp;({{ match.winner_elo_change }})
+                                                                        won against&nbsp;
+                                                                        <a class="loser" href="/player/{{ loser_name }}/">{{ loser_name }}</a>&nbsp;({{ match.loser_elo_change }})
+                                                                        <img class="loser" src="https://crafatar.com/renders/head/{{ match.loser_uuid }}">
+                                                                    {% else %}
+                                                                        <img class="loser" src="https://crafatar.com/renders/head/{{ match.loser_uuid }}">
+                                                                        <a class="loser" href="/player/{{ loser_name }}/">{{ loser_name }}</a>&nbsp;({{ match.loser_elo_change }})
+                                                                        lost to&nbsp;
+                                                                        <a class="winner" href="/player/{{ winner_name }}/">{{ winner_name }}</a>&nbsp;({{ match.winner_elo_change }})
+                                                                        <img class="winner" src="https://crafatar.com/renders/head/{{ match.winner_uuid }}">
+                                                                    {% endif %}
+                                                                </div>
+                                                                <br/>
+                                                                <small>{% format_timestamp match.timestamp '%B %d %Y - %I:%M %p' True %}</small>
+                                                            </div>
+                                                        </div>
+                                                    {% endfor %}
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="punishments" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="profile-content">
+                                <div class="table-wrapper">
+                                    <div class="table-header">
+                                        Bans
+                                    </div>
+                                    <div class="table-content no-padding">
+                                        <table class="table punishments">
+                                            <thead>
+                                            <tr>
+                                                <th>
+                                                    Punisher
+                                                </th>
+                                                <th>
+                                                    Reason
+                                                </th>
+                                                <th>
+                                                    Occurred
+                                                </th>
+                                                <th>
+                                                    Expiration
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% if profile.punishments.bans_size > 0 %}
+                                                {% for ban in profile.punishments.bans %}
+                                                    {% has_expired ban.added_at ban.duration as has_expired %}
+                                                    <tr{% if has_expired %} class="table-warning"{% elif ban.removed_reason == None %} class="table-danger"{% else %} class="table-success"{% endif %}>
+                                                        {% if ban.added_by == None %}
+                                                            <td>
+                                                                <div class="g-v">
+                                                                    <img class="image-drop-shadow app avatar small margin" src="{% get_head_link 'f78a4d8d-d51b-4b39-98a3-230f2de0c670' 64 %}">
+                                                                    <a href="#">Console</a>
+                                                                </div>
+                                                            </td>
+                                                        {% else %}
+                                                            {% get_name_from_uuid ban.added_by as punisher_name %}
+                                                            <td>
+                                                                <div class="g-v">
+                                                                    <img class="image-drop-shadow app avatar small margin" src="{% get_head_link ban.added_by 64 %}">
+                                                                    <a href="/player/{{ punisher_name }}">{{ punisher_name }}</a>
+                                                                </div>
+                                                            </td>
+                                                        {% endif %}
+                                                        <td>
+                                                            {{ ban.reason }}
+                                                        </td>
+                                                        <td>
+                                                            <time class="timeago" datetime="{% get_iso8601_from_epoch ban.added_at %}"></time>
+                                                        </td>
+                                                        <td>
+                                                            {% if ban.type == 'TEMPBAN' %}
+                                                                <time class="timeago" datetime="{% get_iso8601_from_epoch ban.added_at ban.duration %}"></time>
+                                                            {% else %}
+                                                                Never
+                                                            {% endif %}
+                                                        </td>
+                                                    </tr>
+                                                {% endfor %}
+                                            {% else %}
+                                                <tr>
+                                                    <td colspan="4">There is no data to display.</td>
+                                                </tr>
+                                            {% endif %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="table-wrapper">
+                                    <div class="table-header">
+                                        Mutes
+                                    </div>
+                                    <div class="table-content no-padding">
+                                        <table class="table punishments">
+                                            <thead>
+                                            <tr>
+                                                <th>
+                                                    Punisher
+                                                </th>
+                                                <th>
+                                                    Reason
+                                                </th>
+                                                <th>
+                                                    Occurred
+                                                </th>
+                                                <th>
+                                                    Expiration
+                                                </th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% if profile.punishments.mutes_size > 0 %}
+                                                {% for mute in profile.punishments.mutes %}
+                                                    {% has_expired mute.added_at mute.duration as has_expired %}
+                                                    <tr{% if has_expired %} class="table-warning"{% elif mute.removed_reason == None %} class="table-danger"{% else %} class="table-success"{% endif %}>
+                                                        {% if mute.added_by == None %}
+                                                            <td>
+                                                                <div class="g-v">
+                                                                    <img class="image-drop-shadow app avatar small margin" src="{% get_head_link 'f78a4d8d-d51b-4b39-98a3-230f2de0c670' 64 %}">
+                                                                    <a href="#">Console</a>
+                                                                </div>
+                                                            </td>
+                                                        {% else %}
+                                                            {% get_name_from_uuid mute.added_by as punisher_name %}
+                                                            <td>
+                                                                <div class="g-v">
+                                                                    <img class="image-drop-shadow app avatar small margin" src="{% get_head_link mute.added_by 64 %}">
+                                                                    <a href="/player/{{ punisher_name }}">{{ punisher_name }}</a>
+                                                                </div>
+                                                            </td>
+                                                        {% endif %}
+                                                        <td>
+                                                            {{ mute.reason }}
+                                                        </td>
+                                                        <td>
+                                                            <time class="timeago" datetime="{% get_iso8601_from_epoch mute.added_at %}"></time>
+                                                        </td>
+                                                        <td>
+                                                            <time class="timeago" datetime="{% get_iso8601_from_epoch mute.added_at mute.duration %}"></time>
+                                                        </td>
+                                                    </tr>
+                                                {% endfor %}
+                                            {% else %}
+                                                <tr>
+                                                    <td colspan="4">There is no data to display.</td>
+                                                </tr>
+                                            {% endif %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="forum-activity" role="tabpanel" aria-labelledby="forum-activity-tab">
+                            <div class="profile-content">
+                                {% if context.forums.recent_posts_size > 0 %}
+                                    <div class="list-group">
+                                        {% for post in context.forums.recent_posts %}
+                                            {% include "base/player/partial/post_item.html" %}
+                                        {% endfor %}
+                                    </div>
+                                {% else %}
+                                    <p>This user does not have any recent forum activity.</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% if user.is_staff %}
+                            <div class="tab-pane fade" id="staff" role="tabpanel" aria-labelledby="staff-tab">
+                                <div class="profile-content first" id="staff-content"></div>
+                            </div>
+                            {% if user.can_view_logs %}
+                                <div class="tab-pane fade" id="lmlogs" role="tabpanel" aria-labelledby="lmlogs-tab">
+                                    <div class="profile-content first" id="lmlogs-content"></div>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript">
+        setPageAttribute('player_uuid', '{{ context.profile.uuid }}');
+    </script>
+
+    <script type="text/javascript" src="{% static "js/restricted.js" %}"></script>
+{% endblock body_bottom %}

@@ -1,0 +1,93 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block title %}
+    Support Tickets
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container" id="tickets">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        My Tickets
+                    </div>
+                    <div class="table-content">
+                        <a class="btn themed-red-btn" href="/support/tickets/new/">New Ticket</a>
+                    </div>
+                    {% if context.tickets_size > 0 %}
+                        <div class="table-content no-padding">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="fit"></th>
+                                    <th>
+                                        Subject
+                                    </th>
+                                    <th class="fit">
+                                        Handler
+                                    </th>
+                                    <th class="fit">
+                                        Status
+                                    </th>
+                                    <th class="fit">
+                                        Last Update
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for ticket in context.tickets %}
+                                    <tr>
+                                        <td class="fit">
+                                            <a class="btn btn-dark" href="/support/tickets/v/{{ ticket.id }}/">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="/support/tickets/v/{{ ticket.id }}/">{% shorten_string ticket.title 40 %}</a>
+                                        </td>
+                                        <td class="fit">
+                                            {% if ticket.handler_name == None %}
+                                                None
+                                            {% else %}
+                                                <div class="app vertical">
+                                                    <img class="app avatar small margin" src="https://visage.surgeplay.com/face/32/{{ ticket.handler_name }}">
+                                                    <a href="/player/{{ ticket.handler_name }}/">{{ ticket.handler_name }}</a>
+                                                </div>
+                                            {% endif %}
+                                        </td>
+                                        <td class="fit">
+                                            {% if ticket.status == 'a' or ticket.status == 'b' %}
+                                                <span class="btn themed-green-btn">{{ ticket.status_pretty }}</span>
+                                            {% elif ticket.status == 'c' %}
+                                                <div class="btn themed-red-btn">{{ ticket.status_pretty }}</div>
+                                            {% elif ticket.status == 'd' %}
+                                                <div class="btn themed-blue-btn">{{ ticket.status_pretty }}</div>
+                                            {% elif ticket.status == 'e' %}
+                                                <div class="btn themed-yellow-btn">{{ ticket.status_pretty }}</div>
+                                            {% else %}
+                                                {{ ticket.status_pretty }}
+                                            {% endif %}
+                                        </td>
+                                        <td class="fit">
+                                            {% format_timestamp ticket.publish_date '%B %d %Y - %I:%M %p' False %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="table-content">
+                            <p>You do not have any tickets.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}

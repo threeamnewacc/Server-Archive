@@ -1,0 +1,19 @@
+{% load general_tags %}
+
+<tr>
+    <td>
+        <div class="g-vc">
+            <img class="image-drop-shadow" src="{% get_icon_path ladder_data.name %}">
+            {% format_display_name ladder_data.name %}
+        </div>
+    </td>
+    <td>
+        {{ ladder_data.elo }}
+    </td>
+    <td>
+        {{ ladder_data.wins }}
+    </td>
+    <td>
+        {{ ladder_data.losses }}
+    </td>
+</tr>

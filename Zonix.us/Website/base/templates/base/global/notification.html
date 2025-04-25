@@ -1,0 +1,50 @@
+{% load general_tags %}
+{% load time_tags %}
+
+{% if notification.type == 'FORUMS_REPLY_TO_THREAD' %}
+    {% get_name_from_uuid notification.data.reply_creator as reply_creator %}
+    <section>
+        <a href="/player/{{ reply_creator }}/">{{ reply_creator }}</a> replied to your thread:
+    </section>
+    <section>
+        <a href="/forums/t/v/{{ notification.data.thread_id }}/">{% shorten_string notification.data.thread_title 36 %}</a>
+    </section>
+{% elif notification.type == 'TICKETS_REPLY_TO_TICKET' %}
+    {% get_name_from_uuid notification.data.reply_creator as reply_creator %}
+    <section>
+        <a href="/player/{{ reply_creator }}/">{{ reply_creator }}</a> replied to your ticket:
+    </section>
+    <section>
+        <a href="/support/tickets/v/{{ notification.data.ticket_id }}/">{% shorten_string notification.data.ticket_title 36 %}</a>
+    </section>
+{% elif notification.type == 'TICKETS_STATUS_CHANGED' %}
+    <section>
+        A staff member has updated the status of your ticket:
+    </section>
+    <section>
+        <a href="/support/tickets/v/{{ notification.data.ticket_id }}/">{% shorten_string notification.data.ticket_title 36 %}</a>
+    </section>
+{% elif notification.type == 'TICKETS_REASSIGNED' %}
+    <section>
+        Your ticket has been re-assigned:
+    </section>
+    <section>
+        <a href="/support/tickets/v/{{ notification.data.ticket_id }}/">{% shorten_string notification.data.ticket_title 36 %}</a>
+    </section>
+{% elif notification.type == 'TICKETS_ASSIGNED' %}
+    <section>
+        You have been assigned a new ticket:
+    </section>
+    <section>
+        <a href="/support/tickets/v/{{ notification.data.ticket.id }}/">{% shorten_string notification.data.ticket.title 36 %}</a>
+    </section>
+{% elif notification.type == 'APPLICATIONS_STATUS_CHANGED' %}
+    <section>
+        A staff member has updated the status of your application:
+    </section>
+    <section>
+        <a href="/applications/v/{{ notification.data.application_id }}/">Application #{{ notification.data.application_id }}</a>
+    </section>
+{% endif %}
+
+{% timeago_helper notification.timestamp %}

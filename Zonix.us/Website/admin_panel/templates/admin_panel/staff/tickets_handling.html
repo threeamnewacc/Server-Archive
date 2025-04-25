@@ -1,0 +1,77 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+{% load general_tags %}
+{% load time_tags %}
+
+{% block title %}
+    Assigned Tickets
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="table-wrapper ticket-list">
+                    <div class="table-header">
+                        Assigned Tickets
+                    </div>
+                    <div class="table-content no-padding">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="fit"></th>
+                                <th>
+                                    Subject
+                                </th>
+                                <th class="fit">
+                                    Status
+                                </th>
+                                <th class="fit">
+                                    Last Update
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if context.assigned_size > 0 %}
+                                {% for ticket in context.assigned %}
+                                    <tr>
+                                        <td class="fit">
+                                            <a class="btn btn-dark" href="/support/tickets/v/{{ ticket.id }}/">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="/support/tickets/v/{{ ticket.id }}/">{% shorten_string ticket.title 40 %}</a>
+                                        </td>
+                                        <td class="fit">
+                                            {% if ticket.status == 'a' or ticket.status == 'b' %}
+                                                <span class="btn btn-success">{{ ticket.status_pretty }}</span>
+                                            {% elif ticket.status == 'c' %}
+                                                <div class="btn btn-danger">{{ ticket.status_pretty }}</div>
+                                            {% elif ticket.status == 'd' %}
+                                                <div class="btn btn-info">{{ ticket.status_pretty }}</div>
+                                            {% elif ticket.status == 'e' %}
+                                                <div class="btn btn-warning">{{ ticket.status_pretty }}</div>
+                                            {% else %}
+                                                {{ ticket.status_pretty }}
+                                            {% endif %}
+                                        </td>
+                                        <td class="fit">
+                                            {% format_timestamp ticket.publish_date '%B %d %Y - %I:%M %p' False %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr>
+                                    <td colspan="5">You do not have any tickets to handle.</td>
+                                </tr>
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}

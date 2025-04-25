@@ -1,0 +1,16 @@
+{% load time_tags %}
+
+<div class="content" id="reply-{{ reply.id }}">
+    <div class="content-header">
+        <div>
+            <a class="g-v" href="/player/{{ reply.creator_name }}/">
+                <img class="app avatar margin" src="https://visage.surgeplay.com/face/64/{{ reply.creator_name }}">
+                {{ reply.creator_name }}
+            </a>
+            <span class="d-inline pull-right">{% format_timestamp reply.publish_date '%B %d %Y - %I:%M %p' False %}</span>
+        </div>
+    </div>
+    <div class="content-body">
+        {{ reply.content.rendered }}
+    </div>
+</div>

@@ -1,0 +1,51 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block title %}
+    Create Ticket
+{% endblock title %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="row g-row listed">
+            <div class="col-md-12">
+                <div class="table-wrapper">
+                    <div class="table-header">
+                        Create Ticket
+                    </div>
+                    <div class="table-content">
+                        <p>By creating a support ticket, you agree to provide accurate information about your situation, and that failing to do so may result in revoked access to our website and or game. Please allow up to 48 hours for your ticket to be processed by a member of our staff team.</p>
+                        <div class="alert" id="new-ticket-response"></div>
+                        <form class="form" id="new-ticket-form">
+                            <div class="row g-row listed">
+                                <div class="col-md-8">
+                                    <input class="form-control" type="text" name="ticket_subject" placeholder="Subject">
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-control" name="ticket_type">
+                                        <option value="a">Punishment Appeal</option>
+                                        <option value="b">Report Player</option>
+                                        <option value="c">Store Issues / Questions</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row g-row listed">
+                                <div class="col">
+                                    <textarea class="form-control" rows="16" name="ticket_content" placeholder="Tell us about your situation..."></textarea>
+                                </div>
+                            </div>
+                            <button class="btn themed-red-btn">Submit Ticket</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock page_content %}
+
+{% block body_bottom %}
+    <script type="text/javascript" src="{% static "js/support/tickets.js" %}"></script>
+    <script type="text/javascript">
+        setupTicketNew();
+    </script>
+{% endblock body_bottom %}
