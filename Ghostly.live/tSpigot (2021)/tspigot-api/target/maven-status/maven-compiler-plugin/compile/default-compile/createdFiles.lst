@@ -1,0 +1,4 @@
+me\enzol\spigot\handler\MovementHandler.class
+me\enzol\spigot\handler\PacketHandler.class
+me\enzol\spigot\knockback\KnockbackModule.class
+me\enzol\spigot\TrainingSpigot.class

@@ -1,0 +1,21 @@
+package org.bukkit.command.defaults;
+
+import org.bukkit.command.CommandSender;
+
+@Deprecated
+public class MeCommand extends VanillaCommand {
+    public MeCommand() {
+        super("me");
+        
+        this.description = "Performs the specified action in chat";
+        this.usageMessage = "/me <action>";
+        
+        this.setPermission("bukkit.command.me");
+    }
+
+    @Override
+    public boolean execute(CommandSender sender, String currentAlias, String[] args) {
+        sender.sendMessage("&cThis command has been removed security methods.");
+        return true;
+    }
+}
