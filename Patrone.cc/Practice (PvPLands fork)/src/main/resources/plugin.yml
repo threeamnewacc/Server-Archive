@@ -1,0 +1,5 @@
+name: pPractice
+version: ${version}
+authors: [Paroxial, sethsource]
+main: cc.patrone.practice.PracticePlugin
+depend: [pCore]

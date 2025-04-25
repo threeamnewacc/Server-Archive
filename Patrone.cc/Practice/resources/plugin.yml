@@ -1,0 +1,5 @@
+name: Practice
+author: abhi
+version: 1.0
+main: cc.patrone.practice.PracticePlugin
+depend: [Core]
