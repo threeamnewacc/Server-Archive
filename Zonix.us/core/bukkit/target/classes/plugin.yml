@@ -1,0 +1,4 @@
+main: us.zonix.core.CorePlugin
+name: Core
+version: 1.0
+authors: [joeleoli, emilio]

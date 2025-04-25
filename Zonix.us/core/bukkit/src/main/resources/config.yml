@@ -1,0 +1,17 @@
+server:
+  id: 'default-server'
+  type: HUB
+api:
+  url: "localhost:1982"
+  key: "ce07a742-cccc-4888-b595-a62a7dd3bb19"
+jedis:
+  host: "127.0.0.1"
+  port: 6379
+  password: "12345"
+messages:
+  player_send: "&7(To &f%TO%&7) &7%MESSAGE%"
+  player_receive: "&7(From &f%FROM%&7) &7%MESSAGE%"
+  social_spy: "&7(&f%FROM% &7-> &f%TO%&7) &7%MESSAGE%"
+email:
+  user: "admin@zonix.us"
+  password: "^EyY^f8$5$T98QM_"
