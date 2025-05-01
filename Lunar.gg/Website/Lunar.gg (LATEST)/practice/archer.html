@@ -1,0 +1,733 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<!-- Mirrored from www.lunar.gg/practice/archer by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jun 2019 23:54:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice - Lunar Network</title>
+<link rel="icon" href="https://www.lunar.gg/static/images/favicon.ico">
+<link rel="stylesheet" href="https://www.lunar.gg/static/css/bootstrap.css">
+<link rel="stylesheet" href="https://www.lunar.gg/static/css/font-awesome.css">
+<link rel="stylesheet" href="https://www.lunar.gg/static/css/autocomplete.css">
+<link rel="stylesheet" href="https://www.lunar.gg/static/css/fonts.css">
+<link rel="stylesheet" href="https://www.lunar.gg/static/css/style.css">
+<link rel="stylesheet" href="https://www.lunar.gg/static/css/schedule.css">
+<link rel="stylesheet" href="https://www.lunar.gg/static/css/flags.css">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+<div class="container">
+<div class="row">
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+<a class="navbar-brand mr-3" href="https://www.lunar.gg/">
+<img src="https://www.lunar.gg/static/images/logos/text.svg" alt="Text Logo">
+</a>
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://www.lunar.gg/forums">
+Forums
+</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">
+Stats
+</a>
+<div class="dropdown-menu">
+<ul>
+<li>
+<a class="dropdown-item" href="https://www.lunar.gg/squads">
+Squads
+</a>
+</li>
+<li>
+<a class="dropdown-item" href="https://www.lunar.gg/uhc">
+UHC
+</a>
+</li>
+<li>
+<a class="dropdown-item" href="https://www.lunar.gg/practice">
+Practice
+</a>
+</li>
+<li>
+<a class="dropdown-item" href="https://www.lunar.gg/bunkers">
+Bunkers
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.lunar.gg/staff">Staff</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.lunar.gg/tickets">Support</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.lunar.gg/client">Client</a>
+</li>
+<li class="nav-link store-link">
+<a class="nav-link" href="https://www.lunar.gg/store">Store</a>
+</li>
+</ul>
+
+<form class="form-inline" action="https://www.lunar.gg/search">
+<div class="form-group" id="search_wrapper">
+<input id="search" class="form-control" name="query" type="text" placeholder="search..." aria-label="Search">
+<button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+</button>
+</div>
+</form>
+<a class="nav-link" href="https://www.lunar.gg/login">Login</a>
+<a class="nav-link" href="https://www.lunar.gg/register">Register</a>
+</div>
+</nav>
+</div>
+</div>
+</header>
+<div class="container">
+<main class="main">
+<div class="leaderboards">
+<section id="content">
+<div class="page-current">
+<h2><i class="fa fa-trophy" aria-hidden="true"></i>Practice Leaderboards</h2>
+<div class="ml-auto">
+<div class="btn-group">
+<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+<i class="fa fa-globe" aria-hidden="true"></i>
+Worldwide
+</button>
+<div class="dropdown-menu">
+<a href="https://www.lunar.gg/practice/archer" class="dropdown-item">
+<i class="fa fa-globe" aria-hidden="true"></i>
+Worldwide
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/us/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-us" />
+United States
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/gb/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-gb" />
+United Kingdom
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/ca/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-ca" />
+Canada
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/br/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-br" />
+Brazil
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/fr/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-fr" />
+France
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/de/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-de" />
+Germany
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/nl/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-nl" />
+Netherlands
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/mx/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-mx" />
+Mexico
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/ar/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-ar" />
+Argentina
+</a>
+<a href="https://www.lunar.gg/practice/archer/1v1/it/season-current" class="dropdown-item">
+<img src="https://www.lunar.gg/static/images/blank.gif" class="flag flag-it" />
+Italy
+</a>
+</div>
+</div>
+<div class="btn-group">
+<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+Archer
+</button>
+<div class="dropdown-menu">
+<a href="https://www.lunar.gg/practice/global" class="dropdown-item">
+Global
+</a>
+<a href="https://www.lunar.gg/practice/no-debuff" class="dropdown-item">
+No Debuff
+</a>
+<a href="https://www.lunar.gg/practice/debuff" class="dropdown-item">
+Debuff
+</a>
+<a href="https://www.lunar.gg/practice/builduhc" class="dropdown-item">
+BuildUHC
+</a>
+<a href="https://www.lunar.gg/practice/archer" class="dropdown-item">
+Archer
+</a>
+<a href="https://www.lunar.gg/practice/gapple" class="dropdown-item">
+Gapple
+</a>
+<a href="https://www.lunar.gg/practice/soup" class="dropdown-item">
+Soup
+</a>
+<a href="https://www.lunar.gg/practice/sumo" class="dropdown-item">
+Sumo
+</a>
+<a href="https://www.lunar.gg/practice/vanilla" class="dropdown-item">
+Vanilla
+</a>
+</div>
+</div>
+<div class="btn-group">
+<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+Season 1
+</button>
+<div class="dropdown-menu">
+<a href="https://www.lunar.gg/practice/archer" class="dropdown-item">
+Season 1
+</a>
+</div>
+</div>
+<div class="btn-group">
+<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+1v1
+</button>
+<div class="dropdown-menu">
+<a href="https://www.lunar.gg/practice/archer" class="dropdown-item">
+1v1
+</a>
+<a href="https://www.lunar.gg/practice/archer/2v2" class="dropdown-item">
+2v2
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="table-holder">
+<table class="table table-responsive table-striped">
+<thead>
+<tr>
+<th><span class="bg-box"></span></th>
+<th>
+Player
+</th>
+<th class="text-right">Elo</th>
+<th class="text-right">Wins</th>
+<th class="text-right">Losses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="rank">
+1
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/peppermint/practice">
+<img src="https://crafatar.com/avatars/f117c0a2-efe2-4c90-9940-b4ee71e28a18?size=16&amp;overlay" alt="peppermint" height="16" width="16" class="avatar-face"><span>peppermint</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1587
+</td>
+<td class="text-right">
+92
+</td>
+<td class="text-right">
+13
+</td>
+</tr>
+<tr>
+<td class="rank">
+2
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/Mrs/practice">
+<img src="https://crafatar.com/avatars/0927f35f-bf24-489b-b9ef-b0c91ece4969?size=16&amp;overlay" alt="Mrs" height="16" width="16" class="avatar-face"><span>Mrs</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1510
+</td>
+<td class="text-right">
+243
+</td>
+<td class="text-right">
+44
+</td>
+</tr>
+<tr>
+<td class="rank">
+3
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/fucr/practice">
+<img src="https://crafatar.com/avatars/797b3ace-44d6-4661-94b9-80c4a9d95de5?size=16&amp;overlay" alt="fucr" height="16" width="16" class="avatar-face"><span>fucr</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1464
+</td>
+<td class="text-right">
+72
+</td>
+<td class="text-right">
+9
+</td>
+</tr>
+<tr>
+<td class="rank">
+4
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/xShatter/practice">
+<img src="https://crafatar.com/avatars/ba8ca44d-9ac0-4480-8f6a-e745769b8ec5?size=16&amp;overlay" alt="xShatter" height="16" width="16" class="avatar-face"><span>xShatter</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1421
+</td>
+<td class="text-right">
+76
+</td>
+<td class="text-right">
+11
+</td>
+</tr>
+<tr>
+<td class="rank">
+5
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/oMqtt/practice">
+<img src="https://crafatar.com/avatars/b7ac9214-4fe6-4f43-a439-4d2c8161c667?size=16&amp;overlay" alt="oMqtt" height="16" width="16" class="avatar-face"><span>oMqtt</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1403
+</td>
+<td class="text-right">
+161
+</td>
+<td class="text-right">
+50
+</td>
+</tr>
+<tr>
+<td class="rank">
+6
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/Carrying/practice">
+<img src="https://crafatar.com/avatars/863d3d2e-3e39-4435-a0ba-237c3857bfe7?size=16&amp;overlay" alt="Carrying" height="16" width="16" class="avatar-face"><span>Carrying</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1390
+</td>
+<td class="text-right">
+48
+</td>
+<td class="text-right">
+8
+</td>
+</tr>
+<tr>
+<td class="rank">
+7
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/FleXo0/practice">
+<img src="https://crafatar.com/avatars/a8f19729-8531-43de-8cd7-29d08185ad77?size=16&amp;overlay" alt="FleXo0" height="16" width="16" class="avatar-face"><span>FleXo0</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1377
+</td>
+<td class="text-right">
+244
+</td>
+<td class="text-right">
+46
+</td>
+</tr>
+<tr>
+<td class="rank">
+8
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/Miss/practice">
+<img src="https://crafatar.com/avatars/da50085c-d7e1-4889-8d29-b71ddffedac8?size=16&amp;overlay" alt="Miss" height="16" width="16" class="avatar-face"><span>Miss</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1340
+</td>
+<td class="text-right">
+51
+</td>
+<td class="text-right">
+3
+</td>
+</tr>
+<tr>
+<td class="rank">
+9
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/TheElementalBros/practice">
+<img src="https://crafatar.com/avatars/c5d7e7a3-ce11-483c-a9b2-40b915c136f6?size=16&amp;overlay" alt="TheElementalBros" height="16" width="16" class="avatar-face"><span>TheElementalBros</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1332
+</td>
+<td class="text-right">
+49
+</td>
+<td class="text-right">
+17
+</td>
+</tr>
+<tr>
+<td class="rank">
+10
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/Fypsilcn/practice">
+<img src="https://crafatar.com/avatars/7331dcae-7ca7-4836-b1e8-8662512195ee?size=16&amp;overlay" alt="Fypsilcn" height="16" width="16" class="avatar-face"><span>Fypsilcn</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1330
+</td>
+<td class="text-right">
+54
+</td>
+<td class="text-right">
+3
+</td>
+</tr>
+<tr>
+<td class="rank">
+11
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/INMORTALBRAVO/practice">
+<img src="https://crafatar.com/avatars/070362c6-e23c-428e-aa14-5917049346a8?size=16&amp;overlay" alt="INMORTALBRAVO" height="16" width="16" class="avatar-face"><span>INMORTALBRAVO</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1301
+</td>
+<td class="text-right">
+171
+</td>
+<td class="text-right">
+73
+</td>
+</tr>
+<tr>
+<td class="rank">
+12
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/Dragonate/practice">
+<img src="https://crafatar.com/avatars/2d72a34c-1cf8-402e-a932-aee1c6d372b4?size=16&amp;overlay" alt="Dragonate" height="16" width="16" class="avatar-face"><span>Dragonate</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1291
+</td>
+<td class="text-right">
+128
+</td>
+<td class="text-right">
+67
+</td>
+</tr>
+<tr>
+ <td class="rank">
+13
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/ibbeh/practice">
+<img src="https://crafatar.com/avatars/07f8d2fe-171e-4c25-90f4-abf78622cb1f?size=16&amp;overlay" alt="ibbeh" height="16" width="16" class="avatar-face"><span>ibbeh</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1268
+</td>
+<td class="text-right">
+36
+</td>
+<td class="text-right">
+13
+</td>
+</tr>
+<tr>
+<td class="rank">
+14
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/aghhhmyballshurt/practice">
+<img src="https://crafatar.com/avatars/e7e593d5-ca7e-4d0a-937a-32f2db940c17?size=16&amp;overlay" alt="aghhhmyballshurt" height="16" width="16" class="avatar-face"><span>aghhhmyballshurt</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1267
+</td>
+<td class="text-right">
+39
+</td>
+<td class="text-right">
+14
+</td>
+</tr>
+<tr>
+<td class="rank">
+15
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/checog/practice">
+<img src="https://crafatar.com/avatars/c1c1815e-09c0-492d-a298-76b67192e6de?size=16&amp;overlay" alt="checog" height="16" width="16" class="avatar-face"><span>checog</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1243
+</td>
+<td class="text-right">
+40
+</td>
+<td class="text-right">
+9
+</td>
+</tr>
+<tr>
+<td class="rank">
+16
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/RipSkyClash/practice">
+<img src="https://crafatar.com/avatars/f14aa8f3-6cb2-4207-a9c6-80a22549f9e6?size=16&amp;overlay" alt="RipSkyClash" height="16" width="16" class="avatar-face"><span>RipSkyClash</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1231
+</td>
+<td class="text-right">
+21
+</td>
+<td class="text-right">
+1
+</td>
+</tr>
+<tr>
+<td class="rank">
+17
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/King_Wyatt/practice">
+<img src="https://crafatar.com/avatars/b4ab542f-52c4-4382-bf55-4786c2a48dae?size=16&amp;overlay" alt="King_Wyatt" height="16" width="16" class="avatar-face"><span>King_Wyatt</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1225
+</td>
+<td class="text-right">
+52
+</td>
+<td class="text-right">
+36
+</td>
+</tr>
+<tr>
+<td class="rank">
+18
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/xSah/practice">
+<img src="https://crafatar.com/avatars/ec003f7a-9118-4cd0-a996-8436a59cf90d?size=16&amp;overlay" alt="xSah" height="16" width="16" class="avatar-face"><span>xSah</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1222
+</td>
+<td class="text-right">
+30
+</td>
+<td class="text-right">
+14
+</td>
+</tr>
+<tr>
+<td class="rank">
+19
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/gunkthemunk/practice">
+<img src="https://crafatar.com/avatars/46389e2c-6aac-441c-9a3e-bbb4c3e2aa09?size=16&amp;overlay" alt="gunkthemunk" height="16" width="16" class="avatar-face"><span>gunkthemunk</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1215
+</td>
+<td class="text-right">
+53
+</td>
+<td class="text-right">
+42
+</td>
+</tr>
+<tr>
+<td class="rank">
+20
+</td>
+<td class="username">
+<div class="avatar">
+<a href="https://www.lunar.gg/u/Exhalant/practice">
+<img src="https://crafatar.com/avatars/0d876689-1b76-474f-a134-9a3c15babf24?size=16&amp;overlay" alt="Exhalant" height="16" width="16" class="avatar-face"><span>Exhalant</span>
+</a>
+</div>
+</td>
+<td class="text-right">
+1206
+</td>
+<td class="text-right">
+48
+</td>
+<td class="text-right">
+20
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="paging"><li class="arrow disabled"><a><i class="fa fa-chevron-left"></i></a></li><li class="active"><a><strong>1</strong></a></li><li><a href="https://www.lunar.gg/practice/archer?page=2">2</a></li><li><a href="https://www.lunar.gg/practice/archer?page=3">3</a></li><li class="disabled"><span>...</span></li><li><a href="https://www.lunar.gg/practice/archer?page=163">163</a></li><li class="arrow"><a href="https://www.lunar.gg/practice/archer?page=2"><i class="fa fa-chevron-right"></i></a></li></ul>
+</section>
+</div>
+</main>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="shiny-border footer-banner">
+<a href="https://www.lunar.gg/client">
+<div class="banner-info">
+<div class="banner-logo">
+<img src="https://www.lunar.gg/static/images/logos/client.png" width="64" height="58" alt="Lunar Client Logo">
+</div>
+<div class="banner-txt">
+<h2>Lunar Client</h2>
+<p>Modpack and client-side anticheat for Minecraft </p>
+</div>
+</div>
+<div class="btn-holder">
+<button class="btn btn-white">
+<i class="fa fa-download"></i>
+<span>Download</span>
+</button>
+</div>
+</a>
+</div>
+<div class="row">
+<div class="col-md-6">
+
+<ul class="social">
+<li><a href="https://twitter.com/lunarnetworkmc"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="https://www.lunar.gg/discord"><img src="https://www.lunar.gg/static/images/discord.svg" alt="discord"></a>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<div class="footer-right">
+<div class="copyright">
+<a href="https://www.moonsworth.com/">
+Copyright &copy; 2019 Moonsworth
+</a>
+</div>
+<nav class="footer-nav">
+<ul>
+<li><a href="https://www.lunar.gg/terms">Terms & Conditions</a></li>
+<li><a href="https://www.lunar.gg/privacy">Privacy Policy</a></li>
+<li><a href="https://www.lunar.gg/rules">Rules</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div id="modal-content" class="modal-content">
+</div>
+</div>
+</div>
+<script src="https://www.lunar.gg/static/js/popper.js"></script>
+<script src="https://www.lunar.gg/static/js/jquery-3.2.1.min.js"></script>
+<script src="https://www.lunar.gg/static/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.lunar.gg/static/js/jquery.main.js"></script>
+<script src="https://www.lunar.gg/static/js/jquery.autocomplete.js"></script>
+<script src="https://www.lunar.gg/static/js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134796025-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134796025-1');
+</script>
+</body>
+
+<!-- Mirrored from www.lunar.gg/practice/archer by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jun 2019 23:54:19 GMT -->
+</html>
