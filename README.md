@@ -1,4 +1,4 @@
-# This repository contains archives of minecraft servers (Especially 1.7.10-1.8.9 Servers).
+# A minecraft server Archive. (Especially 1.7.10-1.8.9 Servers).
 ## Servers Archived:
 - Badlion.net
 - Ghostly.live
