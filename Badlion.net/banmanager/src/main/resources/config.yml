@@ -1,0 +1,11 @@
+banmanager:
+    connection:
+        url: 127.0.0.1
+        user: root
+        pass: foo
+        db: bans
+    connection2:
+        url: 127.0.0.1
+        user: root
+        pass: foo
+        db: badlion

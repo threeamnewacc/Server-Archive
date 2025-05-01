@@ -1,0 +1,7 @@
+author: Badlion LLC
+name: ArenaPvPChat
+description: ArenaPvP chat plugin
+main: net.badlion.arenapvpchat.ArenaPvPChat
+version: 1.0
+load: postworld
+depend: [ArenaPvP, SmellyChat]

@@ -1,0 +1,231 @@
+name: GFactions
+main: net.badlion.gfactions.GFactions
+version: 3.0
+depend: [Factions, Gberry, GPermissions, CmdSigns, WorldEdit, GGuard, CleanroomGenerator, Votifier]
+
+commands:
+  stuck:
+    description: Teleport out of enemy claims if you're stuck
+  giftlives:
+    description: Gift lives
+  heartshard:
+    description: Heart Shard
+  lives:
+    description: Show lives
+  wrench:
+    description: Spawn a wrench
+    permission: GFactions.superadmin
+  score:
+    description: Lookup your score and your faction's score
+    usage: Unknown command. Type "/help" for help.
+    permission: GFactions.superadmin
+  stronghold:
+    description: StrongHold event
+    usage: Unknown command. Type "/help" for help.
+    permission: GFactions.superadmin
+  scavenge:
+    description: Scavenge event
+    usage: Unknown command. Type "/help" for help.
+    permission: GFactions.superadmin
+  supermine:
+    description: SuperMine event
+    usage: Unknown command. Type "/help" for help.
+    permission: GFactions.superadmin
+  reloadconfig:
+    description: Reloads specified configuration file
+    usage: /reloadconfig <file name>
+    permission: GFactions.superadmin
+  slot:
+    description: Allow/Disallow a player to join the server when full
+    usage: /slot [name]
+    permission: badlion.donatorplus
+    permission-message: You do not have permission to use this command
+  mod:
+    description: Mod/demod a player
+    usage: /mod or /demod <player>
+    aliases: ['unmod', 'demod']
+    permission: GFactions.admin
+    permission-message: You do not have permission to use this command
+  #ranks:
+  #  description: Show the different donator ranks on the server
+  #  aliases: ['rank']
+  #  permission: GFactions.user
+  #  permission-message: You do not have permission to use this command
+  kothtimes:
+    description: KOTH times
+    aliases: ['koth', 'koths']
+    usage: /koths
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  startkoth:
+    description: Start a KOTH
+    usage: /startkoth <limit> <hill_changes>
+    permission: GFactions.admin
+    permission-message: You do not have permission to use this command
+  #lotto:
+  #  description: Lotto information
+  #  usage: /lotto help
+  #  permission: GFactions.user
+  #  permission-message: You do not have permission to use this command
+  slap:
+    description: Slap a player for 5 hearts
+    usage: /slap <name>
+    permission: GFactions.admin
+    permission-message: You do not have permission to use this command
+  strike:
+    description: Silently kill someone
+    usage: /strike <name>
+    permission: GFactions.admin
+    permission-message: You do not have permission to use this command
+  boot:
+    description: Silently kick someone
+    usage: /boot <name>
+    permission: GFactions.admin
+    permission-message: You do not have permission to use this command
+  pvptimer:
+    description: PvPTimer
+    usage: /pvptimer
+    aliases: ['pvp', 'pvptime']
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  bb:
+    description: BloodBowl
+    usage: /bb join
+    aliases: ['bloodbowl']
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  #parkour:
+  #  description: Parkour
+  #  usage: /parkour
+  #  permission: GFactions.admin
+  #  permission-message: You do not have permission to use this command
+  #dragonevent:
+  #  description: Dragon event
+  #  usage: /dragonevent
+  #  permission: GFactions.admin
+  #  permission-message: You do not have permission to use this command
+  manhunt:
+    description: Man Hunt
+    usage: /manhunt
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  events:
+    description: Events
+    usage: /events
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  endkoth:
+    description: End a KOTH early
+    usage: /endkoth
+    permission: GFactions.admin
+    permission-message: You do not have permission to use this command
+  #levels:
+  #  description: Increase McMMO Levels
+  #  usage: /levels [SKILL] [NUMBER_OF_LEVELS_TO_INCREASE]
+  #  permission: GFactions.user
+  #  permission-message: You do not have permission to use this command
+  spanish:
+    alias: ['espanol']
+    description: Move to Spanish Channel
+    usage: /spanish
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  donator:
+    usage: /donator
+    permission: GFactions.admin
+    permission-message: You do not have permission to use this command
+  #vote:
+  #  usage: /vote
+  #  permission: GFactions.user
+  #  aliases: ['v', 'votes']
+  #  permission-message: You do not have permission to use this command
+  #topvoters:
+  #  usage: /topvoters
+  #  permission: GFactions.user
+  #  aliases: ['topvoter', 'topvotes', 'votertop', 'voterstop', 'votetop', 'voters']
+  #  permission-message: You do not have permission to use this command
+  #claim:
+  #  usage: /claim
+  #  permission: GFactions.user
+  #  permission-message: You do not have permission to use this command
+  deenchant:
+    usage: /deenchant
+    permission: GFactions.diamond
+    aliases: ['unenchant', 'disenchant']
+    permission-message: You do not have permission to use this command
+  #craft:
+  #  usage: /craft
+  #  aliases: ['workbench', 'wb']
+  #  permission: GFactions.gold
+  #  permission-message: You do not have permission to use this command
+  #back:
+  #  usage: /back
+  #  permission: GFactions.stone
+  #  permission-message: You do not have permission to use this command
+  appletimer:
+    usage: /appletimer
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  vanish:
+    usage: /vanish
+    aliases: ['v']
+    permission: GFactions.vanish
+    permission-message: You do not have permission to use this command
+  showinvis:
+    usage: /showinvis
+    permission: GFactions.warden
+    permission-message: You do not have permission to use this command
+  seen:
+    usage: /seen [name]
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  wild:
+    description: Teleports you randomly into the Wilderness
+    aliases: ['wilderness']
+    permission: GFactions.user
+    permission-message: You do not have permission to use this command
+  doubleore:
+    description: Double ores
+    permission: GFactions.admin
+
+
+permissions:
+  GFactions.user:
+    description: User permission on GFactions
+    default: true
+  GFactions.admin:
+    description: Admin permission on GFactions
+    default: op
+  GFactions.mod:
+    description: Mod permission on GFactions
+    default: op
+  GFactions.member:
+    description: Member permission on GFactions
+    default: op
+  GFactions.stone:
+    description: Stone permission on GFactions
+    default: op
+  GFactions.coal:
+    description: Coal permission on GFactions
+    default: op
+  GFactions.gold:
+    description: Gold permission on GFactions
+    default: op
+  GFactions.iron:
+    description: Iron permission on GFactions
+    default: op
+  GFactions.diamond:
+    description: Diamond permission on GFactions
+    default: op
+  GFactions.tnt:
+    description: TnT permission on GFactions
+    default: op
+  GFactions.warden:
+    description: Warden permission on GFactions
+    default: false
+  GFactions.vanish:
+    description: Warden permission on GFactions
+    default: op
+  GFactions.superadmin:
+    description: SuperAdmin
+    default: op

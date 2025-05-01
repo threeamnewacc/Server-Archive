@@ -1,0 +1,11 @@
+sg:
+    ranked-server: false
+    server-name: rankedmcsg1
+    min_players: 3
+    num_of_map_choices: 2
+api-url: "http://192.99.44.165:10011/"
+api-key: T2dBwvnOhWBmgamcYvqtbWS5VSbn5nW3
+sig-url: "http://192.99.44.165:20011/"
+sig-key: yEc2auJuGnkw7uNVcRwPZPQcaSNW92Hu
+unranked-url: "http://192.99.44.165:10012/"
+unranked-key: CgQgKWAx654N7DiSIyLh23eAQJkO1IYs

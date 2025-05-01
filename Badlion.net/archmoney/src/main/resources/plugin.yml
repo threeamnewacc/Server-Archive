@@ -1,0 +1,49 @@
+name: ArchMoney
+main: net.badlion.archmoney.ArchMoney
+depend: [Gberry]
+version: 0.1
+database: true
+
+commands:
+  pay:
+    description: Pay another player
+    usage: /pay <name> <amount>
+    permission: ArchMoney.pay
+    permission-message: You do not have permission to use this command.
+  moneygive:
+    description: Give to another player
+    usage: /moneygive <name> <amount> <reason>
+    permission: ArchMoney.give
+    permission-message: You do not have permission to use this command.
+  moneytake:
+    description: Pay another player
+    usage: /moneytake <name> <amount> <reason>
+    permission: ArchMoney.take
+    permission-message: You do not have permission to use this command.
+  money:
+    description: Check balance
+    usage: /money
+    permission: ArchMoney.money
+    permission-message: You do not have permission to use this command.
+  top:
+    aliases: ['baltop', 'moneytop']
+    description: TOP 10
+    usage: /top
+    permission: ArchMoney.top
+    permission-message: You do not have permission to use this command.
+permissions:
+  ArchMoney.pay:
+    description: Pay people
+    default: true
+  ArchMoney.give:
+    description: Give money
+    default: op
+  ArchMoney.take:
+    description: Take money
+    default: op
+  ArchMoney.money:
+    description: CHECK DAT MONEY DOE, ST8 TO DA BANK
+    default: true
+  ArchMoney.top:
+    description: CHECK DAT MONEY FOR TOP 10, ST8 TO DA BANK
+    default: true

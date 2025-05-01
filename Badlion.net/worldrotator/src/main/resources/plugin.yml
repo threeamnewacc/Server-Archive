@@ -1,0 +1,4 @@
+name: WorldRotator
+main: net.badlion.worldrotator.WorldRotator
+version: 1.0
+depend: [Gberry]

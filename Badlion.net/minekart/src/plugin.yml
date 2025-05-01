@@ -1,0 +1,100 @@
+name: MineKart
+main: com.tinywebteam.badlion.MineKart
+version: 0.1
+depend: [CmdSigns,WarpSystem]
+
+commands:
+    race:
+        description: race
+        usage: /race
+        permission: MineKart.race
+        permission-message: You do not have permission to use this command.
+    addtrack:
+        description: Add a track
+        usage: /addtrack <trackName> <itemBlockName>
+        permission: MineKart.addtrack
+        permission-message: You do not have permission to use this command.
+    addcheckpoint:
+        description: Add a checkpoint
+        usage: /addcheckpoint <trackName> <checkpointName> <nextCheckpointName>
+        permission: MineKart.addcheckpoint
+        permission-message: You do not have permission to use this command.
+    additemblock:
+        description: Add itemblock
+        usage: /additemblock <trackName> <itemBlockName>
+        permission: MineKart.additemblock
+        permission-message: You do not have permission to use this command.
+    addfinishlineblock:
+        description: Add finishlineblock
+        usage: /addfinishlineblock <trackName>
+        permission: MineKart.addfinishlineblock
+        permission-message: You do not have permission to use this command.
+    reloaddev:
+        description: Reload
+        usage: /reloaddev
+        permission: MineKart.relaoddev
+        permission-message: You do not have permission to use this command.
+    endercrystal:
+        description: Reload
+        usage: /endercrystal
+        permission: MineKart.endercrystal
+        permission-message: You do not have permission to use this command.
+    removeendercrystal:
+        description: Reload
+        usage: /endercrystal
+        permission: MineKart.endercrystal
+        permission-message: You do not have permission to use this command.
+    spawntest:
+        description: Nigger
+        usage: /spawntest
+        permission: MineKart.spawntest
+        permission-message: Faggot
+    invite:
+        description: Invite a player
+        usage: /invite <playerName>
+        permission: MineKart.user
+        permission-message: You do not have permission to use this command.
+    start:
+        description: Start a race
+        usage: /start
+        permission: MineKart.user
+        permission-message: You do not have permission to use this command.
+    accept:
+        description: Accept a race
+        usage: /accept 
+        permission: MineKart.user
+        permission-message: You do not have permission to use this command.
+    deny:
+        description: Deny a race
+        usage: /deny
+        permission: MineKart.user
+        permission-message: You do not have permission to use this command.
+        
+permissions:
+    MineKart.addtrack:
+        description: Add a track
+        default: op
+    MineKart.addcheckpoint:
+        description: Add a checkpoint
+        default: op
+    MineKart.additemblock:
+        description: Add a itemblock
+        default: op
+    MineKart.addfinishlineblock:
+        description: Add a finish line block
+        default: op
+    MineKart.race:
+        description: Race
+        default: true
+    MineKart.reloaddev:
+        description: reloaddev
+        default: op
+    MineKart.endercrystal:
+        description: endercrystal
+        defualt: op
+    MineKart.spawntest:
+        description: Nigger
+        default: op
+    MineKart.user:
+        description: Invite a player to a race
+        default: true

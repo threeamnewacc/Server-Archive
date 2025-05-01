@@ -1,0 +1,4 @@
+name: ArenaVotes
+main: net.badlion.arenavotes.ArenaVotes
+version: 1.0
+depend: [Gberry, Votifier]

@@ -1,0 +1,110 @@
+name: Premium
+main: net.badlion.premium.Premium
+version: 0.1
+database: true
+depend: [Gberry, GPermissions, Buycraft]
+
+commands:
+    addpremiumranked:
+        description: Add premium to player
+        usage: /addpremiumranked <name> <days> <amountDonated>
+        permission: Premium.addpremiumranked
+        permission-message: You do not have permissions to use this command.
+    removepremiumranked:
+        description: Remove premium player time
+        usage: /removepremiumranked <name> <days> <amountDonated>
+        permission: Premium.removeprmeiumranked
+        permission-message: You do not have permissions to use this command.
+    adddonatorplus:
+        description: Add premium to player
+        usage: /addpremiumranked <name> <days> <amountDonated>
+        permission: Premium.addpremiumranked
+        permission-message: You do not have permissions to use this command.
+    removedonatorplus:
+        description: Remove premium player time
+        usage: /removepremiumranked <name> <days> <amountDonated>
+        permission: Premium.removeprmeiumranked
+        permission-message: You do not have permissions to use this command.
+    addlion:
+        description: Add premium to player
+        usage: /addlion <name> <days> <amountDonated>
+        permission: Premium.addpremiumranked
+        permission-message: You do not have permissions to use this command.
+    removelion:
+        description: Remove premium player time
+        usage: /removelion <name> <days> <amountDonated>
+        permission: Premium.removeprmeiumranked
+        permission-message: You do not have permissions to use this command.
+    expirepremiumranked:
+        description: Expire premium player time
+        usage: /expirepremiumranked <name>
+        permission: Premium.expireprmeiumranked
+        permission-message: You do not have permissions to use this command.
+    coloredname:
+        description: Colored name
+        usage: /coloredname
+        permission: Premium.coloredname
+        permission-message: You do not have permissions to use this command.
+    removecoloredname:
+        description: Remove colored name
+        usage: /removecoloredname
+        permission: Premium.removecoloredname
+        permission-message: You do not have permissions to use this command.
+    uhcstatreset:
+        description: Add UHC Stat Reset
+        usage: /uhcstatreset <uuid>
+        permission: Premium.addpremiumranked
+        permission-message: You do not have permissions to use this command.
+    arenapvpstatreset:
+        description: Add ArenaPvP Stat Reset
+        usage: /arenapvpstatreset <uuid>
+        permission: Premium.addpremiumranked
+        permission-message: You do not have permissions to use this command.
+    givecases:
+        description: Give a player cases
+        usage: /givecases <uuid> <case_type> <amount> <rare_amount> <transaction_id>
+        permission: Premium.givecases
+        permission-message: You do not have permission to use this command.
+    removecases:
+        description: Remove a player's cases
+        usage: /removecases <uuid> <case_type> <amount> <rare_amount> <transaction_id>
+        permission: Premium.removecases
+        permission-message: You do not have permission to use this command.
+    addlives:
+        description: Give lives
+        permission: op
+    removelives:
+        description: Remove lives
+        permission: op
+    refund:
+        description: Refund the transaction
+        usage: /refund <uuid> <transaction_id>
+        permission: Premium.removeprmeiumranked
+        permission-message: You do not have permissions to use this command.
+    chargeback:
+        description: Chargeback the transaction
+        usage: /chargeback <uuid> <transaction_id>
+        permission: Premium.removeprmeiumranked
+        permission-message: You do not have permissions to use this command.
+permissions:
+    Premium.addpremiumranked:
+        description: Give user X days of unlimited ranked games
+        default: op
+    Premium.removepremiumranked:
+        description: Remove user premium for X days
+        default: op
+    Premium.expirepremiumranked:
+        description: Expire premium membership
+        default: op
+    Premium.coloredname:
+        description: Colored Name
+        default: op
+    Premium.removecoloredname:
+        description: Remove Colored Name
+        default: op
+    Premium.givecases:
+        description: Add user cases
+        default: op
+    Premium.removecases:
+        description: Remove user cases
+        default: op

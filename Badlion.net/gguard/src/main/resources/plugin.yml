@@ -1,0 +1,13 @@
+name: GGuard
+main: net.badlion.gguard.GGuard
+version: 0.1
+
+commands:
+  rg:
+    description: Region
+    permission: badlion.gguard
+
+permissions:
+  badlion.gguard:
+    description: GGuard permission
+    default: op

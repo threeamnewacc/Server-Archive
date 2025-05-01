@@ -1,0 +1,55 @@
+{
+    "designs": [
+        {
+            "_id": "_design/sg_match_kill_death",
+            "language": "javascript",
+            "views": {
+                "player-kill-by-match": {
+                    "map": "function(doc) { if (doc.type == 'sg_match_kill_death') { if (doc.match_id) { emit(doc.match_id, null); } } }"
+                }
+            }
+        },
+        {
+            "_id": "_design/sg_match_dc",
+            "language": "javascript",
+            "views": {
+                "player-dc-by-match": {
+                    "map": "function(doc) { if (doc.type == 'sg_match_dc') { if (doc.match_id) { emit(doc.match_id, null); } } }"
+                }
+            }
+        },
+        {
+            "_id": "_design/sg_match_suicide",
+            "language": "javascript",
+            "views": {
+                "player-suicide-by-match": {
+                    "map": "function(doc) { if (doc.type == 'sg_match_suicide') { if (doc.match_id) { emit(doc.match_id, null); } } }"
+                }
+            }
+        },
+        {
+            "_id": "_design/sg_match_player",
+            "language": "javascript",
+            "views": {
+                "player-match-by-player-uuid": {
+                    "map": "function(doc) { if (doc.type == 'sg_match_player') { if (doc.uuid) { emit(doc.uuid, null); } } }"
+                },
+                "player-match-by-match-id": {
+                    "map": "function(doc) { if (doc.type == 'sg_match_player') { if (doc.match_id) { emit(doc.match_id, null); } } }"
+                }
+            }
+        },
+        {
+            "_id": "_design/sg_match",
+            "language": "javascript",
+            "views": {
+                "player-match": {
+                    "map": "function(doc) { if (doc.type == 'sg_match') { if (doc.uuids) { for (var i = 0; i < doc.uuids.length; i++) { emit(doc.uuids[i], doc._id); } } } }"
+                },
+                "match": {
+                    "map": "function(doc) { if (doc.type == 'sg_match') { if (doc._id) { emit(doc._id, null); } } }"
+                }
+            }
+        }
+    ]
+}

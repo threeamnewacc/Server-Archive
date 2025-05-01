@@ -1,0 +1,4 @@
+name: ArenaRender
+main: net.badlion.arenarender.ArenaRender
+version: 1.0
+depend: [Gberry, GEdit]

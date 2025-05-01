@@ -1,0 +1,11 @@
+author: Badlion LLC
+name: VBChat
+description: VBChat Chat Plugin
+main: net.badlion.vbchat.VBChat
+version: 2.0
+load: postworld
+depend: [vaultbattle, SmellyChat]
+
+commands:
+  tc:
+    description: Send a message to your team

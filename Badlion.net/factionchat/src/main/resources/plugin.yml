@@ -1,0 +1,11 @@
+author: Badlion LLC
+name: FactionChat
+description: Faction chat plugin
+main: net.badlion.factionchat.FactionChat
+version: 2.0
+load: postworld
+depend: [Factions, SmellyChat]
+
+commands:
+  fc:
+    description: Send a message to faction

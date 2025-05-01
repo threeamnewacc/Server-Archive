@@ -1,0 +1,3 @@
+name: Shards
+version: 1.0
+main: net.badlion.shards.ShardPlugin

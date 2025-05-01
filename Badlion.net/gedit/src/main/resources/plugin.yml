@@ -1,0 +1,49 @@
+name: GEdit
+version: 1.0
+main: net.badlion.gedit.GEdit
+commands:
+  gcopy:
+    description: Copy
+    permission: badlion.gedit
+  gpaste:
+    description: Paste
+    permission: badlion.gedit
+  ghollowpaste:
+    description: Hollow Paste
+    permission: badlion.gedit
+  gpos1:
+    description: Pos 1
+    permission: badlion.gedit
+  gpos2:
+    description: Pos 2
+    permission: badlion.gedit
+  gset:
+    description: Set
+    permission: badlion.gedit
+  gstack:
+    description: Stack
+    permission: badlion.gedit
+  gwand:
+    description: Wand
+    permission: badlion.gedit
+  gundo:
+    description: Undo
+    permission: badlion.gedit
+  gsave:
+    description: Save
+    permission: badlion.gedit
+  gload:
+    description: Load
+    permission: badlion.gedit
+  gblockid:
+    aliases: ['gbid', 'gid']
+    description: Block ID
+    permission: badlion.gedit
+  gschematic:
+    description: Schematics
+    permission: badlion.gedit
+
+permissions:
+  badlion.gedit:
+    description: GEdit permission
+    default: op

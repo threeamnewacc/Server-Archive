@@ -1,0 +1,93 @@
+name: Gberry
+main: net.badlion.gberry.Gberry
+version: 1.0
+commands:
+  discord:
+  aprilfools:
+    permission: badlion.admin
+  punishments:
+    description: Sends player a link to their punishments profile
+    aliases: ['punishment']
+  clearchat:
+    description: Clear chat for all players
+    permission: op
+    permission-message: You do not have permission to use this command.
+  hacker:
+    description: Activate hack detection on a player
+    permission: op
+    permission-message: You do not have permission to use this command.
+  maxplayer:
+    description: Change # of max players
+    aliases: ['maxplayers']
+    permission: op
+    permission-message: You do not have permission to use this command.
+  invsee:
+    description: See a player's inventory
+    usage: /invsee [player]
+    aliases: ['seeinv']
+    permission: gberry.invsee
+    permission-message: You do not have permission to use this command.
+  armorsee:
+    description: See a player's armor inventory
+    usage: /armorsee [player]
+    aliases: ['seearmor']
+    permission: gberry.invsee
+    permission-message: You do not have permission to use this command.
+  automute:
+    description: Automute
+    permission: badlion.staff
+  logger:
+    description: Add loggers
+    permission: op
+  where:
+    aliases: ['find']
+    description: Find a player on the network
+    permission: badlion.staff
+  getmap:
+    description: Get map info
+    permission: op
+  sudo:
+    description: Sudo
+    permission: badlion.sudo
+  loadsettings:
+    description: Load settings
+    permission: op
+  loadfilters:
+    description: Load filters
+    permission: op
+  extract:
+    description: Get the timezone of all the files in a directory
+    permission: op
+  ginie:
+    description: Turn off all staff messages
+    permission: badlion.admin
+  ss:
+    description: See stats about the server
+    aliases: ['serverstats']
+    permission: op
+    permission-message: You do not have permission to use this command.
+  listhide:
+    description: Hides you from the tab list and /list
+    aliases: ['hide']
+    permission: badlion.staff
+
+
+permissions:
+  badlion.donator:
+    description: Special perms
+    default: false
+  badlion.admin:
+    description: Admin perms
+    default: op
+  badlion.staff:
+    description: Staff perms
+    default: op
+  badlion.mod:
+    description: Mod perms
+    default: op
+  gberry.invsee:
+    description: Invsee perms
+    default: op
+  badlion.globalmod:
+    description: Global mod perms
+    default: op

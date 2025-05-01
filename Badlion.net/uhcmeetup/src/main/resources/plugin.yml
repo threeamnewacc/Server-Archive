@@ -1,0 +1,6 @@
+author: Badlion Network
+name: UHCMeetup
+description: UHC Meetup
+main: net.badlion.uhcmeetup.UHCMeetup
+version: 1.0
+depend: [Gberry, MiniStats, MPG, WorldBorder, WorldRotator]

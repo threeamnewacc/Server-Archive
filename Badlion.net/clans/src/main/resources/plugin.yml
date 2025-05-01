@@ -1,0 +1,4 @@
+name: Clans
+main: net.badlion.clans.ClanPlugin
+version: 1.0
+depend: [Gberry]

@@ -1,0 +1,9 @@
+author: Badlion LLC
+name: SmellyCases
+main: net.badlion.smellycases.SmellyCases
+version: 1.0
+depend: [Gberry]
+commands:
+    givecases:
+        usage: /givecases [player] [type] [total] [rare] [super_rare] [legendary] [transaction_id]
+        permission: badlion.givecases

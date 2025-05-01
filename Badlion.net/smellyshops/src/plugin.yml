@@ -1,0 +1,62 @@
+author: SmellyPenguin
+name: SmellyShops
+description: Shop plugin for Badion Factions
+main: net.badlion.smellyshops.SmellyShops
+version: 1.0
+depend: [Gberry, GFactions]
+commands:
+  sellall:
+    usage: /sellall
+    aliases: ['sell']
+    description: Sell to a shop using /sellall
+    permission: GFactions.gold
+    permission-message: You do not have permission to use this command.
+  createshop:
+    usage: /createshop <buy:sell> <amount> <price> <item_description>
+    description: Create a shop
+    permission: SmellyShops.create
+    permission-message: You do not have permission to use this command.
+  removeshop:
+    usage: /removeshop
+    description: Remove a shop
+    permission: SmellyShops.remove
+    permission-message: You do not have permission to use this command.
+  createitemshop:
+    usage: /createitemshop <amount> <price> <item_description>
+    description: Create an item shop
+    permission: SmellyShops.create
+    permission-message: You do not have permission to use this command.
+  removeitemshop:
+    usage: /removeitemshop
+    description: Remove an item shop
+    permission: SmellyShops.remove
+    permission-message: You do not have permission to use this command.
+  createrepairshop:
+    usage: /createrepairshop <durability> <price>
+    description: Create a repair shop
+    permission: SmellyShops.create
+    permission-message: You do not have permission to use this command.
+  removerepairshop:
+    usage: /removerepairshop
+    description: Remove a repair shop
+    permission: SmellyShops.remove
+    permission-message: You do not have permission to use this command.
+permissions:
+  SmellyShops.create:
+    default: op
+    description: Create a shop
+  SmellyShops.remove:
+    default: op
+    description: Remove a shop
+  SmellyShops.buy:
+    default: true
+    description: Buy from a shop
+  SmellyShops.sell:
+    default: true
+    description: Sell to a shop
+  SmellyShops.repair:
+    default: op
+    description: Buy from a repair shop
+  SmellyShops.sellall:
+    default: op
+    description: Sell to a shop using /sellall

@@ -1,0 +1,6 @@
+name: TDM
+version: 1.0
+main: net.badlion.tdm.TDM
+depend: [MPG, SmellyMapVotes]
+
+commands:

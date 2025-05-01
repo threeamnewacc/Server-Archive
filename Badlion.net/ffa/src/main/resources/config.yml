@@ -1,0 +1,6 @@
+# Current Types: "nodebuff" / "sg" / "uhc"
+ffa_type: null
+
+# Y limit threshold used to determine when to
+# spawn a combat logger NPC when a player disconnects
+spawn_platform_y_limit: 99999999999

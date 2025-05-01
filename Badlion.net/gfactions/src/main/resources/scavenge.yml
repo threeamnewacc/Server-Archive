@@ -1,0 +1,11 @@
+event_times:
+  - "4-20-6969 04:20"
+num-of-chest: 12
+despawn-time-in-sec: 100
+msgs:
+  start: "&4START"
+  found-all-chests: ""
+  chests-expired: ""
+  ten: ""
+  five: ""
+  two: ""

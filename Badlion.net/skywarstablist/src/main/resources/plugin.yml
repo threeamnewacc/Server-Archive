@@ -1,0 +1,11 @@
+name: SWTabList
+main: net.badlion.skywarstablist.SWTabList
+version: 1.0
+author: SmellyPenguin
+depend: [SkyWars]
+load: postworld
+
+commands:
+  hide:
+    permission: badlion.admin
+    description: Hides you from the tab list and /list

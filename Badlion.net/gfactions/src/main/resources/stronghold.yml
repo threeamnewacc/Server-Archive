@@ -1,0 +1,130 @@
+event_times:
+  - "4-20-6969 04:20"
+administration:
+  announce_capper: true # Sets if the NAME of the SINGLE capper is annouced or not.
+  loot_on: true # Let me turn the global random loot spawning on or off
+  buffs_on: true # Allow me to disable all capture time effecting buffs/nerfs
+  capture_on: true # Allow capturing of strongholds
+  event_regions:
+    - keep1
+    - stronghold_library
+    - keep2
+    - smellyisgr8
+deathban_time: 900000
+balance:
+  blacklist_capture_time_modifier: 1000 # + 1000 capture time to stronghold blacklisted factions
+  capture_steal_value: 0.5 # How much of enemy's points to steal when taking over a point
+  passive_loot_drop_interval: 90 # Time until chance to replenish passive loot in seconds
+  passive_loot_drop_chance_over_extended_buff: 0.15 # If they control 1+ keeps
+  passive_loot_drop_chance_modifiers_keys:
+    - base
+    - halloween_event
+  passive_loot_drop_chance_modifiers: # passive_loot_drop_base_chance + (modifiers added up)
+    base: 0.33
+    halloween_event: 0.10
+    over_extended_buff: 0.15
+  capture_score: 100 # the score gained right after capturing an event
+  passive_score_increase: 3 # how much score a faction gets at the below intervals
+  passive_score_distribution: 3600 # seconds until a faction gains more score from any held
+  capture_length: 1200 # seconds of capturing needed to capture the thing
+  under_population_limit: 5 # You need 5 members or less to get the buff
+  over_population_limit: 40 # You need 40 members or more to get the buff
+  capture_length_modifiers: # real_capture_time = capture_length * (1 * (the modifiers added up))
+    over_extended_offense: +0.25 # This means it takes 0.25x longer to capture a new keep if you already control one
+    over_extended_defense: -0.45 # This means it takes 0.45x less time to capture a keep controlled by a faction that has more than one
+    over_population_buff: -0.10 # Larger factions can capture keeps this much quicker
+    under_population_buff: +0.10 # Smaller factions capture keeps this much slower
+    deterioration_buff: -0.10 # Takes 0.10x less time to capture a keep controlled by faction that didn't pay the deterioration price
+  deterioration_items: # MATERIAL_NAME:DATA:AMOUNT
+    - STONE:0:128
+    - DIAMOND_BLOCK:0:32
+  deterioration_money:
+      2147483647
+keeps_keys:
+  - keep1
+  - keep2
+keeps:
+  keep1:
+    name: &4Red
+    loot_drop_locations_keys:
+      - chest1
+      - chest2
+    loot_drop_locations:
+      chest1: "0,0,0,world"
+      chest2: "0,0,0,world"
+    balance:
+      loot_on: true # Loot for specific stronghold
+    capture_point:
+      corner1: 0,0,0,world
+      corner2: 0,0,0,world
+    deterioration_sign: 0,0,0,world
+    doors_keys:
+      - door1
+      - door2
+    doors:
+      door1:
+        material: STONE
+        data: 0
+        world: world
+        x: 0
+        y: 0
+        z: 0
+        x1: 0
+        y1: 0
+        z1: 0
+        lever1: 0,0,0,world
+        lever2: 0,0,0,world
+      door2:
+        material: STONE
+        data: 0
+        world: world
+        x: 0
+        y: 0
+        z: 0
+        x1: 0
+        y1: 0
+        z1: 0
+        lever1: 0,0,0,world
+        lever2: 0,0,0,world
+  keep2:
+    name: &5Blue
+    loot_drop_locations_keys:
+      - chest1
+      - chest2
+    loot_drop_locations:
+      chest1: 0,0,0,world
+      chest2: 0,0,0,world
+    balance:
+      loot_on: true # Loot for specific stronghold
+    capture_point:
+      corner1: 0,0,0,world
+      corner2: 0,0,0,world
+    deterioration_sign: 0,0,0,world
+    doors_keys:
+      - door1
+      - door2
+    doors:
+      door1:
+        material: STONE
+        data: 0
+        world: world
+        x: 0
+        y: 0
+        z: 0
+        x1: 0
+        y1: 0
+        z1: 0
+        lever1: 0,0,0,world
+        lever2: 0,0,0,world
+      door2:
+        material: STONE
+        data: 0
+        world: world
+        x: 0
+        y: 0
+        z: 0
+        x1: 0
+        y1: 0
+        z1: 0
+        lever1: 0,0,0,world
+        lever2: 0,0,0,world

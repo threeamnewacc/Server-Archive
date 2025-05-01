@@ -1,0 +1,47 @@
+name: ArenaLobby
+main: net.badlion.arenalobby.ArenaLobby
+version: 1.0
+depend: [Gberry, GGuard, CmdSigns, ColorName, sidebar]
+
+commands:
+  accept:
+    description: Accept a duel request.
+  reboot:
+    permission: op
+    description: Reboot the server
+  force:
+    permission: badlion.tournament
+    description: Force into a match
+  joinevent:
+    description: Join event
+  leave:
+    description: Leave a queue
+  openoppinv:
+    description: Open 1v1 opponent inventory
+  rating:
+      description: Look up a ranked rating
+  resetelo:
+    aliases: ['eloreset']
+    description: Reset ELO
+  spawn:
+    description: Spawn
+  state:
+    permission: op
+    description: Debug crap
+  stats:
+    description: View all ratings
+  scanarenas:
+    permission: op
+    description: Scan arenas
+  joinqueue:
+    description: Join a queue
+  rankup:
+    permission: op
+    description: Debug rankup
+  convertalldbsettings:
+    permission: op
+    description: Convert all db settings
+  fly:
+    description: Toggle flight
+    usage: /fly [on/off]
+    permission-message: You do not have permission to use this command.

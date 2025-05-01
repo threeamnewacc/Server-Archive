@@ -1,0 +1,27 @@
+name: MPG
+main: net.badlion.mpg.MPG
+version: 2.0
+depend: [Cosmetics, Gberry, MiniStats, WorldRotator]
+
+commands:
+  configmap:
+    description: Config Map
+    permission: badlion.mapcreator
+  stats:
+    description: Lookup a user's stats
+    aliases: ['records']
+  team:
+    description: Team handling
+  tele:
+    description: Teleports to a specific player
+    usage: /tele <player>
+  vote:
+    description: Vote for a map
+    aliases: ['v']
+  wl:
+    description: Whitelist a player
+
+permissions:
+  badlion.mapcreator:
+    description: Map Creator
+    default: op

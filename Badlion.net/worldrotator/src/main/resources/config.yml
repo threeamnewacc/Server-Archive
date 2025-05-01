@@ -1,0 +1,6 @@
+worldrotator:
+    delete_on_boot: true
+    path_to_worlds: default
+    worlds_to_load:
+        - world1
+        - world2

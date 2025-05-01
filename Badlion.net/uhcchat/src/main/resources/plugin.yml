@@ -1,0 +1,16 @@
+author: Badlion LLC
+name: UHCChat
+description: UHC Chat plugin for the Badlion Network
+main: net.badlion.uhcchat.UHCChat
+version: 2.0
+load: postworld
+depend: [BadlionUHC, SmellyChat]
+
+commands:
+  uhcmc:
+    description: UHC mod chat
+  tc:
+    description: Send a message to team chat
+  sp:
+    description: Talk in Spectator Chat
+    usage: /sp [message]

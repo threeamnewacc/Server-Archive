@@ -1,0 +1,31 @@
+name: Auction
+main: net.badlion.auction.Auction
+version: 0.1
+depend: [ArchMoney, CombatTag, Factions, Gberry, GFactions]
+
+commands:
+    auction:
+        description: Auction
+        usage: /auction
+        aliases: ['auc']
+        permission: Auction.user
+        permission-message: You do not have permission to use this command
+    bid:
+        description: Auction bid
+        usage: /bid <amount>
+        permission: Auction.user
+        permission-message: You do not have permission to use this command
+    trade:
+        description: Trade
+        usage: /trade
+        permission: Auction.user
+        permission-message: You do not have permission to use this command
+  
+permissions:
+    Auction.user:
+        description: User permission on Auction
+        default: true
+    Auction.start:
+        description: Start permission on Auction
+        default: op
+    

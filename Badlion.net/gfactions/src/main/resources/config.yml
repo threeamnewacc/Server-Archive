@@ -1,0 +1,109 @@
+gfactions:
+    prefix: default
+    spawn_location: 0.5,73,34,180,0,world
+    end_enter_spawn_locations:
+        - -16.5,82.5,-42.5,180,0,world_the_end
+        - -86.5,59.5,5.5,180,0,world_the_end
+        - 115.5,58.5,1.5,180,0,world_the_end
+        - 71.5,58.5,53.5,180,0,world_the_end
+    end_exit_spawn_location: -80.5,68,183.5,180,0,world
+    god_apple_timer: 30 # in minutes
+    pvp_protection_time: 3600 # in seconds
+    war_zone:
+        min_x: -100
+        max_x: 100
+        min_z: -100
+        max_z: 100
+    #remaining_tickets: 0
+    #lotto:
+    #    jackpot_multiplier: 1.3
+    #    ticket_price: 100
+    #    draw_times:
+    #        - Monday 20:00
+    #        - Thursday 17:00
+    #dungeon_keys:
+    #    - test1
+    #dungeons:
+    #    current_portal_spawned: false
+    #    current_portal_x: 1
+    #    current_portal_z: 2
+    #    test1:
+    #        world_name: world
+    #        spawn_x: 1
+    #        spawn_y: 1
+    #        spawn_z: 1
+    #        number_of_chests: 1
+    #        chest0:
+    #            chest_x: 1
+    #            chest_y: 1
+    #            chest_z: 1
+    #        zombie_percentage: 1
+    #        skeleton_percentage: 1
+    #        creeper_percentage: 1
+    #        spider_percentage: 1
+    #        blaze_percentage: 1
+    #        ghast_percentage: 1
+    #        giant_percentage: 1
+    #        max_mob_level_y: 1
+    #        max_player_level_y: 1
+    #dungeon_portals:
+    #    - 1 2 3x2 3 4
+    #    - 1 2 3x2 3 4
+    #parkour:
+    #    parkour:
+    #        - 5-4-2014 14:20
+    #    chest_names:
+    #        - test
+    #    chest_locations:
+    #        test:
+    #            chest_x: 372
+    #            chest_y: 22
+    #            chest_z: -731
+    man_hunt:
+        man_hunt_times:
+            - 5-4-2014 14:20
+        pp_names:
+            - test
+        pp_locations:
+            test:
+                pp_x: 372
+                pp_y: 22
+                pp_z: -731
+    koth:
+        deathban_time: 900000
+        koth_score_depreciation_amount: 1
+        koth_score_depreciation_frequency: 5
+        koth_times:
+            - 5-4-2014 14:20
+        koth_names:
+            - pvparena
+        pvparena:
+            area:
+                x_min: 376
+                y_min: 22
+                z_min: -747
+                x_max: 391
+                y_max: 32
+                z_max: -763
+            capzone:
+                x_min: 381
+                y_min: 22
+                z_min: -753
+                x_max: 386
+                y_max: 26
+                z_max: -758
+    supermine:
+        supermine_times:
+            - 5-4-2014 14:20
+    #dragon:
+    #    ender_crystal_locations:
+    #        - 13.5 81 -19.5
+    #        - 59.5 79 27.5
+    #        - 9.5 82 13.5
+    #        - -2.5 76 14.5
+    #        - -10.5 81 42.5
+    #        - -24.5 77 29.5
+    #        - -41.5 80 -36.5
+    #        - -32.5 76 -89.5
+    #        - -2.5 91 -88.5
+    #        - 6.5 76 -79.5

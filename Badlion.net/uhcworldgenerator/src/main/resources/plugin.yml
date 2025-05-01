@@ -1,0 +1,11 @@
+name: UHCWorldGenerator
+main: net.badlion.uhcworldgenerator.UHCWorldGenerator
+version: 1.0
+description: Builds UHC Worlds
+depend: [WorldBorder]
+commands:
+    tpworld:
+        description: TP to world
+        usage: /tpworld [name]
+    chkbiome:
+        description: Check biome type

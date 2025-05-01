@@ -1,0 +1,6 @@
+author: Badlion Network
+name: CaptureTheFlag
+description: Capture the Flag
+main: net.badlion.capturetheflag.CTF
+version: 1.0
+depend: [Gberry, MiniStats, MPG, WorldRotator]

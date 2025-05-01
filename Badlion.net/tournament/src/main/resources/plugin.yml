@@ -1,0 +1,13 @@
+name: Tournament
+main: net.badlion.tournament.TournamentPlugin
+version: 0.1
+depend: [Gberry]
+
+commands:
+    ready:
+        description: Ready for a match
+    team:
+        description: Edit teams
+    tournament:
+        description: Edit tournaments
+

@@ -1,0 +1,21 @@
+{
+    "_id": "_design/factions",
+    "language": "javascript",
+    "views": {
+        "bounties-setter-uuid": {
+            "map": "function(doc) { if (doc.type == 'bounties') { if (doc.setter_uuid) { emit(doc.setter_uuid, null); } } }"
+        },
+        "bounties-hunted-uuid": {
+            "map": "function(doc) { if (doc.type == 'bounties') { if (doc.hunted_uuid) { emit(doc.hunted_uuid, null); } } }"
+        },
+        "bounties-time-created": {
+            "map": "function(doc) { if (doc.type == 'bounties') { if (doc.time_created) { emit(doc.time_created, null); } } }"
+        },
+        "bounties-money-reward": {
+            "map": "function(doc) { if (doc.type == 'bounties') { if (doc.money) { emit(doc.money, null); } } }"
+        },
+        "bounties-item-rewards": {
+            "map": "function(doc) { if (doc.type == 'bounties') { if (doc.items) { emit(doc.items, null); } } }"
+        }
+    }
+}

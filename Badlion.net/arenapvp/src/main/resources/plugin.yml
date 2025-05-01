@@ -1,0 +1,13 @@
+name: ArenaPvP
+main: net.badlion.arenapvp.ArenaPvP
+version: 3.0
+depend: [ColorName, Gberry, GGuard]
+
+commands:
+  sp:
+    description: Teleport to someone while in spectator mode.
+  reboot:
+    permission: op
+    description: Reboot the server.
+  stats:
+    description: View all ratings

@@ -1,0 +1,7 @@
+name: SkyWarsLobby
+version: 1.0
+main: net.badlion.skywarslobby.SkyWarsLobby
+depend: [Gberry, SmellyPets, SmellyParticles]
+commands:
+  leave:
+    description: Leave the queue

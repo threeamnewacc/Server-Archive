@@ -1,0 +1,7 @@
+name: SkyWars
+version: 1.0
+main: net.badlion.skywars.SkyWars
+depend: [MPG, SmellyMapVotes]
+commands:
+  playagain:
+    description: Play again

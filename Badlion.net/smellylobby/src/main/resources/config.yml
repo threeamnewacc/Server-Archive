@@ -1,0 +1,28 @@
+smellylobby:
+  archapi:
+    url: http://10.0.0.1:9011/
+    key: 8qPqqR324esK9hGrNkTzT3DUPp9UC9pC
+  spawn_location: 0.5,64,0.5,180,0,world
+  message_of_the_day:
+    #- §c------- Current Badlion IP's -------
+    #- §a- North America - na.badlion.net
+    #- §a- Europe - eu.badlion.net
+    #- §a- Australia - au.badlion.net
+    - §c-------News and Events-------
+    - §a- Badlion HCF Map 2 is now live
+    - §a- Arena PvP 4.0 is now live
+    - §a- Soup PvP is part of Arena PvP now
+    - §a- UHC 3.0 is now live
+    - §a- Register for the website in-game using
+  api:
+    servers:
+      - unranked_na_sg
+      - unranked_eu_sg
+      #- unranked_au_sg
+      - mini_uhc_na
+      - mini_uhc_eu
+    unranked_na_sg: http://158.69.52.56:10012/GetServers/CgQgKWAx654N7DiSIyLh23eAQJkO1IYs
+    unranked_eu_sg: http://149.202.74.234:10012/GetServers/CgQgKWAx654N7DiSIyLh23eAQJkO1IYs
+    #unranked_au_sg: http://221.121.151.35:10012/GetServers/CgQgKWAx654N7DiSIyLh23eAQJkO1IYs
+    mini_uhc_na: http://158.69.52.56:20090/GetServers/RALBAv4JWgqzFn24535XJ2q8mSGhWYnY
+    mini_uhc_eu: http://149.202.74.234:20090/GetServers/RALBAv4JWgqzFn24535XJ2q8mSGhWYnY

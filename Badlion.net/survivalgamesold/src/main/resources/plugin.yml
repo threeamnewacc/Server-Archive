@@ -1,0 +1,29 @@
+author: Badlion Network
+name: SurvivalGames
+description: Survival Games for Badlion Network
+main: net.badlion.survivalgames.SurvivalGames
+version: 1.0
+depend: [Gberry, MiniStats, WorldRotator]
+
+commands:
+    vote:
+        description: Vote
+        aliases: ['v']
+    configmap:
+        description: Config Map
+        aliases: ['cm']
+        permission: op
+    debug:
+        description: Debug
+        permission: op
+    giftmatches:
+        aliases: ['giftmatch', 'giftmatchs']
+        permission: badlion.donatorplus
+        description: Gift extra matches to a player
+    stats:
+        description: Lookup stats on a user
+        aliases: ['records']
+    wl:
+        permission: badlion.lion
+        description: Add a player to a donator's whitelist
+        aliases: ['wolfpack']

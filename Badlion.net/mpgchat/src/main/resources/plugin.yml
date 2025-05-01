@@ -1,0 +1,14 @@
+author: Badlion LLC
+name: MPGChat
+description: MPG chat plugin for the Badlion Network
+main: net.badlion.mpgchat.MPGChat
+version: 2.0
+load: postworld
+depend: [SmellyChat, MPG]
+
+commands:
+  tc:
+    description: Send a message to team chat
+  sp:
+    usage: /sp <message>
+    description: Talk in Spectator Chat

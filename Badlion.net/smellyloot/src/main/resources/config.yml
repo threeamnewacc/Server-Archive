@@ -1,0 +1,64 @@
+event_drops_keys:
+  - koth
+  - stronghold
+event_drops:
+  koth:
+    noob_tier: 3
+  stronghold:
+    god_tier: 8
+drop_parties_keys:
+  - sotw
+  - stronghold
+drop_parties:
+  sotw:
+    loot_table: noob_tier
+    drop_interval: 5
+    drop_chance: 0.85
+    locations:
+      - 10,15,23,world
+  stronghold:
+    loot_table: god_tier
+    drop_interval: 15
+    drop_chance: 0.50
+    locations:
+      - 10,15,23,world
+      - 512,42,325,world
+      - -138,76,123,world
+tiers_keys:
+  - noob_tier
+  - god_tier
+tiers:
+  noob_tier:
+    random_items_keys:
+      - noob_sword
+    random_items:
+      noob_sword:
+        drop_chance: 10
+        material: WOOD_SWORD
+        amount: 1
+        durability: 1
+        meta:
+          title: The Noob Slayer
+          lines:
+            - A mighty
+            - sword from
+            - the noob.
+  god_tier:
+    common_items_keys:
+      - bones
+    common_items:
+      bones:
+        material: BONE
+        amount: 1
+        durability: 1
+        enchants_keys:
+          - key1
+          - key2
+        enchants:
+          key1:
+            name: DURABILITY
+            level: 3
+        meta:
+          title: Animal Bones
+          lines:
+            - Some animal remains.

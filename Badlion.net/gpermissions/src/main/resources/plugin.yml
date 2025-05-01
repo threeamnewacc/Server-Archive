@@ -1,0 +1,16 @@
+name: GPermissions
+main: net.badlion.gpermissions.GPermissions
+version: 0.1
+depend: [Gberry]
+
+commands:
+    user:
+        description: Handle user crap
+        permission: op
+        permission-message: You do not have permission to use this command
+        usage: /user [username] setgroup [group]
+    perm:
+        description: Create group/modify group perms
+        permission: op
+        permission-message: You do not have permission to use this command
+        usage: /perm [create/add/remove] [group] [perm/prefix] or /perm reload

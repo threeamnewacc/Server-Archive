@@ -1,0 +1,35 @@
+name: ArenaSetup
+main: net.badlion.arenasetup.ArenaSetup
+version: 1.0
+depend: [Gberry, GEdit]
+
+commands:
+  arenasetup:
+    permission: op
+    description: Start arena setup
+  setwarp1:
+    permission: op
+    description: Set warp 1
+  setwarp2:
+    permission: op
+    description: Set warp 2
+  setarenatypes:
+    aliases: [sat]
+    permission: op
+    description: Set arena types
+  finishsetup:
+    permission: op
+    description: Finish arena setup
+  delarena:
+    permission: op
+    description: Delete an arena
+  arenastatus:
+    permission: op
+    description: View setup status
+  setarenaselection:
+    aliases: [sas]
+    permission: op
+    description: Set arenas selection
+  listarenas:
+    permission: op
+    description: List all arenas

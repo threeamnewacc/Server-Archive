@@ -1,0 +1,4 @@
+gpermissions:
+    isInitialized: false
+    server: default
+    send_user_messages: true

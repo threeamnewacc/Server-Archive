@@ -1,0 +1,9 @@
+name: GCheat
+main: net.badlion.gcheat.GCheat
+version: 1.0
+depend: [Gberry]
+
+commands:
+  dgcheat:
+    description: Debug GCheat
+    permission: op

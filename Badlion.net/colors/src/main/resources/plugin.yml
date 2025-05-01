@@ -1,0 +1,16 @@
+name: ColorName
+main: net.badlion.colors.ColorName
+version: 1.0
+depend: [Gberry]
+
+commands:
+  color:
+    description: Color name. Type /color help for help.
+    permission: ColorName.changecolor
+permissions:
+  ColorName.changecolor:
+    description: Allows player to change name color.  Before applying this permission you must change default to false or op.
+    default: false
+  ColorName.admin:
+    description: Allows admin to change other player's name color.
+    default: op

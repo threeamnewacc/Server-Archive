@@ -1,0 +1,8 @@
+deathban-time-in-mins: 1
+deathban-max-time-in-mins: 100
+extra-min-per-death: 1
+special-death-ban-length-in-min: 1
+special-death-ban-enabled: false
+heart-shard-pieces: 5
+donator-time-off-deathban-percentage: 10
+donator-plus-time-off-deathban-percentage: 20

@@ -1,0 +1,10 @@
+author: Badlion LLC
+name: SmellyMapVotes
+main: net.badlion.smellymapvotes.SmellyMapVotes
+version: 1.0
+depend: [Gberry]
+
+commands:
+  mapvote:
+    description: Vote for the current map
+    usage: Unknown command. Type "/help" for help.

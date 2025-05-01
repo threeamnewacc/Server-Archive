@@ -1,0 +1,11 @@
+author: Badlion LLC
+name: PotionChat
+description: Potion PVP chat plugin
+main: net.badlion.potionchat.PotionChat
+version: 2.0
+load: postworld
+depend: [PotionPvP, SmellyChat]
+
+commands:
+  pc:
+    description: Send a message to party

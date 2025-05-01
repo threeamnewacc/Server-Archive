@@ -1,0 +1,4 @@
+name: Messenger
+main: net.badlion.messenger.Messenger
+version: 0.1
+depend: [Gberry]

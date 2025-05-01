@@ -1,0 +1,75 @@
+name: PotionPvP
+main: net.badlion.potpvp.PotPvP
+version: 3.0
+depend: [CmdSigns, ColorName, Gberry, GGuard, SmellyMapVotes]
+
+commands:
+  addarena:
+    permission: op
+    description: Add Arena
+  addwarp:
+    permission: op
+    description: Add Warp
+  tpwarp:
+    permission: op
+    description: Teleport to Warp
+  force:
+    permission: badlion.tournament
+    description: Force into a match
+  duel:
+    description: Send a duel request
+  fakevote:
+    permission: op
+    description: Fake vote
+  follow:
+    description: Follow a player
+  giftmatches:
+    aliases: ['giftmatch', 'giftmatchs']
+    permission: badlion.donatorplus
+    description: Gift extra matches to a player
+  invite:
+    description: Send party invite to player
+  promote:
+    description: Promote player to party leader
+  joinevent:
+    description: Join event
+  leave:
+    description: Leave a queue
+  openoppinv:
+    description: Open 1v1 opponent inventory
+  party:
+    description: Party commands
+  quota:
+    description: Quota
+  ranked:
+    description: Ranked matchmaking
+  rankedteam:
+    description: Ranked Team matchmaking
+  rating:
+      description: Look up a ranked rating
+  resetelo:
+    aliases: ['eloreset']
+    description: Reset ELO
+  rrduel:
+      description: Redrover duel, unused now
+  spawn:
+    description: Spawn
+  spectate:
+    aliases: ['spec', 'sp', 'tele']
+    description: Spectate a player
+  state:
+    permission: op
+    description: Debug crap
+  stats:
+    description: View all ratings
+  unfollow:
+    description: Unfollow player
+  unranked:
+    description: Unranked matchmaking
+  scanarenas:
+    permission: op
+    description: Scan arenas
+
+permissions:
+    badlion.tournament:
+        description: Permission for tournament hosts

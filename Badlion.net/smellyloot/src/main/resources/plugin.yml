@@ -1,0 +1,11 @@
+author: Badlion Studios LLC
+name: SmellyLoot
+description: Loot plugin for Badlion Studios LLC
+main: net.badlion.smellyloot.SmellyLoot
+version: 1.0
+
+commands:
+  reloaddrops:
+    description: Reload the SmellyLoot configs
+    permission: op
+    permission-message: You do not have permission to use this command.

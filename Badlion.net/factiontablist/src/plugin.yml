@@ -1,0 +1,5 @@
+name: FactionTabList
+main: net.badlion.factiontablist.FactionTabList
+version: 1.0
+author: SmellyPenguin
+depend: [Factions, GFactions]

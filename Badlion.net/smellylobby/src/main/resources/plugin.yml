@@ -1,0 +1,12 @@
+name: SmellyLobby
+main: net.badlion.smellylobby.SmellyLobby
+version: 1.0
+depend: [BanManager, Gberry, GGuard, GPermissions, SmellyChat]
+commands:
+    fly:
+        description: Toggle flight
+        usage: /fly [on/off]
+        permission-message: You do not have permission to use this command.
+    uhctimes:
+        description: Displays upcoming UHC times
+        aliases: ['uhcs', 'uhc']

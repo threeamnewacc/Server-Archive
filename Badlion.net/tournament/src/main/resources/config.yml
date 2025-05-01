@@ -1,0 +1,9 @@
+tournament:
+  default-players: 16
+  teams: false
+  team-size: 5
+  invitation-type: all
+  automated: false
+  automated-player-count: 16
+  automated-type: singleknockout
+  automated-group-size: 4

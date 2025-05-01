@@ -1,0 +1,45 @@
+author: Badlion LLC
+name: SmellyChat
+description: Chat plugin for the Badlion Network
+main: net.badlion.smellychat.SmellyChat
+version: 2.0
+depend: [BanManager, Gberry, GPermissions]
+
+commands:
+  ad:
+    description: Local admin chat
+    usage: /ad <message>
+    permission: badlion.admin
+    permission-message: You do not have permission to use this command.
+  mc:
+    description: Mod chat
+    usage: /mc <message>
+    permission: badlion.staff
+    permission-message: You do not have permission to use this command.
+  report:
+    description: Report a player
+    aliases: ['rp', 'hacker', 'shitstaff', 'ezban']
+  ch:
+    description: Channel commands
+  tgc:
+    aliases: ['tg']
+    description: Toggle global chat
+  gc:
+    description: Send a message to global chat
+  globalmute:
+    description: Mute all them bitches
+    aliases: ['gm']
+    permission: badlion.gm
+    permission-message: You do not have permission to use this command.
+  friendslist:
+    aliases: ['friend', 'friends', 'friendlist']
+    description: Friend commands
+  ignorelist:
+    aliases: ['ignore', 'ignores', 'ignoreslist']
+    description: Ignore commands
+  mark:
+    description: Set a player's chat to a specific color
+    permission: badlion.lion
+  unmark:
+    description: Unmark a player's chat
+    permission: badlion.lion

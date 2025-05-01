@@ -1,0 +1,10 @@
+name: World
+spawn_locations:
+- X Y Z YAW PITCH
+- X Y Z YAW PITCH
+- X Y Z YAW PITCH
+death_match_locations:
+- X Y Z YAW PITCH
+- X Y Z YAW PITCH
+- X Y Z YAW PITCH
+chest_locations:

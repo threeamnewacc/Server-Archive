@@ -1,0 +1,38 @@
+name: CmdSigns
+main: net.badlion.cmdsigns.CmdSigns
+version: 0.1
+depend: [Gberry]
+
+commands:
+  addsign:
+    description: Add Sign
+    usage: /addsign <commands seperated with \n>
+    permission: CmdSigns.addsign
+    permission-message: You do not have permission to use this command
+  updatesign:
+    description: Update Sign
+    usage: /updatesign <commands seperated with \n>
+    permission: CmdSigns.updatesign
+    permission-message: You do not have permission to use this command
+  removesign:
+     description: Remove Sign
+     usage: /removesign
+     permission: CmdSigns.removesign
+     permission-message: You do not have permission to use this command
+  
+permissions:
+  CmdSigns.*:
+    description: Gives access to all cmdsign features
+    children:
+      CmdSigns.addsign: true
+      CmdSigns.updatesign: true
+      CmdSigns.removesign: true
+  CmdSigns.addsign:
+    description: Add sign
+    default: op
+  CmdSigns.updatesign:
+    description: Update sign
+    default: op
+  CmdSigns.removesign:
+    description: Remove sign
+    default: op

@@ -1,0 +1,242 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "net.badlion.shards.grpc";
+option java_outer_classname = "ShardProto";
+option objc_class_prefix = "SHRD";
+
+package shard;
+
+service PlayerTransfer {
+  // Syncs a players data
+  rpc PlayerTransfer (PlayerTransferRequest) returns (PlayerTransferReply) {}
+}
+
+// The request message containing the players data
+message PlayerTransferRequest {
+  string name = 1;
+  string uuid = 2;
+  string world = 3;
+  double locx = 4;
+  double locy = 5;
+  double locz = 6;
+  float yaw = 7;
+  float pitch = 8;
+  bool sprinting = 9;
+  bool flying = 10;
+  string inventory = 11;
+  string armor = 12;
+  int32 handslot = 13;
+  int32 gamemode = 14;
+  double health = 15;
+  int32 food = 16;
+  float saturation = 17;
+  float exhaustion = 18;
+  string potions = 19;
+  float exp = 20;
+  int32 totalexp = 21;
+  int32 level = 22;
+  int32 fireticks = 23;
+  int32 entityid = 24;
+}
+
+message PlayerTransferReply {
+  bool received = 1;
+}
+
+
+// Place a block onto another server
+service BlockSync {
+  rpc BlockSync (BlockSyncRequest) returns (BlockSyncReply) {}
+}
+
+message BlockSyncRequest {
+  string material = 1;
+  int32 durability = 2;
+  int32 locx = 3;
+  int32 locy = 4;
+  int32 locz = 5;
+  string world = 6;
+}
+
+message BlockSyncReply {
+  bool placed = 1;
+}
+
+// Show a fake entity to players on the other server, also move the entity around
+service EntitySync {
+  rpc EntitySync (EntitySyncRequest) returns (EntitySyncReply) {}
+}
+
+message EntitySyncRequest {
+  int32 entityid = 1;
+  string entitytype = 2;
+  string world = 3;
+  double locx = 4;
+  double locy = 5;
+  double locz = 6;
+  float yaw = 7;
+  float pitch = 8;
+  double velx = 9;
+  double vely = 10;
+  double velz = 11;
+  string entityuuid = 12;
+  int32 data = 13;
+  string extradata = 14;
+}
+
+message EntitySyncReply {
+    bool received = 1;
+}
+
+// Despawn the fake entity other players can see on the other server
+service EntityDespawn {
+  rpc EntityDespawn (EntityDespawnRequest) returns (EntityDespawnReply) {}
+}
+
+message EntityDespawnRequest {
+  int32 entityid = 1;
+}
+
+message EntityDespawnReply {
+    bool despawned = 1;
+}
+
+// Transfer an entity to another server
+service EntityTransfer {
+  rpc EntityTransfer (EntityTransferRequest) returns (EntityTransferReply) {}
+}
+
+message EntityTransferRequest {
+  string entitytype = 1;
+  string world = 2;
+  double locx = 3;
+  double locy = 4;
+  double locz = 5;
+  float yaw = 6;
+  float pitch = 7;
+  int32 tickslived = 8;
+  int32 fireticks = 9;
+  double velx = 10;
+  double vely = 11;
+  double velz = 12;
+  double health = 13;
+  bool isbaby = 14;
+  int32 entityid = 15;
+  int32 age = 16;
+  string extradata = 17;
+  double maxhealth = 18;
+}
+
+message EntityTransferReply {
+    bool received = 1;
+}
+
+
+// Used for plugin communication to the master server
+service MasterPluginSync {
+  rpc MasterPluginSync (MasterPluginSyncRequest) returns (MasterPluginSyncReply) {}
+}
+
+message MasterPluginSyncRequest {
+  string from = 1;
+  string data = 2;
+}
+
+message MasterPluginSyncReply {
+  string response = 1;
+}
+
+// Request used to figure out what server is master, and also to get the master config on boot up
+service MasterServerCheck {
+  rpc MasterServerCheck (Empty) returns (MasterServerCheckReply) {}
+}
+
+message MasterServerCheckReply {
+  bool ismaster = 1;
+  int64 worldtime = 2;
+  string masterconf = 3;
+}
+
+// Shutdown a slave server when its no longer needed
+service SlaveShutdown {
+  rpc SlaveShutdown (Empty) returns (Empty) {}
+}
+
+message Empty {
+}
+
+// Keep chunks loaded/unloaded on either side when they need to be
+service SyncChunkStatus {
+  rpc SyncChunkStatus (ChunkStatusRequest) returns (ChunkStatusReply) {}
+}
+
+message ChunkStatusRequest {
+  int32 x = 1;
+  int32 z = 2;
+  string method = 3;
+}
+
+message ChunkStatusReply {
+  bool loaded = 1;
+}
+
+service PlayerSync {
+  rpc PlayerSync (PlayerSyncRequest) returns (PlayerSyncReply) {}
+}
+
+message PlayerSyncRequest {
+  string uuid = 1;
+  string username = 2;
+  int32 entityid = 3;
+  string armor = 4;
+  string iteminhand = 5;
+  string world = 6;
+  double locx = 7;
+  double locy = 8;
+  double locz = 9;
+  float yaw = 10;
+  float pitch = 11;
+  int32 fireticks = 12;
+  double velx = 13;
+  double vely = 14;
+  double velz = 15;
+  double health = 16;
+}
+
+message PlayerSyncReply {
+
+}
+
+// Despawn the fake player other players can see on the other server
+service PlayerDespawn {
+  rpc PlayerDespawn (PlayerDespawnRequest) returns (PlayerDespawnReply) {}
+}
+
+message PlayerDespawnRequest {
+  int32 entityid = 1;
+  string uuid = 2;
+}
+
+message PlayerDespawnReply {
+  bool despawned = 1;
+}
+
+
+service AttackEntity {
+  rpc AttackEntity (AttackEntityRequest) returns (AttackEntityReply) {}
+}
+
+message AttackEntityRequest {
+  int32 attackerid = 1;
+  int32 targetid = 2;
+
+}
+
+message AttackEntityReply {
+
+}
+
+
+
+// Confirm actions before we do things, for example block breaks need to be confirmed before we allow it to be broken.

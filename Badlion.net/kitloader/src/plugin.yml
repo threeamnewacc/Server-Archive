@@ -1,0 +1,29 @@
+name: KitLoader
+main: net.badlion.kits.KitLoader
+version: 0.1
+depend: [Gberry]
+
+commands:
+  load:
+    description: Load kit
+    usage: /load
+    permission: KitLoader.load
+    permission-message: You do not have permission to use this command.
+  save:
+    description: Save kit
+    usage: /save
+    permission: KitLoader.save
+    permission-message: You do not have permission to use this command.
+        
+permissions:
+  KitLoader.*:
+    description: Gives access to all inventory management features
+    children:
+      KitLoader.load: true
+      KitLoader.save: true
+  KitLoader.load:
+    description: Load a custom inventory
+    default: true
+  KitLoader.save:
+    description: Save a custom inventory
+    default: true

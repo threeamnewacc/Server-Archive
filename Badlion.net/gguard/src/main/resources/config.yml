@@ -1,0 +1,40 @@
+gguard:
+    use_compass: true
+    verbose: true
+    active_regions:
+        - test1
+    regions:
+        test1:
+            world: world
+            min_x: 0
+            min_y: 0
+            min_z: 0
+            max_x: 1
+            max_y: 1
+            max_z: 1
+            allow_broken_blocks: true
+            allow_placed_blocks: true
+            allow_fire: true
+            allow_ice_melt: true
+            allow_tnt_explosions: true
+            allow_tnt_block_damage: true
+            allow_creeper_explosions: true
+            allow_creeper_block_damage: true
+            allow_piston_usage: true
+            allow_block_movement: true
+            allow_bucket_placement: true
+            change_damage_values_for_players: true
+            damage_multiplier: 0.5
+            allow_creature_spawn: true
+            heal_players: true
+            feed_players: true
+            allow_ender_pearls: true
+            allow_mob_damage: true
+            allow_enderman_move_blocks: true
+            allow_potion_effects: true
+            allow_chest_interaction: true
+            allow_hanging_items: true
+            allow_pvp: true
+            allow_item_interaction: true
+            allow_player_sleep: true
+            allow_player_pickup_items: true

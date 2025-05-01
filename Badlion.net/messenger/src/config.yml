@@ -1,0 +1,8 @@
+messenger:
+    time: 150
+    active_messages:
+        - message1
+    messages:
+        message1: 
+            color: RED
+            message: This is a sample message

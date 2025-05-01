@@ -1,0 +1,8 @@
+name: BungeeLobby
+main: net.badlion.bungeelobby.BungeeLobby
+version: 1.0
+author: Badlion, LLC
+
+commands:
+  bip:
+    description: Displays IP of current bungee

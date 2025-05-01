@@ -1,0 +1,21 @@
+event_times:
+  - "4-20-6969 04:20"
+min-region-location: 0,0,0,world
+max-region-location: 0,0,0,world
+coal-chance: 10
+iron-chance: 10
+gold-chance: 10
+redstone-chance: 10
+lapis-chance: 10
+diamond-chance: 10
+emerald-chance: 10
+cobble-locations:
+  - 0,0,0,world
+msgs:
+  start: ""
+  end: ""
+  refresh: ""
+  ten: ""
+  five: ""
+  two: ""
+

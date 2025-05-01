@@ -1,0 +1,7 @@
+author: Badlion LLC
+name: SkyWarsChat
+description: Sky Wars chat plugin for the Badlion Network
+main: net.badlion.skywarschat.SkyWarsChat
+version: 1.0
+load: postworld
+depend: [SmellyChat, SkyWars]

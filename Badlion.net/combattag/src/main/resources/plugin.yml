@@ -1,0 +1,10 @@
+author: Badlion Network
+name: CombatTag
+description: Survival Games for Badlion Network
+main: net.badlion.combattag.CombatTagPlugin
+version: 1.0
+depend: [Gberry]
+
+commands:
+    ct:
+        description: Show how much longer you are combat-tagged for

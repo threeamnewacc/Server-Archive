@@ -1,0 +1,7 @@
+author: Badlion Network
+name: MiniStats
+description: Mini Statistics for Badlion Network
+main: net.badlion.ministats.MiniStats
+version: 1.0
+depend: [Gberry]
+

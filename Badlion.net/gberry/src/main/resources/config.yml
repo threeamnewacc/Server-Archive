@@ -1,0 +1,13 @@
+gberry:
+    spam_filter: true
+db:
+    min-connections: 5
+    max-connections: 10
+    partitions: 1
+couchdb:
+    url: 127.0.0.1
+    port: 5984
+    db: badlion
+server: none
+sync-url: "http://192.99.44.165:10111/"
+sync-key: 5mPkwHY9xxLUMVwmCCZK3whzjsWMjyBC

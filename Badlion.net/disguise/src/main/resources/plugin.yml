@@ -1,0 +1,24 @@
+author: Badlion Network
+name: Disguise
+description: Disguise plugin
+main: net.badlion.disguise.Disguise
+version: 2.0
+depend: [Gberry]
+
+commands:
+  disguise:
+    permission: badlion.disguise
+    description: Enables disguise
+    aliases: ['d']
+  redisguise:
+    permission: badlion.disguise
+    description: Gets a new disguise profile
+    aliases: ['rd']
+  undisguise:
+    permission: badlion.disguise
+    description: Disables disguise
+    aliases: ['ud']
+  viewdisguise:
+    permission: badlion.staff
+    usage: /vd <player_name>
+    aliases: ['vd', 'viewd']

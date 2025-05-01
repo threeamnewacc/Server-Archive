@@ -1,0 +1,10 @@
+name: Score
+main: net.badlion.score.ScorePlugin
+version: 1.0
+database: true
+depend: [Gberry]
+
+commands:
+    score:
+        usage: §eUsage: /score, /score faction
+        description: Lookup your score and your faction's score

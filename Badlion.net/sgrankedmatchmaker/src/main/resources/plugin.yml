@@ -1,0 +1,22 @@
+author: Badlion Network
+name: SGRankedMatchMaker
+description: SG Ranked MatchMaker for Badlion Network
+main: net.badlion.sgrankedmatchmaker.SGRankedMatchMaker
+version: 1.0
+depend: [Gberry]
+
+commands:
+    stats:
+        description: Stats for a player
+        aliases: ['record', 'records', 'stat']
+    giftmatches:
+        aliases: ['giftmatch', 'giftmatchs']
+        permission: badlion.donatorplus
+        description: Gift extra matches to a player
+    rankedleft:
+        description: Check number of ranked matches left
+    extrasgrankedmatches:
+        description: Extra ranked matches for voting
+        usage: /extrasgrankedmatches <player_name>
+        permission: op
+        permission-message: You do not have permission to use this command.

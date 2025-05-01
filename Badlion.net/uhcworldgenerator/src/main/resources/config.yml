@@ -1,0 +1,8 @@
+start_time: 21 # Time to start generating UHC worlds
+end_time: 9 # Time to stop generating UHC worlds
+100_worlds: 0
+500_worlds: 0
+1k_worlds: 0
+2k_worlds: 0
+3k_worlds: 10
+4k_worlds: 0

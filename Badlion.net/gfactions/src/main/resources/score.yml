@@ -1,0 +1,12 @@
+score_enabled: true
+score_player_multipliers_keys:
+  - weekend_bonus
+  - donator_bonus
+score_player_multipliers:
+  weekend_bonus: 0.15 # Every player gets this bonus
+  donator_bonus: 0.5
+    permission: badlion.donator # We check for this permission before giving the bonus
+score_faction_multipliers_keys:
+  - weekend_bonus
+score_faction_multipliers:
+  weekend_bonus: 1.5 # All factions get this bonus, no permission stuff here

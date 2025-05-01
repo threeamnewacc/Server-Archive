@@ -1,0 +1,59 @@
+name: BanManager
+main: net.badlion.banmanager.BanManager
+version: 0.1
+depend: [Gberry]
+
+commands:
+  ban:
+    description: Global Ban
+    usage: /ban <player> <reason>
+    permission: bm.ban
+    permission-message: You do not have permission to use this command.
+  kick:
+    description: Kick Command
+    usage: /kick <player> <reason>
+    permission: bm.kick
+    permission-message: You do not have permission to use this command.
+  mute:
+    description: Mute Command
+    usage: /mute <player> <reason>
+    permission: bm.mute
+    permission-message: You do not have permission to use this command.
+  unban:
+    description: Unban Command
+    usage: /unban <player>
+    permission: bm.unban
+    permission-message: You do not have permission to use this command.
+  unmute:
+    description: Unmute Command
+    usage: /unmute <player>
+    permission: bm.unmute
+    permission-message: You do not have permission to use this command.
+  judgementday:
+    description: Judgement Day
+    usage: /judgementday
+    permission: op
+  banwave:
+    description: Ban Wave
+    usage: /banwave
+    permission: op
+
+permissions:
+  bm.ban:
+    description: Global Ban Command
+    default: op
+  bm.kick:
+    description: Kick Command
+    default: op
+  bm.admin:
+    description: Admin
+    default: op
+  bm.mute:
+    description: Mute Command
+    default: op
+  bm.unban:
+    description: Mute Command
+    default: op
+  bm.unmute:
+    description: Mute Command
+    default: op

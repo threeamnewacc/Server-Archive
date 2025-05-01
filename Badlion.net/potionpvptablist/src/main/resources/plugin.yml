@@ -1,0 +1,5 @@
+name: PotionTabList
+main: net.badlion.potionpvptablist.PotionTabList
+version: 2.0
+author: SmellyPenguin
+depend: [ColorName, PotionPvP]

@@ -1,0 +1,16 @@
+name: Build
+main: net.badlion.build.BuildPlugin
+version: 1.0
+depend: [Gberry]
+
+commands:
+  addarena:
+    description: Add arena
+    permission: badlion.mapadmin
+  addwarp:
+    description: Add Warp
+    permission: badlion.mapadmin
+permissions:
+  badlion.mapadmin:
+    description: Badlion Map Admin
+    default: false

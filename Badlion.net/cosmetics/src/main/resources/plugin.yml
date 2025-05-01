@@ -1,0 +1,24 @@
+author: Badlion LLC
+name: Cosmetics
+description: Cosmetics plugin for Badlion LLC
+main: net.badlion.cosmetics.Cosmetics
+version: 1.0
+depend: [Gberry, SmellyCases]
+
+commands:
+  equipcosmetic:
+    description: Equip a cosmetic for yourself or for a player
+    permission: op
+    usage: /equipcosmetic <morph/particle/pet> <equipcosmetic> or /equipparticle <player> <morph/particle/pet> <cosmetic_name>
+  givecosmetic:
+    description: Give a player a cosmetic
+    usage: /givecosmetic <player> <morph_name>
+    permission: op
+    permission-message: You do not have permission to use this command.
+  togglecosmetics:
+    description: Toggle Cosmetics
+    usage: /togglecosmetics
+    permission: op
+  cosmetics:
+    description: Open the Cosmetics inventory
+    aliases: [cosmetic, cosmeticsinventory, cosmeticinventory]

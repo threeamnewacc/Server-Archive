@@ -1,0 +1,6 @@
+author: Badlion Network
+name: SurvivalGames
+description: Survival Games
+main: net.badlion.survivalgames.SurvivalGames
+version: 2.0
+depend: [Gberry, MiniStats, MPG, WorldRotator]

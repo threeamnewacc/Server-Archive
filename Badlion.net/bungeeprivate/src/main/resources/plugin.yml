@@ -1,0 +1,5 @@
+name: BungeePrivate
+main: net.badlion.bungeeprivate.BungeePrivatePlugin
+version: 1.0
+author: Badlion, LLC
+depends: [BungeeLobby]

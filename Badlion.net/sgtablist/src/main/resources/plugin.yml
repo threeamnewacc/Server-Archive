@@ -1,0 +1,6 @@
+name: SGTabList
+main: net.badlion.sgtablist.SGTabList
+version: 2.0
+author: Badlion LLC
+depend: [MPG, SurvivalGames]
+load: postworld

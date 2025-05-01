@@ -1,0 +1,104 @@
+name: BadlionUHC
+main: net.badlion.uhc.BadlionUHC
+version: 2.0
+description: Badlion automatic UHC manager
+author: SmellyPenguin, MasterGberry
+depend: [BanManager, CleanroomGenerator, WorldBorder, WorldEdit, Gberry, GGuard, GPermissions, MiniStats, SmellyChat]
+commands:
+  killcount:
+    description: Look up the kill count of a player
+    aliases: ['kc']
+    usage: /killcount <player>
+  killtop:
+    description: Show top 3 players with most kills
+    aliases: ['kt']
+    usage: /killtop
+  sendcoords:
+    description: Sends your coordinates to your team
+    aliases: ['sendcoord', 'sendc', 'sc']
+  transferhealth:
+    description: Transfer a portion of your health to a teammate
+    aliases: ['th', 'ht', 'healthtransfer']
+    usage: /th <player> <amount>
+  health:
+    description: Look up the health of a player
+    aliases: ['h']
+    usage: /h <player>
+  stick:
+    description: Gives player a team management stick
+  vanish:
+    aliases: ['v']
+  tele:
+    description: Teleports to a specific player
+    usage: /tele <player>
+  configs:
+    aliases: ['config']
+    description: Shows all configurations for the UHC
+  bordershrink:
+    description: Set up border shrinking
+    aliases: ['bs']
+  spectator:
+    description: Let players spectate after they die in the UHC
+    aliases: ['spec']
+    permission: badlion.admin
+  wl:
+    description: Whitelist players for the UHC
+  uhc:
+    description: Main command for Badlion UHC
+    aliases: ['uch']
+  team:
+    description: Main command for teams
+    aliases: ['teams', 'party']
+  tl:
+    description: Team list alias
+  feed:
+    description: Fead all players
+    aliases: ['fead']
+    permission: badlion.uhcsrhost
+  food:
+    description: Gives the number of steak to every player
+    usage: /food [num_of_steak]
+    permission: badlion.uhcsrhost
+  heal:
+    description: Heal all players
+    aliases: ['heel']
+    permission: badlion.uhcsrhost
+  ci:
+    description: Clear every player's inventory
+    aliases: ['clearinventory', 'clearinv']
+    permission: badlion.uhcsrhost
+  helpop:
+    description: Send a message to all operators
+    usage: /helpop <message>
+    aliases: ['ho']
+  stats:
+    description: Show stats for a player
+    aliases: ['stat']
+  miningnotification:
+    description: Mining Notification Command
+    permission: badlion.uhcsrhost
+  scenarios:
+    description: Game scenarios
+    aliases: ['scenario', 'explain']
+    usage: /scenarios
+  resetstats:
+    description: Reset stats
+  mlg:
+    description: Perform an MLG water bucket
+  practice:
+    description: Join pre-game practice arena
+  rules:
+    description: Rules
+  qc:
+      description: Quadrant chat
+  objectives:
+      description: Objectives
+  qteam:
+      description: Quadrant team
+  uhcgm:
+    description: Toggle global mute
+    permission: badlion.uhctrial
+permissions:
+  badlion.uhcsrhost:
+    description: UHC Senior Host Perm
+    default: op

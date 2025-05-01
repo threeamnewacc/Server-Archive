@@ -1,0 +1,5 @@
+name: PlayerLogger
+main: net.badlion.playerlogger.PlayerLogger
+version: 0.1
+database: false
+depend: [Gberry]

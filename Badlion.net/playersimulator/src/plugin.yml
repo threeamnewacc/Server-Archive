@@ -1,0 +1,34 @@
+name: PlayerSimulator
+version: 1.0
+description: Simulates players for load testing
+
+author: Travis Watkins
+website: https://github.com/amaranth/PlayerSimulator
+
+main: com.probablycoding.bukkit.playersimulator.PlayerSimulator
+
+commands:
+  spawnbots:
+    description: Spawn a fake player at a random location
+    usage: /<command> [count] [radius]
+    permission: playersimulator.spawn
+  killbots:
+    description: Disconnect all fake players
+    permission: playersimulator.killbots
+  debug:
+    description: Show tick rate, memory usage, and number of chunks loaded
+    permission: playersimulator.debug
+  botlocations:
+    description: Print out all bot locations
+    permission: playersimulator.debug
+
+permissions:
+  playersimulator:
+    description: Allow a player all plugin permissions
+    children:
+      playersimulator.spawn:
+        description: Allow a player to spawn fake players
+      playersimulator.killbots:
+        description: Allow a player to kill off fake players
+      playersimulator.debug:
+        description: Allow a player to see debug info

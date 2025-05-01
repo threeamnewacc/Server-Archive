@@ -1,0 +1,6 @@
+name: SGLobbyTabList
+main: net.badlion.sglobbytablist.SGLobbyTabList
+version: 1.0
+author: Badlion LLC
+depend: [SGLobby]
+load: postworld

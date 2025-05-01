@@ -1,0 +1,37 @@
+name: BadlionEssentials
+main: net.badlion.essentials.EssentialsPlugin
+version: 1.0
+depend: [Gberry]
+
+commands:
+    home:
+        description: List homes
+        permission: badlion.essentials.user
+    sethome:
+        description: Set a home
+        permission: badlion.essentials.user
+    delhome:
+        description: Delete a home
+        permission: badlion.essentials.user
+    listhomes:
+        description: List homes for another user
+        permission: badlion.essentials.mod
+    warp:
+        description: List homes
+        permission: badlion.essentials.user
+    setwarp:
+        description: Set a warp
+        permission: badlion.essentials.admin
+    delwarp:
+        description: Delete a warp
+        permission: badlion.essentials.admin
+permissions:
+    badlion.essentials.user:
+        default: true
+        description: Essentials user
+    badlion.essentials.admin:
+        default: false
+        description: Essentials admin
+    badlion.essentials.mod:
+        default: false
+        description: Essentials mod

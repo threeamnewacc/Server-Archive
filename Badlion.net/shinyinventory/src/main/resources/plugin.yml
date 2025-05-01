@@ -1,0 +1,4 @@
+name: ShinyInventory
+main: net.badlion.shinyinventory
+version: 0.0.1
+description: Shiny's inventory code

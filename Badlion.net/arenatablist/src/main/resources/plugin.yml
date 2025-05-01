@@ -1,0 +1,5 @@
+name: ArenaTablist
+main: net.badlion.arenatablist.ArenaTabList
+version: 1.0
+depend: [ColorName, Gberry]
+softdepend: [ArenaLobby, ArenaPvP]

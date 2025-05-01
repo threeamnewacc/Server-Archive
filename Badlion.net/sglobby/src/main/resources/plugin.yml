@@ -1,0 +1,14 @@
+name: SGLobby
+version: 2.0
+main: net.badlion.sglobby.SGLobby
+depend: [Gberry, Cosmetics, SmellyCases]
+load: postworld
+
+commands:
+  leave:
+    description: Leave the queue
+  settings:
+    description: Open SG settings
+  stats:
+    description: Lookup a user's stats
+    aliases: ['records']

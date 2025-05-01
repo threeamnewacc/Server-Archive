@@ -1,0 +1,5 @@
+name: vaultbattle
+author: Travisvv
+version: 1.0
+main: net.kohi.vaultbattle.VaultBattlePlugin
+depend: [sidebar, WorldEdit, combattracker, Gberry, Cosmetics]

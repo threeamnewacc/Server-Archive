@@ -1,0 +1,12 @@
+author: Badlion LLC
+name: PracticeChat
+description: Practice PVP chat plugin
+main: net.badlion.practicechat.PracticeChat
+version: 2.0
+load: postworld
+depend: [kpractice, SmellyChat]
+
+commands:
+  pc:
+    description: Send a message to party
+    aliases: ['tc']

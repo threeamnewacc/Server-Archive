@@ -1,0 +1,14 @@
+author: Badlion Network
+name: FFA
+description: FFA
+main: net.badlion.ffa.FFA
+version: 1.0
+depend: [Gberry, MiniStats, MPG, WorldRotator]
+
+commands:   # TODO: /STATS?
+  stats:
+    description: Lookup a user's stats
+    aliases: ['records']
+  spawn:
+    description: Teleport to the FFA spawn
+    aliases: ['leave']

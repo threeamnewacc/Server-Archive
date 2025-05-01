@@ -1,0 +1,4 @@
+playerlogger:
+    server: default
+    track-deaths: false
+    track-ips: true
