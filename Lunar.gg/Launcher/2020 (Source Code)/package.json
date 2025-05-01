@@ -1,0 +1,33 @@
+{
+  "name": "lunarclient",
+  "version": "2.1.2",
+  "description": "Lunar Client",
+  "repository": "https://github.com/LunarClient/Launcher",
+  "author": "Moonsworth, LLC",
+  "license": "UNLICENSED",
+  "main": "build/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron-log": "^4.2.0",
+    "electron-progressbar": "^1.2.0",
+    "electron-store": "^5.1.1",
+    "electron-updater": "^4.3.1",
+    "minecraft-pinger": "^1.0.3",
+    "node-machine-id": "^1.1.12",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "request": "^2.88.2",
+    "rimraf": "^3.0.2",
+    "sha1-file": "^1.0.4",
+    "shadowguard.js": "github:Constantin-Schreiber-Jona-Wagner-GbR/shadowguard.js",
+    "shell-escape": "^0.2.0",
+    "tar-fs": "^2.0.0",
+    "unzipper": "^0.10.10"
+  },
+  "devDependencies": {
+    "electron": "^5.0.1"
+  }
+}
